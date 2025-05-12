@@ -1,0 +1,440 @@
+@prefix : <http://www.semanticweb.org/luigiasprino/ontologies/2025/4/untitled-ontology-3/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/luigiasprino/ontologies/2025/4/untitled-ontology-3/> .
+
+<https://w3id.org/italia/ontoschool/> rdf:type owl:Ontology ;
+                                       owl:versionIRI <https://w3id.org/italia/ontoschool/0.0.1> ;
+                                       owl:imports <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> ,
+                                                   <https://w3id.org/italia/onto/CLV/1.0> ,
+                                                   <https://w3id.org/italia/onto/COV/0.12> ,
+                                                   <https://w3id.org/italia/onto/RO/0.3> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/italia/ontoschool/haPuntoDiErogazioneDelServizio
+:haPuntoDiErogazioneDelServizio rdf:type owl:ObjectProperty ;
+                                rdfs:domain :IstitutoDiRiferimento ;
+                                rdfs:range :PuntoDiErogazioneDelServizio .
+
+
+###  https://w3id.org/italia/ontoschool/haPuntoDiErogazioneDiSezioneSeraleOCarceraria
+:haPuntoDiErogazioneDiSezioneSeraleOCarceraria rdf:type owl:ObjectProperty ;
+                                               rdfs:subPropertyOf :haPuntoDiErogazioneDelServizio ;
+                                               rdfs:domain [ rdf:type owl:Class ;
+                                                             owl:unionOf ( :IstitutoProfessionale
+                                                                           :IstitutoTecnico
+                                                                           :Liceo
+                                                                         )
+                                                           ] ;
+                                               rdfs:range [ rdf:type owl:Class ;
+                                                            owl:unionOf ( :SezioneCarceraria
+                                                                          :SezioneSerale
+                                                                        )
+                                                          ] .
+
+
+###  https://w3id.org/italia/ontoschool/haSede
+:haSede rdf:type owl:ObjectProperty ;
+        rdfs:domain :IstituzioneScolastica ;
+        rdfs:range :SedeIstituzioneScolastica .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/italia/ontoschool/CentroProvincialiIstruzioneDegliAdulti
+:CentroProvincialiIstruzioneDegliAdulti rdf:type owl:Class ;
+                                        rdfs:subClassOf :IstitutoDiRiferimento ,
+                                                        :IstituzioneScolasticaDiPrimoCiclo ,
+                                                        :IstituzioneScolasticaPerAdulti ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :haPuntoDiErogazioneDelServizio ;
+                                                          owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                              owl:unionOf ( :CentroTerritorialePermanente
+                                                                                            :ScuolaCarcerariaPrimariaESecondariaDiPrimoGrado
+                                                                                          )
+                                                                            ]
+                                                        ] .
+
+
+###  https://w3id.org/italia/ontoschool/CentroTerritorialePermanente
+:CentroTerritorialePermanente rdf:type owl:Class ;
+                              rdfs:subClassOf :IstituzioneScolasticaDiPrimoCiclo ,
+                                              :IstituzioneScolasticaPerAdulti ,
+                                              :PuntoDiErogazioneDelServizio .
+
+
+###  https://w3id.org/italia/ontoschool/CircoloDidattico
+:CircoloDidattico rdf:type owl:Class ;
+                  rdfs:subClassOf :IstitutoDiRiferimento ,
+                                  :IstituzioneScolasticaDiPrimoCiclo ,
+                                  [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :haPuntoDiErogazioneDelServizio ;
+                                                           owl:someValuesFrom :ScuolaInfanzia
+                                                         ]
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :haPuntoDiErogazioneDelServizio ;
+                                                           owl:someValuesFrom :ScuolaPrimaria
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] .
+
+
+###  https://w3id.org/italia/ontoschool/Convitto
+:Convitto rdf:type owl:Class ;
+          rdfs:subClassOf :IstituzioneScolastica .
+
+
+###  https://w3id.org/italia/ontoschool/Educandato
+:Educandato rdf:type owl:Class ;
+            rdfs:subClassOf :IstituzioneScolastica .
+
+
+###  https://w3id.org/italia/ontoschool/IstitutoComprensivo
+:IstitutoComprensivo rdf:type owl:Class ;
+                     rdfs:subClassOf :IstitutoDiRiferimento ,
+                                     :IstituzioneScolasticaDiPrimoCiclo ,
+                                     [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                              owl:onProperty :haPuntoDiErogazioneDelServizio ;
+                                                              owl:someValuesFrom :ScuolaInfanzia
+                                                            ]
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty :haPuntoDiErogazioneDelServizio ;
+                                                              owl:someValuesFrom :ScuolaPrimaria
+                                                            ]
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty :haPuntoDiErogazioneDelServizio ;
+                                                              owl:someValuesFrom :ScuolaSecondariaDiPrimoGrado
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] .
+
+
+###  https://w3id.org/italia/ontoschool/IstitutoDArte
+:IstitutoDArte rdf:type owl:Class ;
+               rdfs:subClassOf :IstituzioneScolasticaDiSecondoCiclo ,
+                               :PuntoDiErogazioneDelServizio .
+
+
+###  https://w3id.org/italia/ontoschool/IstitutoDiIstruzioneSecondariaSuperiore
+:IstitutoDiIstruzioneSecondariaSuperiore rdf:type owl:Class ;
+                                         rdfs:subClassOf :IstitutoDiRiferimento ,
+                                                         :IstituzioneScolasticaDiSecondoCiclo ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :haPuntoDiErogazioneDelServizio ;
+                                                           owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                               owl:unionOf ( :IstitutoProfessionale
+                                                                                             :IstitutoTecnico
+                                                                                             :Liceo
+                                                                                           )
+                                                                             ]
+                                                         ] .
+
+
+###  https://w3id.org/italia/ontoschool/IstitutoDiRiferimento
+:IstitutoDiRiferimento rdf:type owl:Class ;
+                       rdfs:subClassOf :IstituzioneScolastica ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :haPuntoDiErogazioneDelServizio ;
+                                         owl:someValuesFrom :PuntoDiErogazioneDelServizio
+                                       ] .
+
+
+###  https://w3id.org/italia/ontoschool/IstitutoMagistrale
+:IstitutoMagistrale rdf:type owl:Class ;
+                    rdfs:subClassOf :IstituzioneScolasticaDiSecondoCiclo ,
+                                    :PuntoDiErogazioneDelServizio .
+
+
+###  https://w3id.org/italia/ontoschool/IstitutoOmnicomprensivo
+:IstitutoOmnicomprensivo rdf:type owl:Class ;
+                         rdfs:subClassOf :IstitutoDiRiferimento .
+
+
+###  https://w3id.org/italia/ontoschool/IstitutoProfessionale
+:IstitutoProfessionale rdf:type owl:Class ;
+                       rdfs:subClassOf :IstituzioneScolasticaDiSecondoCiclo ,
+                                       :PuntoDiErogazioneDelServizio ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :haPuntoDiErogazioneDelServizio ;
+                                         owl:allValuesFrom [ rdf:type owl:Class ;
+                                                             owl:unionOf ( :SezioneCarceraria
+                                                                           :SezioneSerale
+                                                                         )
+                                                           ]
+                                       ] .
+
+
+###  https://w3id.org/italia/ontoschool/IstitutoProfessionalePerIServiziAlberghieriERistorazione
+:IstitutoProfessionalePerIServiziAlberghieriERistorazione rdf:type owl:Class ;
+                                                          rdfs:subClassOf :IstitutoProfessionale .
+
+
+###  https://w3id.org/italia/ontoschool/IstitutoProfessionalePerIServiziCommercialiETuristici
+:IstitutoProfessionalePerIServiziCommercialiETuristici rdf:type owl:Class ;
+                                                       rdfs:subClassOf :IstitutoProfessionale .
+
+
+###  https://w3id.org/italia/ontoschool/IstitutoProfessionalePerIServiziSociali
+:IstitutoProfessionalePerIServiziSociali rdf:type owl:Class ;
+                                         rdfs:subClassOf :IstitutoProfessionale .
+
+
+###  https://w3id.org/italia/ontoschool/IstitutoProfessionalePerLAgricolturaELAmbiente
+:IstitutoProfessionalePerLAgricolturaELAmbiente rdf:type owl:Class ;
+                                                rdfs:subClassOf :IstitutoProfessionale .
+
+
+###  https://w3id.org/italia/ontoschool/IstitutoProfessionalePerLIndustriaELArtigianato
+:IstitutoProfessionalePerLIndustriaELArtigianato rdf:type owl:Class ;
+                                                 rdfs:subClassOf :IstitutoProfessionale .
+
+
+###  https://w3id.org/italia/ontoschool/IstitutoProfessionalePerLIndustriaELeAttivitaMarinare
+:IstitutoProfessionalePerLIndustriaELeAttivitaMarinare rdf:type owl:Class ;
+                                                       rdfs:subClassOf :IstitutoProfessionale .
+
+
+###  https://w3id.org/italia/ontoschool/IstitutoProfessionalePerLaCinematografiaELaTelevisione
+:IstitutoProfessionalePerLaCinematografiaELaTelevisione rdf:type owl:Class ;
+                                                        rdfs:subClassOf :IstitutoProfessionale .
+
+
+###  https://w3id.org/italia/ontoschool/IstitutoTecnico
+:IstitutoTecnico rdf:type owl:Class ;
+                 rdfs:subClassOf :IstituzioneScolasticaDiSecondoCiclo ,
+                                 :PuntoDiErogazioneDelServizio ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :haPuntoDiErogazioneDelServizio ;
+                                   owl:allValuesFrom [ rdf:type owl:Class ;
+                                                       owl:unionOf ( :SezioneCarceraria
+                                                                     :SezioneSerale
+                                                                   )
+                                                     ]
+                                 ] .
+
+
+###  https://w3id.org/italia/ontoschool/IstitutoTecnicoAeronautico
+:IstitutoTecnicoAeronautico rdf:type owl:Class ;
+                            rdfs:subClassOf :IstitutoTecnico .
+
+
+###  https://w3id.org/italia/ontoschool/IstitutoTecnicoAgrario
+:IstitutoTecnicoAgrario rdf:type owl:Class ;
+                        rdfs:subClassOf :IstitutoTecnico .
+
+
+###  https://w3id.org/italia/ontoschool/IstitutoTecnicoCommerciale
+:IstitutoTecnicoCommerciale rdf:type owl:Class ;
+                            rdfs:subClassOf :IstitutoTecnico .
+
+
+###  https://w3id.org/italia/ontoschool/IstitutoTecnicoIndustriale
+:IstitutoTecnicoIndustriale rdf:type owl:Class ;
+                            rdfs:subClassOf :IstitutoTecnico .
+
+
+###  https://w3id.org/italia/ontoschool/IstitutoTecnicoNautico
+:IstitutoTecnicoNautico rdf:type owl:Class ;
+                        rdfs:subClassOf :IstitutoTecnico .
+
+
+###  https://w3id.org/italia/ontoschool/IstitutoTecnicoPerAttivitaSociali
+:IstitutoTecnicoPerAttivitaSociali rdf:type owl:Class ;
+                                   rdfs:subClassOf :IstitutoTecnico .
+
+
+###  https://w3id.org/italia/ontoschool/IstitutoTecnicoPerGeometri
+:IstitutoTecnicoPerGeometri rdf:type owl:Class ;
+                            rdfs:subClassOf :IstitutoTecnico .
+
+
+###  https://w3id.org/italia/ontoschool/IstitutoTecnicoPerIlTurismo
+:IstitutoTecnicoPerIlTurismo rdf:type owl:Class ;
+                             rdfs:subClassOf :IstitutoTecnico .
+
+
+###  https://w3id.org/italia/ontoschool/IstituzioneScolastica
+:IstituzioneScolastica rdf:type owl:Class ;
+                       rdfs:subClassOf <https://w3id.org/italia/onto/COV/Organization> ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :haSede ;
+                                         owl:someValuesFrom :SedeIstituzioneScolastica
+                                       ] .
+
+
+###  https://w3id.org/italia/ontoschool/IstituzioneScolasticaDiPrimoCiclo
+:IstituzioneScolasticaDiPrimoCiclo rdf:type owl:Class ;
+                                   rdfs:subClassOf :IstituzioneScolastica .
+
+
+###  https://w3id.org/italia/ontoschool/IstituzioneScolasticaDiSecondoCiclo
+:IstituzioneScolasticaDiSecondoCiclo rdf:type owl:Class ;
+                                     rdfs:subClassOf :IstituzioneScolastica .
+
+
+###  https://w3id.org/italia/ontoschool/IstituzioneScolasticaPerAdulti
+:IstituzioneScolasticaPerAdulti rdf:type owl:Class ;
+                                rdfs:subClassOf :IstituzioneScolastica .
+
+
+###  https://w3id.org/italia/ontoschool/Liceo
+:Liceo rdf:type owl:Class ;
+       rdfs:subClassOf :IstituzioneScolasticaDiSecondoCiclo ,
+                       :PuntoDiErogazioneDelServizio ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :haPuntoDiErogazioneDelServizio ;
+                         owl:allValuesFrom [ rdf:type owl:Class ;
+                                             owl:unionOf ( :SezioneCarceraria
+                                                           :SezioneSerale
+                                                         )
+                                           ]
+                       ] .
+
+
+###  https://w3id.org/italia/ontoschool/LiceoArtistico
+:LiceoArtistico rdf:type owl:Class ;
+                rdfs:subClassOf :Liceo .
+
+
+###  https://w3id.org/italia/ontoschool/LiceoClassico
+:LiceoClassico rdf:type owl:Class ;
+               rdfs:subClassOf :IstituzioneScolasticaDiSecondoCiclo ,
+                               :Liceo .
+
+
+###  https://w3id.org/italia/ontoschool/LiceoScientifico
+:LiceoScientifico rdf:type owl:Class ;
+                  rdfs:subClassOf :IstituzioneScolasticaDiSecondoCiclo ,
+                                  :Liceo .
+
+
+###  https://w3id.org/italia/ontoschool/PuntoDiErogazioneDelServizio
+:PuntoDiErogazioneDelServizio rdf:type owl:Class ;
+                              rdfs:subClassOf :IstituzioneScolastica ;
+                              rdfs:label "Plesso"@it .
+
+
+###  https://w3id.org/italia/ontoschool/ScuolaCarcerariaPrimariaESecondariaDiPrimoGrado
+:ScuolaCarcerariaPrimariaESecondariaDiPrimoGrado rdf:type owl:Class ;
+                                                 rdfs:subClassOf :IstituzioneScolasticaDiPrimoCiclo ,
+                                                                 :IstituzioneScolasticaPerAdulti ,
+                                                                 :PuntoDiErogazioneDelServizio .
+
+
+###  https://w3id.org/italia/ontoschool/ScuolaInfanzia
+:ScuolaInfanzia rdf:type owl:Class ;
+                rdfs:subClassOf :PuntoDiErogazioneDelServizio .
+
+
+###  https://w3id.org/italia/ontoschool/ScuolaMagistrale
+:ScuolaMagistrale rdf:type owl:Class ;
+                  rdfs:subClassOf :IstituzioneScolasticaDiSecondoCiclo ,
+                                  :PuntoDiErogazioneDelServizio .
+
+
+###  https://w3id.org/italia/ontoschool/ScuolaParitaria
+:ScuolaParitaria rdf:type owl:Class ;
+                 rdfs:subClassOf <https://w3id.org/italia/onto/COV/PrivateOrganization> ,
+                                 :IstituzioneScolastica .
+
+
+###  https://w3id.org/italia/ontoschool/ScuolaPerUtenzaConBisogniSpeciali
+:ScuolaPerUtenzaConBisogniSpeciali rdf:type owl:Class ;
+                                   rdfs:subClassOf :IstituzioneScolastica .
+
+
+###  https://w3id.org/italia/ontoschool/ScuolaPrimaria
+:ScuolaPrimaria rdf:type owl:Class ;
+                rdfs:subClassOf :PuntoDiErogazioneDelServizio .
+
+
+###  https://w3id.org/italia/ontoschool/ScuolaSecondariaDiPrimoGrado
+:ScuolaSecondariaDiPrimoGrado rdf:type owl:Class ;
+                              rdfs:subClassOf :PuntoDiErogazioneDelServizio .
+
+
+###  https://w3id.org/italia/ontoschool/SedeCentraleDellaScuolaDelPrimoGrado
+:SedeCentraleDellaScuolaDelPrimoGrado rdf:type owl:Class ;
+                                      rdfs:subClassOf :IstitutoDiRiferimento ,
+                                                      :IstituzioneScolasticaDiPrimoCiclo ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty :haPuntoDiErogazioneDelServizio ;
+                                                        owl:allValuesFrom :ScuolaSecondariaDiPrimoGrado
+                                                      ] .
+
+
+###  https://w3id.org/italia/ontoschool/SedeCentraleDellaScuolaDelSecondoGrado
+:SedeCentraleDellaScuolaDelSecondoGrado rdf:type owl:Class ;
+                                        rdfs:subClassOf :IstitutoDiRiferimento ,
+                                                        :IstituzioneScolasticaDiSecondoCiclo ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :haPuntoDiErogazioneDelServizio ;
+                                                          owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                              owl:unionOf ( :IstitutoProfessionale
+                                                                                            :IstitutoTecnico
+                                                                                            :Liceo
+                                                                                          )
+                                                                            ]
+                                                        ] .
+
+
+###  https://w3id.org/italia/ontoschool/SedeIstituzioneScolastica
+:SedeIstituzioneScolastica rdf:type owl:Class ;
+                           rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject> ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty <https://w3id.org/italia/onto/CLV/hasAddress> ;
+                                             owl:allValuesFrom <https://w3id.org/italia/onto/CLV/Address>
+                                           ] .
+
+
+###  https://w3id.org/italia/ontoschool/SezioneCarceraria
+:SezioneCarceraria rdf:type owl:Class ;
+                   rdfs:subClassOf :IstituzioneScolasticaDiSecondoCiclo ,
+                                   :IstituzioneScolasticaPerAdulti ,
+                                   :PuntoDiErogazioneDelServizio .
+
+
+###  https://w3id.org/italia/ontoschool/SezioneSerale
+:SezioneSerale rdf:type owl:Class ;
+               rdfs:subClassOf :IstituzioneScolasticaDiSecondoCiclo ,
+                               :IstituzioneScolasticaPerAdulti ,
+                               :PuntoDiErogazioneDelServizio .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ owl:intersectionOf ( :IstitutoOmnicomprensivo
+                       :IstituzioneScolasticaDiPrimoCiclo
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                    owl:onProperty :haPuntoDiErogazioneDelServizio ;
+                    owl:someValuesFrom :IstituzioneScolasticaDiSecondoCiclo
+                  ]
+] .
+
+
+[ owl:intersectionOf ( :IstitutoOmnicomprensivo
+                       :IstituzioneScolasticaDiSecondoCiclo
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                    owl:onProperty :haPuntoDiErogazioneDelServizio ;
+                    owl:someValuesFrom :IstituzioneScolasticaDiPrimoCiclo
+                  ]
+] .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
