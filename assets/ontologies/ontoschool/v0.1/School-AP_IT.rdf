@@ -14,15 +14,6 @@
     xmlns:foaf="http://xmlns.com/foaf/0.1/"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
   <owl:Ontology rdf:about="https://w3id.org/italia/onto/School">
-    <dct:creator>
-      <foaf:Agent rdf:about="https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab">
-        <foaf:name xml:lang="it">Istituto di Scienze e Tecnologie della Cognizione del CNR - Semantic Technology Lab (STLab)</foaf:name>
-        <foaf:name xml:lang="en">Institute of Cognitive Sciences and Technologies of the Italian Research Council (CNR) - Semantic Technology Laboratory (STLab)</foaf:name>
-        <dct:identifier>cnr - Z6HZEH - STLab</dct:identifier>
-        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-      </foaf:Agent>
-    </dct:creator>
     <owl:versionInfo xml:lang="en">Versione 0.1 - aggiornata il 19/05/2025 - Primo rilascio</owl:versionInfo>
     <owl:imports rdf:resource="https://w3id.org/italia/onto/CLV/1.0"/>
     <admsapit:hasOntologyLanguage rdf:resource="https://w3id.org/italia/onto/ADMS/OWL"/>
@@ -125,7 +116,6 @@
     </admsapit:hasSemanticAssetDistribution>
     <dct:title xml:lang="en">School-AP_IT</dct:title>
     <admsapit:prev rdf:resource="https://w3id.org/italia/onto/School/0.1"/>
-    <admsapit:hasContributor rdf:resource="https://w3id.org/italia/data/public-organization/INDIRE"/>
     <dcat:keyword>scuola</dcat:keyword>
     <rdfs:comment xml:lang="it">Questa ontologia che descrive il sistema scolastico italiano.</rdfs:comment>
     <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
@@ -150,7 +140,15 @@
       </admsapit:SemanticAssetDistribution>
     </admsapit:hasSemanticAssetDistribution>
     <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
-    <admsapit:hasContributor rdf:resource="https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab"/>
+    <admsapit:hasContributor>
+      <foaf:Agent rdf:about="https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab">
+        <foaf:name xml:lang="it">Istituto di Scienze e Tecnologie della Cognizione del CNR - Semantic Technology Lab (STLab)</foaf:name>
+        <foaf:name xml:lang="en">Institute of Cognitive Sciences and Technologies of the Italian Research Council (CNR) - Semantic Technology Laboratory (STLab)</foaf:name>
+        <dct:identifier>cnr - Z6HZEH - STLab</dct:identifier>
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </foaf:Agent>
+    </admsapit:hasContributor>
   </owl:Ontology>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoDArte">
     <owl:versionInfo>unstable</owl:versionInfo>
@@ -301,6 +299,20 @@
     <rdfs:subClassOf>
       <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstituzioneScolastica"/>
     </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiSecondoCiclo"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/School/haPuntoDiErogazioneDelServizio"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:intersectionOf rdf:parseType="Collection">
+      <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoOmnicomprensivo"/>
+      <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiPrimoCiclo"/>
+    </owl:intersectionOf>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoProfessionalePerLIndustriaELArtigianato">
     <owl:versionInfo>unstable</owl:versionInfo>
@@ -470,20 +482,6 @@
     <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiSecondoCiclo"/>
     <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstitutoDiRiferimento"/>
   </owl:Class>
-  <owl:Class>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiSecondoCiclo"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/School/haPuntoDiErogazioneDelServizio"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <owl:intersectionOf rdf:parseType="Collection">
-      <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoOmnicomprensivo"/>
-      <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiPrimoCiclo"/>
-    </owl:intersectionOf>
-  </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/Convitto">
     <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
@@ -586,6 +584,20 @@
       <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstituzioneScolastica"/>
     </rdfs:subClassOf>
   </owl:Class>
+  <owl:Class>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiPrimoCiclo"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/School/haPuntoDiErogazioneDelServizio"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:intersectionOf rdf:parseType="Collection">
+      <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoOmnicomprensivo"/>
+      <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiSecondoCiclo"/>
+    </owl:intersectionOf>
+  </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstituzioneScolastica">
     <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
@@ -602,20 +614,6 @@
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/COV/Organization"/>
-  </owl:Class>
-  <owl:Class>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiPrimoCiclo"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/School/haPuntoDiErogazioneDelServizio"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <owl:intersectionOf rdf:parseType="Collection">
-      <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoOmnicomprensivo"/>
-      <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiSecondoCiclo"/>
-    </owl:intersectionOf>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoTecnicoAgrario">
     <owl:versionInfo>unstable</owl:versionInfo>
