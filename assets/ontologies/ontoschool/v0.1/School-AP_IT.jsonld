@@ -1,35 +1,6 @@
 {
     "@graph": [
         {
-            "@id": "school:ScuolaCarcerariaPrimariaESecondariaDiPrimoGrado",
-            "owl:versionInfo": "unstable",
-            "rdfs:isDefinedBy": {
-                "@id": "https://w3id.org/italia/onto/School"
-            },
-            "rdfs:label": [
-                {
-                    "@language": "en",
-                    "@value": "Scuola Carceraria Primaria E Secondaria Di Primo Grado"
-                },
-                {
-                    "@language": "it",
-                    "@value": "Scuola Carceraria Primaria E Secondaria Di Primo Grado"
-                }
-            ],
-            "rdfs:subClassOf": [
-                {
-                    "@id": "school:PuntoDiErogazioneDelServizio"
-                },
-                {
-                    "@id": "school:IstituzioneScolasticaPerAdulti"
-                },
-                {
-                    "@id": "school:IstituzioneScolasticaDiPrimoCiclo"
-                }
-            ],
-            "@type": "owl:Class"
-        },
-        {
             "@id": "https://w3id.org/italia/data/project/NDC",
             "l0:name": {
                 "@language": "it",
@@ -71,6 +42,14 @@
         },
         {
             "@id": "https://w3id.org/italia/onto/School",
+            "dct:creator": [
+                {
+                    "@id": "https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab"
+                },
+                {
+                    "@id": "https://w3id.org/italia/data/public-organization/INDIRE"
+                }
+            ],
             "owl:versionInfo": [
                 {
                     "@language": "en",
@@ -234,9 +213,6 @@
             "admsapit:hasFormalityLevel": {
                 "@id": "admsapit:Formal"
             },
-            "dct:creator": {
-                "@id": "https://w3id.org/italia/data/public-organization/INDIRE"
-            },
             "admsapit:officialURI": {
                 "@value": "https://w3id.org/italia/onto/School",
                 "@type": "xsd:anyURI"
@@ -306,27 +282,6 @@
             "@type": "owl:Class"
         },
         {
-            "@id": "school:IstitutoOmnicomprensivo",
-            "owl:versionInfo": "unstable",
-            "rdfs:isDefinedBy": {
-                "@id": "https://w3id.org/italia/onto/School"
-            },
-            "rdfs:label": [
-                {
-                    "@language": "en",
-                    "@value": "Istituto Omnicomprensivo"
-                },
-                {
-                    "@language": "it",
-                    "@value": "Istituto Omnicomprensivo"
-                }
-            ],
-            "rdfs:subClassOf": {
-                "@id": "school:IstitutoDiRiferimento"
-            },
-            "@type": "owl:Class"
-        },
-        {
             "@id": "school:LiceoScientifico",
             "owl:versionInfo": "unstable",
             "rdfs:isDefinedBy": {
@@ -370,7 +325,7 @@
             ],
             "rdfs:subClassOf": [
                 {
-                    "@id": "_:b40"
+                    "@id": "_:b35"
                 },
                 {
                     "@id": "school:PuntoDiErogazioneDelServizio"
@@ -403,32 +358,59 @@
             "@type": "owl:Class"
         },
         {
-            "@id": "_:b3",
-            "@type": "owl:Class",
-            "owl:intersectionOf": {
-                "@list": [
-                    {
-                        "@id": "_:b52"
-                    },
-                    {
-                        "@id": "_:b32"
-                    }
-                ]
-            }
+            "@id": "_:b0",
+            "owl:allValuesFrom": {
+                "@id": "school:ScuolaSecondariaDiPrimoGrado"
+            },
+            "owl:onProperty": {
+                "@id": "school:haPuntoDiErogazioneDelServizio"
+            },
+            "@type": "owl:Restriction"
         },
         {
-            "@id": "_:b5",
-            "owl:unionOf": {
-                "@list": [
-                    {
-                        "@id": "school:SezioneCarceraria"
-                    },
-                    {
-                        "@id": "school:SezioneSerale"
-                    }
-                ]
+            "@id": "school:ScuolaSecondariaDiPrimoGrado",
+            "owl:versionInfo": "unstable",
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Scuola Secondaria Di Primo Grado"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Scuola Secondaria Di Primo Grado"
+                }
+            ],
+            "rdfs:subClassOf": {
+                "@id": "school:PuntoDiErogazioneDelServizio"
             },
             "@type": "owl:Class"
+        },
+        {
+            "@id": "school:haPuntoDiErogazioneDelServizio",
+            "owl:versionInfo": "unstable",
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "ha Punto Di Erogazione Del Servizio"
+                },
+                {
+                    "@language": "it",
+                    "@value": "ha Punto Di Erogazione Del Servizio"
+                }
+            ],
+            "rdfs:range": {
+                "@id": "school:PuntoDiErogazioneDelServizio"
+            },
+            "rdfs:domain": {
+                "@id": "school:IstitutoDiRiferimento"
+            },
+            "@type": "owl:ObjectProperty"
         },
         {
             "@id": "school:ScuolaInfanzia",
@@ -490,7 +472,7 @@
             ],
             "rdfs:subClassOf": [
                 {
-                    "@id": "_:b51"
+                    "@id": "_:b41"
                 },
                 {
                     "@id": "school:PuntoDiErogazioneDelServizio"
@@ -502,17 +484,77 @@
             "@type": "owl:Class"
         },
         {
-            "@id": "_:b7",
+            "@id": "_:b1",
+            "owl:allValuesFrom": {
+                "@id": "_:b2"
+            },
+            "owl:onProperty": {
+                "@id": "school:haPuntoDiErogazioneDelServizio"
+            },
+            "@type": "owl:Restriction"
+        },
+        {
+            "@id": "_:b2",
             "owl:unionOf": {
                 "@list": [
                     {
-                        "@id": "school:SezioneCarceraria"
+                        "@id": "school:IstitutoProfessionale"
                     },
                     {
-                        "@id": "school:SezioneSerale"
+                        "@id": "school:IstitutoTecnico"
+                    },
+                    {
+                        "@id": "school:Liceo"
                     }
                 ]
             },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "school:IstitutoDiRiferimento",
+            "owl:versionInfo": "unstable",
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Istituto Di Riferimento"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Istituto Di Riferimento"
+                }
+            ],
+            "rdfs:subClassOf": [
+                {
+                    "@id": "_:b39"
+                },
+                {
+                    "@id": "school:IstituzioneScolastica"
+                }
+            ],
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "school:IstitutoProfessionalePerLIndustriaELArtigianato",
+            "owl:versionInfo": "unstable",
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:subClassOf": {
+                "@id": "school:IstitutoProfessionale"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Istituto Professionale Per L'Industria E L'Artigianato"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Istituto Professionale Per L'Industria E L'Artigianato"
+                }
+            ],
             "@type": "owl:Class"
         },
         {
@@ -545,124 +587,23 @@
             "@type": "owl:Class"
         },
         {
-            "@id": "_:b10",
-            "owl:someValuesFrom": {
-                "@id": "school:PuntoDiErogazioneDelServizio"
-            },
-            "owl:onProperty": {
-                "@id": "school:haPuntoDiErogazioneDelServizio"
-            },
-            "@type": "owl:Restriction"
-        },
-        {
-            "@id": "school:haPuntoDiErogazioneDelServizio",
-            "owl:versionInfo": "unstable",
-            "rdfs:isDefinedBy": {
-                "@id": "https://w3id.org/italia/onto/School"
-            },
-            "rdfs:label": [
-                {
-                    "@language": "en",
-                    "@value": "ha Punto Di Erogazione Del Servizio"
-                },
+            "@id": "https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab",
+            "foaf:name": [
                 {
                     "@language": "it",
-                    "@value": "ha Punto Di Erogazione Del Servizio"
-                }
-            ],
-            "rdfs:range": {
-                "@id": "school:PuntoDiErogazioneDelServizio"
-            },
-            "rdfs:domain": {
-                "@id": "school:IstitutoDiRiferimento"
-            },
-            "@type": "owl:ObjectProperty"
-        },
-        {
-            "@id": "school:IstitutoDiRiferimento",
-            "owl:versionInfo": "unstable",
-            "rdfs:isDefinedBy": {
-                "@id": "https://w3id.org/italia/onto/School"
-            },
-            "rdfs:label": [
+                    "@value": "Istituto di Scienze e Tecnologie della Cognizione del CNR - Semantic Technology Lab (STLab)"
+                },
                 {
                     "@language": "en",
-                    "@value": "Istituto Di Riferimento"
-                },
-                {
-                    "@language": "it",
-                    "@value": "Istituto Di Riferimento"
+                    "@value": "Institute of Cognitive Sciences and Technologies of the Italian Research Council (CNR) - Semantic Technology Laboratory (STLab)"
                 }
             ],
-            "rdfs:subClassOf": [
-                {
-                    "@id": "_:b10"
-                },
-                {
-                    "@id": "school:IstituzioneScolastica"
-                }
-            ],
-            "@type": "owl:Class"
-        },
-        {
-            "@id": "school:IstitutoProfessionalePerLIndustriaELArtigianato",
-            "owl:versionInfo": "unstable",
-            "rdfs:isDefinedBy": {
-                "@id": "https://w3id.org/italia/onto/School"
-            },
-            "rdfs:subClassOf": {
-                "@id": "school:IstitutoProfessionale"
-            },
-            "rdfs:label": [
-                {
-                    "@language": "en",
-                    "@value": "Istituto Professionale Per L'Industria E L'Artigianato"
-                },
-                {
-                    "@language": "it",
-                    "@value": "Istituto Professionale Per L'Industria E L'Artigianato"
-                }
-            ],
-            "@type": "owl:Class"
-        },
-        {
-            "@id": "school:SezioneCarceraria",
-            "owl:versionInfo": "unstable",
-            "rdfs:isDefinedBy": {
-                "@id": "https://w3id.org/italia/onto/School"
-            },
-            "rdfs:label": [
-                {
-                    "@language": "en",
-                    "@value": "Sezione Carceraria"
-                },
-                {
-                    "@language": "it",
-                    "@value": "Sezione Carceraria"
-                }
-            ],
-            "rdfs:subClassOf": [
-                {
-                    "@id": "school:PuntoDiErogazioneDelServizio"
-                },
-                {
-                    "@id": "school:IstituzioneScolasticaPerAdulti"
-                },
-                {
-                    "@id": "school:IstituzioneScolasticaDiSecondoCiclo"
-                }
-            ],
-            "@type": "owl:Class"
-        },
-        {
-            "@id": "_:b13",
-            "owl:allValuesFrom": {
-                "@id": "https://w3id.org/italia/onto/CLV/Address"
-            },
-            "owl:onProperty": {
-                "@id": "https://w3id.org/italia/onto/CLV/hasAddress"
-            },
-            "@type": "owl:Restriction"
+            "dct:identifier": "cnr - Z6HZEH - STLab",
+            "@type": [
+                "foaf:Agent",
+                "http://dati.gov.it/onto/dcatapit#Agent",
+                "owl:NamedIndividual"
+            ]
         },
         {
             "@id": "https://w3id.org/italia/data/distribution/School-AP_IT-JSON-LD",
@@ -751,7 +692,7 @@
             ],
             "rdfs:subClassOf": [
                 {
-                    "@id": "_:b50"
+                    "@id": "_:b52"
                 },
                 {
                     "@id": "https://w3id.org/italia/onto/COV/Organization"
@@ -869,25 +810,6 @@
             }
         },
         {
-            "@id": "https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab",
-            "foaf:name": [
-                {
-                    "@language": "it",
-                    "@value": "Istituto di Scienze e Tecnologie della Cognizione del CNR - Semantic Technology Lab (STLab)"
-                },
-                {
-                    "@language": "en",
-                    "@value": "Institute of Cognitive Sciences and Technologies of the Italian Research Council (CNR) - Semantic Technology Laboratory (STLab)"
-                }
-            ],
-            "dct:identifier": "cnr - Z6HZEH - STLab",
-            "@type": [
-                "foaf:Agent",
-                "http://dati.gov.it/onto/dcatapit#Agent",
-                "owl:NamedIndividual"
-            ]
-        },
-        {
             "@id": "school:Educandato",
             "owl:versionInfo": "unstable",
             "rdfs:isDefinedBy": {
@@ -909,9 +831,9 @@
             "@type": "owl:Class"
         },
         {
-            "@id": "_:b16",
+            "@id": "_:b6",
             "owl:someValuesFrom": {
-                "@id": "school:IstituzioneScolasticaDiPrimoCiclo"
+                "@id": "school:ScuolaPrimaria"
             },
             "owl:onProperty": {
                 "@id": "school:haPuntoDiErogazioneDelServizio"
@@ -919,14 +841,88 @@
             "@type": "owl:Restriction"
         },
         {
-            "@id": "_:b17",
+            "@id": "school:ScuolaPrimaria",
+            "owl:versionInfo": "unstable",
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Scuola Primaria"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Scuola Primaria"
+                }
+            ],
+            "rdfs:subClassOf": {
+                "@id": "school:PuntoDiErogazioneDelServizio"
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "_:b7",
             "owl:someValuesFrom": {
-                "@id": "school:IstituzioneScolasticaDiSecondoCiclo"
+                "@id": "school:ScuolaPrimaria"
             },
             "owl:onProperty": {
                 "@id": "school:haPuntoDiErogazioneDelServizio"
             },
             "@type": "owl:Restriction"
+        },
+        {
+            "@id": "_:b11",
+            "owl:someValuesFrom": {
+                "@id": "school:ScuolaInfanzia"
+            },
+            "owl:onProperty": {
+                "@id": "school:haPuntoDiErogazioneDelServizio"
+            },
+            "@type": "owl:Restriction"
+        },
+        {
+            "@id": "_:b12",
+            "@type": "owl:Class",
+            "owl:intersectionOf": {
+                "@list": [
+                    {
+                        "@id": "_:b24"
+                    },
+                    {
+                        "@id": "_:b6"
+                    }
+                ]
+            }
+        },
+        {
+            "@id": "school:ScuolaCarcerariaPrimariaESecondariaDiPrimoGrado",
+            "owl:versionInfo": "unstable",
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Scuola Carceraria Primaria E Secondaria Di Primo Grado"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Scuola Carceraria Primaria E Secondaria Di Primo Grado"
+                }
+            ],
+            "rdfs:subClassOf": [
+                {
+                    "@id": "school:PuntoDiErogazioneDelServizio"
+                },
+                {
+                    "@id": "school:IstituzioneScolasticaPerAdulti"
+                },
+                {
+                    "@id": "school:IstituzioneScolasticaDiPrimoCiclo"
+                }
+            ],
+            "@type": "owl:Class"
         },
         {
             "@id": "school:SedeCentraleDellaScuolaDelPrimoGrado",
@@ -946,52 +942,13 @@
             ],
             "rdfs:subClassOf": [
                 {
-                    "@id": "_:b18"
+                    "@id": "_:b0"
                 },
                 {
                     "@id": "school:IstituzioneScolasticaDiPrimoCiclo"
                 },
                 {
                     "@id": "school:IstitutoDiRiferimento"
-                }
-            ],
-            "@type": "owl:Class"
-        },
-        {
-            "@id": "_:b18",
-            "owl:allValuesFrom": {
-                "@id": "school:ScuolaSecondariaDiPrimoGrado"
-            },
-            "owl:onProperty": {
-                "@id": "school:haPuntoDiErogazioneDelServizio"
-            },
-            "@type": "owl:Restriction"
-        },
-        {
-            "@id": "school:IstitutoTecnico",
-            "owl:versionInfo": "unstable",
-            "rdfs:isDefinedBy": {
-                "@id": "https://w3id.org/italia/onto/School"
-            },
-            "rdfs:label": [
-                {
-                    "@language": "en",
-                    "@value": "Istituto Tecnico"
-                },
-                {
-                    "@language": "it",
-                    "@value": "Istituto Tecnico"
-                }
-            ],
-            "rdfs:subClassOf": [
-                {
-                    "@id": "_:b37"
-                },
-                {
-                    "@id": "school:PuntoDiErogazioneDelServizio"
-                },
-                {
-                    "@id": "school:IstituzioneScolasticaDiSecondoCiclo"
                 }
             ],
             "@type": "owl:Class"
@@ -1018,9 +975,38 @@
             "@type": "owl:Class"
         },
         {
-            "@id": "_:b21",
+            "@id": "school:IstitutoTecnico",
+            "owl:versionInfo": "unstable",
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Istituto Tecnico"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Istituto Tecnico"
+                }
+            ],
+            "rdfs:subClassOf": [
+                {
+                    "@id": "_:b25"
+                },
+                {
+                    "@id": "school:PuntoDiErogazioneDelServizio"
+                },
+                {
+                    "@id": "school:IstituzioneScolasticaDiSecondoCiclo"
+                }
+            ],
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "_:b19",
             "owl:someValuesFrom": {
-                "@id": "school:ScuolaInfanzia"
+                "@id": "school:IstituzioneScolasticaDiPrimoCiclo"
             },
             "owl:onProperty": {
                 "@id": "school:haPuntoDiErogazioneDelServizio"
@@ -1045,7 +1031,7 @@
             ],
             "rdfs:subClassOf": [
                 {
-                    "@id": "_:b26"
+                    "@id": "_:b20"
                 },
                 {
                     "@id": "school:IstituzioneScolasticaDiSecondoCiclo"
@@ -1057,28 +1043,14 @@
             "@type": "owl:Class"
         },
         {
-            "@id": "_:b26",
+            "@id": "_:b20",
             "owl:allValuesFrom": {
-                "@id": "_:b30"
+                "@id": "_:b43"
             },
             "owl:onProperty": {
                 "@id": "school:haPuntoDiErogazioneDelServizio"
             },
             "@type": "owl:Restriction"
-        },
-        {
-            "@id": "_:b27",
-            "owl:unionOf": {
-                "@list": [
-                    {
-                        "@id": "school:CentroTerritorialePermanente"
-                    },
-                    {
-                        "@id": "school:ScuolaCarcerariaPrimariaESecondariaDiPrimoGrado"
-                    }
-                ]
-            },
-            "@type": "owl:Class"
         },
         {
             "@id": "school:CentroProvincialiIstruzioneDegliAdulti",
@@ -1098,7 +1070,7 @@
             ],
             "rdfs:subClassOf": [
                 {
-                    "@id": "_:b29"
+                    "@id": "_:b21"
                 },
                 {
                     "@id": "school:IstituzioneScolasticaPerAdulti"
@@ -1113,31 +1085,14 @@
             "@type": "owl:Class"
         },
         {
-            "@id": "_:b29",
+            "@id": "_:b21",
             "owl:allValuesFrom": {
-                "@id": "_:b27"
+                "@id": "_:b22"
             },
             "owl:onProperty": {
                 "@id": "school:haPuntoDiErogazioneDelServizio"
             },
             "@type": "owl:Restriction"
-        },
-        {
-            "@id": "_:b30",
-            "owl:unionOf": {
-                "@list": [
-                    {
-                        "@id": "school:IstitutoProfessionale"
-                    },
-                    {
-                        "@id": "school:IstitutoTecnico"
-                    },
-                    {
-                        "@id": "school:Liceo"
-                    }
-                ]
-            },
-            "@type": "owl:Class"
         },
         {
             "@id": "school:IstitutoTecnicoPerGeometri",
@@ -1161,14 +1116,18 @@
             "@type": "owl:Class"
         },
         {
-            "@id": "_:b32",
-            "owl:someValuesFrom": {
-                "@id": "school:ScuolaPrimaria"
+            "@id": "_:b22",
+            "owl:unionOf": {
+                "@list": [
+                    {
+                        "@id": "school:CentroTerritorialePermanente"
+                    },
+                    {
+                        "@id": "school:ScuolaCarcerariaPrimariaESecondariaDiPrimoGrado"
+                    }
+                ]
             },
-            "owl:onProperty": {
-                "@id": "school:haPuntoDiErogazioneDelServizio"
-            },
-            "@type": "owl:Restriction"
+            "@type": "owl:Class"
         },
         {
             "@id": "school:IstitutoDArte",
@@ -1189,6 +1148,35 @@
             "rdfs:subClassOf": [
                 {
                     "@id": "school:PuntoDiErogazioneDelServizio"
+                },
+                {
+                    "@id": "school:IstituzioneScolasticaDiSecondoCiclo"
+                }
+            ],
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "school:SezioneCarceraria",
+            "owl:versionInfo": "unstable",
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Sezione Carceraria"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Sezione Carceraria"
+                }
+            ],
+            "rdfs:subClassOf": [
+                {
+                    "@id": "school:PuntoDiErogazioneDelServizio"
+                },
+                {
+                    "@id": "school:IstituzioneScolasticaPerAdulti"
                 },
                 {
                     "@id": "school:IstituzioneScolasticaDiSecondoCiclo"
@@ -1218,6 +1206,16 @@
             "@type": "owl:Class"
         },
         {
+            "@id": "_:b24",
+            "owl:someValuesFrom": {
+                "@id": "school:ScuolaInfanzia"
+            },
+            "owl:onProperty": {
+                "@id": "school:haPuntoDiErogazioneDelServizio"
+            },
+            "@type": "owl:Restriction"
+        },
+        {
             "@id": "school:IstitutoProfessionalePerIServiziCommercialiETuristici",
             "owl:versionInfo": "unstable",
             "rdfs:isDefinedBy": {
@@ -1239,26 +1237,9 @@
             "@type": "owl:Class"
         },
         {
-            "@id": "_:b35",
-            "@type": "owl:Class",
-            "owl:intersectionOf": {
-                "@list": [
-                    {
-                        "@id": "_:b21"
-                    },
-                    {
-                        "@id": "_:b49"
-                    },
-                    {
-                        "@id": "_:b44"
-                    }
-                ]
-            }
-        },
-        {
-            "@id": "_:b37",
+            "@id": "_:b25",
             "owl:allValuesFrom": {
-                "@id": "_:b41"
+                "@id": "_:b45"
             },
             "owl:onProperty": {
                 "@id": "school:haPuntoDiErogazioneDelServizio"
@@ -1308,7 +1289,61 @@
             "@type": "owl:Class"
         },
         {
-            "@id": "school:ScuolaPrimaria",
+            "@id": "_:b28",
+            "rdfs:subClassOf": {
+                "@id": "_:b29"
+            },
+            "@type": "owl:Class",
+            "owl:intersectionOf": {
+                "@list": [
+                    {
+                        "@id": "school:IstitutoOmnicomprensivo"
+                    },
+                    {
+                        "@id": "school:IstituzioneScolasticaDiPrimoCiclo"
+                    }
+                ]
+            }
+        },
+        {
+            "@id": "_:b29",
+            "owl:someValuesFrom": {
+                "@id": "school:IstituzioneScolasticaDiSecondoCiclo"
+            },
+            "owl:onProperty": {
+                "@id": "school:haPuntoDiErogazioneDelServizio"
+            },
+            "@type": "owl:Restriction"
+        },
+        {
+            "@id": "_:b31",
+            "@type": "owl:Class",
+            "owl:intersectionOf": {
+                "@list": [
+                    {
+                        "@id": "_:b11"
+                    },
+                    {
+                        "@id": "_:b7"
+                    },
+                    {
+                        "@id": "_:b33"
+                    }
+                ]
+            }
+        },
+        {
+            "@id": "_:b33",
+            "owl:someValuesFrom": {
+                "@id": "school:ScuolaSecondariaDiPrimoGrado"
+            },
+            "owl:onProperty": {
+                "@id": "school:haPuntoDiErogazioneDelServizio"
+            },
+            "@type": "owl:Restriction"
+        },
+        {
+            "@id": "school:IstitutoOmnicomprensivo",
             "owl:versionInfo": "unstable",
             "rdfs:isDefinedBy": {
                 "@id": "https://w3id.org/italia/onto/School"
@@ -1316,15 +1351,29 @@
             "rdfs:label": [
                 {
                     "@language": "en",
-                    "@value": "Scuola Primaria"
+                    "@value": "Istituto Omnicomprensivo"
                 },
                 {
                     "@language": "it",
-                    "@value": "Scuola Primaria"
+                    "@value": "Istituto Omnicomprensivo"
                 }
             ],
             "rdfs:subClassOf": {
-                "@id": "school:PuntoDiErogazioneDelServizio"
+                "@id": "school:IstitutoDiRiferimento"
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "_:b34",
+            "owl:unionOf": {
+                "@list": [
+                    {
+                        "@id": "school:SezioneCarceraria"
+                    },
+                    {
+                        "@id": "school:SezioneSerale"
+                    }
+                ]
             },
             "@type": "owl:Class"
         },
@@ -1350,9 +1399,9 @@
             "@type": "owl:Class"
         },
         {
-            "@id": "_:b40",
+            "@id": "_:b35",
             "owl:allValuesFrom": {
-                "@id": "_:b46"
+                "@id": "_:b34"
             },
             "owl:onProperty": {
                 "@id": "school:haPuntoDiErogazioneDelServizio"
@@ -1360,25 +1409,21 @@
             "@type": "owl:Restriction"
         },
         {
-            "@id": "school:ScuolaSecondariaDiPrimoGrado",
-            "owl:versionInfo": "unstable",
-            "rdfs:isDefinedBy": {
-                "@id": "https://w3id.org/italia/onto/School"
-            },
-            "rdfs:label": [
-                {
-                    "@language": "en",
-                    "@value": "Scuola Secondaria Di Primo Grado"
-                },
-                {
-                    "@language": "it",
-                    "@value": "Scuola Secondaria Di Primo Grado"
-                }
-            ],
+            "@id": "_:b36",
             "rdfs:subClassOf": {
-                "@id": "school:PuntoDiErogazioneDelServizio"
+                "@id": "_:b19"
             },
-            "@type": "owl:Class"
+            "@type": "owl:Class",
+            "owl:intersectionOf": {
+                "@list": [
+                    {
+                        "@id": "school:IstitutoOmnicomprensivo"
+                    },
+                    {
+                        "@id": "school:IstituzioneScolasticaDiSecondoCiclo"
+                    }
+                ]
+            }
         },
         {
             "@id": "school:Convitto",
@@ -1506,26 +1551,12 @@
             ],
             "rdfs:subClassOf": [
                 {
-                    "@id": "_:b13"
+                    "@id": "_:b53"
                 },
                 {
                     "@id": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
                 }
             ],
-            "@type": "owl:Class"
-        },
-        {
-            "@id": "_:b41",
-            "owl:unionOf": {
-                "@list": [
-                    {
-                        "@id": "school:SezioneCarceraria"
-                    },
-                    {
-                        "@id": "school:SezioneSerale"
-                    }
-                ]
-            },
             "@type": "owl:Class"
         },
         {
@@ -1546,48 +1577,6 @@
             ],
             "rdfs:subClassOf": {
                 "@id": "school:IstitutoTecnico"
-            },
-            "@type": "owl:Class"
-        },
-        {
-            "@id": "school:IstitutoProfessionalePerLIndustriaELeAttivitaMarinare",
-            "owl:versionInfo": "unstable",
-            "rdfs:isDefinedBy": {
-                "@id": "https://w3id.org/italia/onto/School"
-            },
-            "rdfs:label": [
-                {
-                    "@language": "en",
-                    "@value": "Istituto Professionale Per L Industria E Le Attivita Marinare"
-                },
-                {
-                    "@language": "it",
-                    "@value": "Istituto Professionale Per L Industria E Le Attivita Marinare"
-                }
-            ],
-            "rdfs:subClassOf": {
-                "@id": "school:IstitutoProfessionale"
-            },
-            "@type": "owl:Class"
-        },
-        {
-            "@id": "school:IstitutoProfessionalePerLAgricolturaELAmbiente",
-            "owl:versionInfo": "unstable",
-            "rdfs:isDefinedBy": {
-                "@id": "https://w3id.org/italia/onto/School"
-            },
-            "rdfs:label": [
-                {
-                    "@language": "en",
-                    "@value": "Istituto Professionale Per L Agricoltura EL Ambiente"
-                },
-                {
-                    "@language": "it",
-                    "@value": "Istituto Professionale Per L Agricoltura EL Ambiente"
-                }
-            ],
-            "rdfs:subClassOf": {
-                "@id": "school:IstitutoProfessionale"
             },
             "@type": "owl:Class"
         },
@@ -1618,6 +1607,113 @@
             "@type": "owl:Class"
         },
         {
+            "@id": "_:b39",
+            "owl:someValuesFrom": {
+                "@id": "school:PuntoDiErogazioneDelServizio"
+            },
+            "owl:onProperty": {
+                "@id": "school:haPuntoDiErogazioneDelServizio"
+            },
+            "@type": "owl:Restriction"
+        },
+        {
+            "@id": "school:IstitutoProfessionalePerLIndustriaELeAttivitaMarinare",
+            "owl:versionInfo": "unstable",
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Istituto Professionale Per L Industria E Le Attivita Marinare"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Istituto Professionale Per L Industria E Le Attivita Marinare"
+                }
+            ],
+            "rdfs:subClassOf": {
+                "@id": "school:IstitutoProfessionale"
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "_:b41",
+            "owl:allValuesFrom": {
+                "@id": "_:b42"
+            },
+            "owl:onProperty": {
+                "@id": "school:haPuntoDiErogazioneDelServizio"
+            },
+            "@type": "owl:Restriction"
+        },
+        {
+            "@id": "_:b42",
+            "owl:unionOf": {
+                "@list": [
+                    {
+                        "@id": "school:SezioneCarceraria"
+                    },
+                    {
+                        "@id": "school:SezioneSerale"
+                    }
+                ]
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "school:IstitutoProfessionalePerLAgricolturaELAmbiente",
+            "owl:versionInfo": "unstable",
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Istituto Professionale Per L Agricoltura EL Ambiente"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Istituto Professionale Per L Agricoltura EL Ambiente"
+                }
+            ],
+            "rdfs:subClassOf": {
+                "@id": "school:IstitutoProfessionale"
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "_:b43",
+            "owl:unionOf": {
+                "@list": [
+                    {
+                        "@id": "school:IstitutoProfessionale"
+                    },
+                    {
+                        "@id": "school:IstitutoTecnico"
+                    },
+                    {
+                        "@id": "school:Liceo"
+                    }
+                ]
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "_:b45",
+            "owl:unionOf": {
+                "@list": [
+                    {
+                        "@id": "school:SezioneCarceraria"
+                    },
+                    {
+                        "@id": "school:SezioneSerale"
+                    }
+                ]
+            },
+            "@type": "owl:Class"
+        },
+        {
             "@id": "school:ScuolaMagistrale",
             "owl:versionInfo": "unstable",
             "rdfs:isDefinedBy": {
@@ -1644,23 +1740,6 @@
             "@type": "owl:Class"
         },
         {
-            "@id": "_:b42",
-            "rdfs:subClassOf": {
-                "@id": "_:b16"
-            },
-            "@type": "owl:Class",
-            "owl:intersectionOf": {
-                "@list": [
-                    {
-                        "@id": "school:IstitutoOmnicomprensivo"
-                    },
-                    {
-                        "@id": "school:IstituzioneScolasticaDiSecondoCiclo"
-                    }
-                ]
-            }
-        },
-        {
             "@id": "school:ScuolaPerUtenzaConBisogniSpeciali",
             "owl:versionInfo": "unstable",
             "rdfs:isDefinedBy": {
@@ -1682,16 +1761,6 @@
             "@type": "owl:Class"
         },
         {
-            "@id": "_:b44",
-            "owl:someValuesFrom": {
-                "@id": "school:ScuolaSecondariaDiPrimoGrado"
-            },
-            "owl:onProperty": {
-                "@id": "school:haPuntoDiErogazioneDelServizio"
-            },
-            "@type": "owl:Restriction"
-        },
-        {
             "@id": "school:IstitutoComprensivo",
             "owl:versionInfo": "unstable",
             "rdfs:isDefinedBy": {
@@ -1709,7 +1778,7 @@
             ],
             "rdfs:subClassOf": [
                 {
-                    "@id": "_:b35"
+                    "@id": "_:b31"
                 },
                 {
                     "@id": "school:IstituzioneScolasticaDiPrimoCiclo"
@@ -1742,40 +1811,6 @@
             "@type": "owl:Class"
         },
         {
-            "@id": "_:b46",
-            "owl:unionOf": {
-                "@list": [
-                    {
-                        "@id": "school:SezioneCarceraria"
-                    },
-                    {
-                        "@id": "school:SezioneSerale"
-                    }
-                ]
-            },
-            "@type": "owl:Class"
-        },
-        {
-            "@id": "_:b49",
-            "owl:someValuesFrom": {
-                "@id": "school:ScuolaPrimaria"
-            },
-            "owl:onProperty": {
-                "@id": "school:haPuntoDiErogazioneDelServizio"
-            },
-            "@type": "owl:Restriction"
-        },
-        {
-            "@id": "_:b50",
-            "owl:someValuesFrom": {
-                "@id": "school:SedeIstituzioneScolastica"
-            },
-            "owl:onProperty": {
-                "@id": "school:haSede"
-            },
-            "@type": "owl:Restriction"
-        },
-        {
             "@id": "school:CircoloDidattico",
             "owl:versionInfo": "unstable",
             "rdfs:isDefinedBy": {
@@ -1793,7 +1828,7 @@
             ],
             "rdfs:subClassOf": [
                 {
-                    "@id": "_:b3"
+                    "@id": "_:b12"
                 },
                 {
                     "@id": "school:IstituzioneScolasticaDiPrimoCiclo"
@@ -1805,51 +1840,38 @@
             "@type": "owl:Class"
         },
         {
-            "@id": "_:b51",
-            "owl:allValuesFrom": {
-                "@id": "_:b5"
+            "@id": "_:b49",
+            "owl:unionOf": {
+                "@list": [
+                    {
+                        "@id": "school:SezioneCarceraria"
+                    },
+                    {
+                        "@id": "school:SezioneSerale"
+                    }
+                ]
             },
-            "owl:onProperty": {
-                "@id": "school:haPuntoDiErogazioneDelServizio"
-            },
-            "@type": "owl:Restriction"
+            "@type": "owl:Class"
         },
         {
             "@id": "_:b52",
             "owl:someValuesFrom": {
-                "@id": "school:ScuolaInfanzia"
+                "@id": "school:SedeIstituzioneScolastica"
             },
             "owl:onProperty": {
-                "@id": "school:haPuntoDiErogazioneDelServizio"
+                "@id": "school:haSede"
             },
             "@type": "owl:Restriction"
         },
         {
             "@id": "_:b53",
             "owl:allValuesFrom": {
-                "@id": "_:b54"
+                "@id": "https://w3id.org/italia/onto/CLV/Address"
             },
             "owl:onProperty": {
-                "@id": "school:haPuntoDiErogazioneDelServizio"
+                "@id": "https://w3id.org/italia/onto/CLV/hasAddress"
             },
             "@type": "owl:Restriction"
-        },
-        {
-            "@id": "_:b54",
-            "owl:unionOf": {
-                "@list": [
-                    {
-                        "@id": "school:IstitutoProfessionale"
-                    },
-                    {
-                        "@id": "school:IstitutoTecnico"
-                    },
-                    {
-                        "@id": "school:Liceo"
-                    }
-                ]
-            },
-            "@type": "owl:Class"
         },
         {
             "@id": "school:ScuolaParitaria",
@@ -1889,40 +1911,6 @@
                 "http://dati.gov.it/onto/dcatapit#Organization",
                 "owl:NamedIndividual"
             ]
-        },
-        {
-            "@id": "_:b55",
-            "owl:unionOf": {
-                "@list": [
-                    {
-                        "@id": "school:IstitutoProfessionale"
-                    },
-                    {
-                        "@id": "school:IstitutoTecnico"
-                    },
-                    {
-                        "@id": "school:Liceo"
-                    }
-                ]
-            },
-            "@type": "owl:Class"
-        },
-        {
-            "@id": "_:b56",
-            "rdfs:subClassOf": {
-                "@id": "_:b17"
-            },
-            "@type": "owl:Class",
-            "owl:intersectionOf": {
-                "@list": [
-                    {
-                        "@id": "school:IstitutoOmnicomprensivo"
-                    },
-                    {
-                        "@id": "school:IstituzioneScolasticaDiPrimoCiclo"
-                    }
-                ]
-            }
         },
         {
             "@id": "school:IstitutoMagistrale",
@@ -1967,15 +1955,32 @@
                 }
             ],
             "rdfs:range": {
-                "@id": "_:b7"
+                "@id": "_:b49"
             },
             "rdfs:domain": {
-                "@id": "_:b55"
+                "@id": "_:b56"
             },
             "rdfs:subPropertyOf": {
                 "@id": "school:haPuntoDiErogazioneDelServizio"
             },
             "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "_:b56",
+            "owl:unionOf": {
+                "@list": [
+                    {
+                        "@id": "school:IstitutoProfessionale"
+                    },
+                    {
+                        "@id": "school:IstitutoTecnico"
+                    },
+                    {
+                        "@id": "school:Liceo"
+                    }
+                ]
+            },
+            "@type": "owl:Class"
         },
         {
             "@id": "school:IstitutoDiIstruzioneSecondariaSuperiore",
@@ -1995,7 +2000,7 @@
             ],
             "rdfs:subClassOf": [
                 {
-                    "@id": "_:b53"
+                    "@id": "_:b1"
                 },
                 {
                     "@id": "school:IstituzioneScolasticaDiSecondoCiclo"

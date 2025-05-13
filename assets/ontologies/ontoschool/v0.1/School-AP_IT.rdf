@@ -24,6 +24,7 @@
         <owl:imports rdf:resource="https://w3id.org/italia/onto/RO/0.3"/>
         <dc:description rdf:resource="https://raw.githubusercontent.com/luigi-asprino/education/refs/heads/main/assets/ontologies/ontoschool/School.png"/>
         <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
+        <dct:creator rdf:resource="https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab"/>
         <dct:creator rdf:resource="https://w3id.org/italia/data/public-organization/INDIRE"/>
         <dct:description xml:lang="it">Questa ontologia che descrive il sistema scolastico italiano.</dct:description>
         <dct:description xml:lang="en">This ontology describes the Italian school system.</dct:description>

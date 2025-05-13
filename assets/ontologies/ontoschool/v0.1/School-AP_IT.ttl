@@ -67,7 +67,7 @@ school:IstitutoProfessionalePerLIndustriaELArtigianato
         rdfs:label                    "School-AP_IT"@en , "School-AP_IT"@it;
         dc:description                <https://raw.githubusercontent.com/luigi-asprino/education/refs/heads/main/assets/ontologies/ontoschool/School.png>;
         dct:accrualPeriodicity        <http://publications.europa.eu/resource/authority/frequency/IRREG>;
-        dct:creator                   <https://w3id.org/italia/data/public-organization/INDIRE>;
+        dct:creator                   <https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab> , <https://w3id.org/italia/data/public-organization/INDIRE>;
         dct:description               "This ontology describes the Italian school system."@en , "Questa ontologia che descrive il sistema scolastico italiano."@it;
         dct:identifier                "https://w3id.org/italia/onto/School";
         dct:issued                    "2025-05-19"^^xsd:date;
@@ -124,18 +124,18 @@ school:SedeCentraleDellaScuolaDelPrimoGrado
                           ];
         owl:versionInfo   "unstable" .
 
-school:IstitutoTecnicoPerAttivitaSociali
-        rdf:type          owl:Class;
-        rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
-        rdfs:label        "Istituto Tecnico Per Attivita Sociali"@en , "Istituto Tecnico Per Attivita Sociali"@it;
-        rdfs:subClassOf   school:IstitutoTecnico;
-        owl:versionInfo   "unstable" .
-
 school:PuntoDiErogazioneDelServizio
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Plesso"@it;
         rdfs:subClassOf   school:IstituzioneScolastica;
+        owl:versionInfo   "unstable" .
+
+school:IstitutoTecnicoPerAttivitaSociali
+        rdf:type          owl:Class;
+        rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
+        rdfs:label        "Istituto Tecnico Per Attivita Sociali"@en , "Istituto Tecnico Per Attivita Sociali"@it;
+        rdfs:subClassOf   school:IstitutoTecnico;
         owl:versionInfo   "unstable" .
 
 school:SedeCentraleDellaScuolaDelSecondoGrado
@@ -182,18 +182,18 @@ school:IstitutoDArte  rdf:type  owl:Class;
         rdfs:subClassOf   school:PuntoDiErogazioneDelServizio , school:IstituzioneScolasticaDiSecondoCiclo;
         owl:versionInfo   "unstable" .
 
-school:IstitutoTecnicoPerIlTurismo
-        rdf:type          owl:Class;
-        rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
-        rdfs:label        "Istituto Tecnico Per Il Turismo"@en , "Istituto Tecnico Per Il Turismo"@it;
-        rdfs:subClassOf   school:IstitutoTecnico;
-        owl:versionInfo   "unstable" .
-
 school:SezioneCarceraria
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Sezione Carceraria"@en , "Sezione Carceraria"@it;
         rdfs:subClassOf   school:PuntoDiErogazioneDelServizio , school:IstituzioneScolasticaPerAdulti , school:IstituzioneScolasticaDiSecondoCiclo;
+        owl:versionInfo   "unstable" .
+
+school:IstitutoTecnicoPerIlTurismo
+        rdf:type          owl:Class;
+        rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
+        rdfs:label        "Istituto Tecnico Per Il Turismo"@en , "Istituto Tecnico Per Il Turismo"@it;
+        rdfs:subClassOf   school:IstitutoTecnico;
         owl:versionInfo   "unstable" .
 
 school:IstitutoProfessionalePerIServiziCommercialiETuristici
@@ -244,6 +244,14 @@ school:ScuolaPrimaria
         rdfs:subClassOf   school:PuntoDiErogazioneDelServizio;
         owl:versionInfo   "unstable" .
 
+[ rdf:type            owl:Class;
+  rdfs:subClassOf     [ rdf:type            owl:Restriction;
+                        owl:onProperty      school:haPuntoDiErogazioneDelServizio;
+                        owl:someValuesFrom  school:IstituzioneScolasticaDiSecondoCiclo
+                      ];
+  owl:intersectionOf  ( school:IstitutoOmnicomprensivo school:IstituzioneScolasticaDiPrimoCiclo )
+] .
+
 school:IstitutoOmnicomprensivo
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
@@ -273,6 +281,14 @@ school:Liceo  rdf:type    owl:Class;
                             owl:onProperty     school:haPuntoDiErogazioneDelServizio
                           ];
         owl:versionInfo   "unstable" .
+
+[ rdf:type            owl:Class;
+  rdfs:subClassOf     [ rdf:type            owl:Restriction;
+                        owl:onProperty      school:haPuntoDiErogazioneDelServizio;
+                        owl:someValuesFrom  school:IstituzioneScolasticaDiPrimoCiclo
+                      ];
+  owl:intersectionOf  ( school:IstitutoOmnicomprensivo school:IstituzioneScolasticaDiSecondoCiclo )
+] .
 
 school:ScuolaSecondariaDiPrimoGrado
         rdf:type          owl:Class;
@@ -322,6 +338,12 @@ school:IstitutoTecnicoAeronautico
         rdfs:subClassOf   school:IstitutoTecnico;
         owl:versionInfo   "unstable" .
 
+school:LiceoClassico  rdf:type  owl:Class;
+        rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
+        rdfs:label        "Liceo Classico"@en , "Liceo Classico"@it;
+        rdfs:subClassOf   school:Liceo , school:IstituzioneScolasticaDiSecondoCiclo;
+        owl:versionInfo   "unstable" .
+
 school:IstitutoDiRiferimento
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
@@ -354,12 +376,6 @@ school:IstituzioneScolasticaPerAdulti
         rdfs:subClassOf   school:IstituzioneScolastica;
         owl:versionInfo   "unstable" .
 
-school:LiceoClassico  rdf:type  owl:Class;
-        rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
-        rdfs:label        "Liceo Classico"@en , "Liceo Classico"@it;
-        rdfs:subClassOf   school:Liceo , school:IstituzioneScolasticaDiSecondoCiclo;
-        owl:versionInfo   "unstable" .
-
 school:ScuolaMagistrale
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
@@ -371,14 +387,6 @@ school:ScuolaMagistrale
         rdf:type        foaf:Agent , <http://dati.gov.it/onto/dcatapit#Agent> , owl:NamedIndividual;
         dct:identifier  "cnr - Z6HZEH - STLab";
         foaf:name       "Istituto di Scienze e Tecnologie della Cognizione del CNR - Semantic Technology Lab (STLab)"@it , "Institute of Cognitive Sciences and Technologies of the Italian Research Council (CNR) - Semantic Technology Laboratory (STLab)"@en .
-
-[ rdf:type            owl:Class;
-  rdfs:subClassOf     [ rdf:type            owl:Restriction;
-                        owl:onProperty      school:haPuntoDiErogazioneDelServizio;
-                        owl:someValuesFrom  school:IstituzioneScolasticaDiPrimoCiclo
-                      ];
-  owl:intersectionOf  ( school:IstitutoOmnicomprensivo school:IstituzioneScolasticaDiSecondoCiclo )
-] .
 
 school:ScuolaPerUtenzaConBisogniSpeciali
         rdf:type          owl:Class;
@@ -500,14 +508,6 @@ school:ScuolaParitaria
         rdf:type        vcard:Organization , vcard:Kind , <http://dati.gov.it/onto/dcatapit#Organization> , owl:NamedIndividual;
         vcard:fn        "Segreteria Tecnica Istat - Progetto PNRR National Data Catalog";
         vcard:hasEmail  <mailto:ndc-segr-tec@istat.it> .
-
-[ rdf:type            owl:Class;
-  rdfs:subClassOf     [ rdf:type            owl:Restriction;
-                        owl:onProperty      school:haPuntoDiErogazioneDelServizio;
-                        owl:someValuesFrom  school:IstituzioneScolasticaDiSecondoCiclo
-                      ];
-  owl:intersectionOf  ( school:IstitutoOmnicomprensivo school:IstituzioneScolasticaDiPrimoCiclo )
-] .
 
 <https://w3id.org/italia/data/contact-point/INDIRE>
         rdf:type        vcard:Organization , vcard:Kind , <http://dati.gov.it/onto/dcatapit#Organization> , owl:NamedIndividual;

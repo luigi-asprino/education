@@ -24,7 +24,7 @@
                                                    <https://w3id.org/italia/onto/COV/0.12> ,
                                                    <https://w3id.org/italia/onto/RO/0.3> ;
                                         dc:description <https://raw.githubusercontent.com/luigi-asprino/education/refs/heads/main/assets/ontologies/ontoschool/School.png> ;
-                                       dct:creator 
+                                       dct:creator <https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab> ,
                                                                                  <https://w3id.org/italia/data/public-organization/INDIRE> ;
                                        dct:description "Questa ontologia che descrive il sistema scolastico italiano."@it ,
                                                                                      "This ontology describes the Italian school system."@en ;
