@@ -35,7 +35,7 @@
                                                                                      dct:modified "2025-05-19"^^xsd:date ;
                                                                                      dct:language <http://publications.europa.eu/resource/authority/language/ENG> ,
                                                  <http://publications.europa.eu/resource/authority/language/ITA> ;
-                                                 dct:publisher <https://w3id.org/italia/data/public-organization/PCM-1RSIZZ>,  <https://w3id.org/italia/data/public-organization/INDIRE>;
+                                                 dct:publisher <https://w3id.org/italia/data/public-organization/PCM-1RSIZZ>;
                                                  dct:rightsHolder <https://w3id.org/italia/data/public-organization/INDIRE> ;
                                                  dct:title "School-AP_IT"@it ;
                                                  dct:title "School-AP_IT"@en ;
