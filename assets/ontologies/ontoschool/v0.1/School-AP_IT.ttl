@@ -14,58 +14,41 @@ PREFIX vcard:    <http://www.w3.org/2006/vcard/ns#>
 PREFIX xml:      <http://www.w3.org/XML/1998/namespace>
 PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
 
-<https://w3id.org/italia/data/public-organization/PCM-1RSIZZ>
-        rdf:type        foaf:Agent , <http://dati.gov.it/onto/dcatapit#Agent>;
-        dct:identifier  "PCM-1RSIZZ";
-        foaf:name       "Digital Transformation Department of the Presidency of the Council of Ministers"@en , "Dipartimento per la Trasformazione Digitale della Presidenza del Consiglio dei Ministri"@it .
-
-<https://w3id.org/italia/data/project/NDC>
-        rdf:type  admsapit:Project , owl:NamedIndividual;
-        l0:name   "National Data Catalog - schema.gov.it"@it .
-
 school:CentroTerritorialePermanente
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Centro Territoriale Permanente"@en , "Centro Territoriale Permanente"@it;
         rdfs:subClassOf   school:PuntoDiErogazioneDelServizio , school:IstituzioneScolasticaPerAdulti , school:IstituzioneScolasticaDiPrimoCiclo;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
+
+<https://w3id.org/italia/data/project/NDC>
+        rdf:type  admsapit:Project , owl:NamedIndividual;
+        l0:name   "National Data Catalog - schema.gov.it"@it .
 
 school:LiceoScientifico
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Liceo Scientifico"@en , "Liceo Scientifico"@it;
         rdfs:subClassOf   school:Liceo , school:IstituzioneScolasticaDiSecondoCiclo;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
-
-[ rdf:type            owl:Class;
-  rdfs:isDefinedBy    <https://w3id.org/italia/onto/School>;
-  rdfs:subClassOf     [ rdf:type            owl:Restriction;
-                        rdfs:isDefinedBy    <https://w3id.org/italia/onto/School>;
-                        owl:onProperty      school:haPuntoDiErogazioneDelServizio;
-                        owl:someValuesFrom  school:IstituzioneScolasticaDiSecondoCiclo;
-                        owl:versionInfo     "unstable"@en , "non stabile"@it
-                      ];
-  owl:intersectionOf  ( school:IstitutoOmnicomprensivo school:IstituzioneScolasticaDiPrimoCiclo );
-  owl:versionInfo     "unstable"@en , "non stabile"@it
-] .
+        owl:versionInfo   "unstable" .
 
 school:ScuolaInfanzia
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Scuola Infanzia"@en , "Scuola Infanzia"@it;
         rdfs:subClassOf   school:PuntoDiErogazioneDelServizio;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:IstitutoProfessionalePerIServiziAlberghieriERistorazione
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Istituto Professionale Per I Servizi Alberghieri E Ristorazione"@en , "Istituto Professionale Per I Servizi Alberghieri E Ristorazione"@it;
         rdfs:subClassOf   school:IstitutoProfessionale;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 rdfs:domain  rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "domain"@en , "domain"@it;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:haPuntoDiErogazioneDelServizio
         rdf:type          owl:ObjectProperty;
@@ -73,18 +56,18 @@ school:haPuntoDiErogazioneDelServizio
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "ha Punto Di Erogazione Del Servizio"@en , "ha Punto Di Erogazione Del Servizio"@it;
         rdfs:range        school:PuntoDiErogazioneDelServizio;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:IstitutoProfessionalePerLIndustriaELArtigianato
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Istituto Professionale Per L'Industria E L'Artigianato"@en , "Istituto Professionale Per L'Industria E L'Artigianato"@it;
         rdfs:subClassOf   school:IstitutoProfessionale;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 rdf:object  rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "object"@en , "object"@it;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 <https://w3id.org/italia/onto/School>
         rdf:type                      owl:Ontology , owl:NamedIndividual , admsapit:SemanticAsset;
@@ -125,26 +108,26 @@ rdf:object  rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         admsapit:target               "Imprese" , "Pubbliche Amministrazioni";
         admsapit:type                 admsapit:DomainOntology .
 
-rdfs:comment  rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
-        rdfs:label        "comment"@en , "comment"@it;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
-
 school:Educandato  rdf:type  owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Educandato"@en , "Educandato"@it;
         rdfs:subClassOf   school:IstituzioneScolastica;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
+
+rdfs:comment  rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
+        rdfs:label        "comment"@en , "comment"@it;
+        owl:versionInfo   "unstable" .
 
 school:ScuolaCarcerariaPrimariaESecondariaDiPrimoGrado
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Scuola Carceraria Primaria E Secondaria Di Primo Grado"@en , "Scuola Carceraria Primaria E Secondaria Di Primo Grado"@it;
         rdfs:subClassOf   school:PuntoDiErogazioneDelServizio , school:IstituzioneScolasticaPerAdulti , school:IstituzioneScolasticaDiPrimoCiclo;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 rdfs:range  rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "range"@en , "range"@it;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:SedeCentraleDellaScuolaDelPrimoGrado
         rdf:type          owl:Class;
@@ -155,23 +138,23 @@ school:SedeCentraleDellaScuolaDelPrimoGrado
                             rdfs:isDefinedBy   <https://w3id.org/italia/onto/School>;
                             owl:allValuesFrom  school:ScuolaSecondariaDiPrimoGrado;
                             owl:onProperty     school:haPuntoDiErogazioneDelServizio;
-                            owl:versionInfo    "unstable"@en , "non stabile"@it
+                            owl:versionInfo    "unstable"
                           ];
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:PuntoDiErogazioneDelServizio
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Plesso"@it;
         rdfs:subClassOf   school:IstituzioneScolastica;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:IstitutoTecnicoPerAttivitaSociali
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Istituto Tecnico Per Attivita Sociali"@en , "Istituto Tecnico Per Attivita Sociali"@it;
         rdfs:subClassOf   school:IstitutoTecnico;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:SedeCentraleDellaScuolaDelSecondoGrado
         rdf:type          owl:Class;
@@ -183,68 +166,80 @@ school:SedeCentraleDellaScuolaDelSecondoGrado
                             owl:allValuesFrom  [ rdf:type          owl:Class;
                                                  rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
                                                  owl:unionOf       ( school:IstitutoProfessionale school:IstitutoTecnico school:Liceo );
-                                                 owl:versionInfo   "unstable"@en , "non stabile"@it
+                                                 owl:versionInfo   "unstable"
                                                ];
                             owl:onProperty     school:haPuntoDiErogazioneDelServizio;
-                            owl:versionInfo    "unstable"@en , "non stabile"@it
+                            owl:versionInfo    "unstable"
                           ];
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:CentroProvincialiIstruzioneDegliAdulti
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
-        rdfs:label        "Centro Provinciali Istruzione Degli Adulti"@it , "Centro Provinciali Istruzione Degli Adulti"@en;
-        rdfs:subClassOf   school:IstituzioneScolasticaDiPrimoCiclo , school:IstitutoDiRiferimento , school:IstituzioneScolasticaPerAdulti;
+        rdfs:label        "Centro Provinciali Istruzione Degli Adulti"@en , "Centro Provinciali Istruzione Degli Adulti"@it;
+        rdfs:subClassOf   school:IstituzioneScolasticaPerAdulti , school:IstituzioneScolasticaDiPrimoCiclo , school:IstitutoDiRiferimento;
         rdfs:subClassOf   [ rdf:type           owl:Restriction;
                             rdfs:isDefinedBy   <https://w3id.org/italia/onto/School>;
                             owl:allValuesFrom  [ rdf:type          owl:Class;
                                                  rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
                                                  owl:unionOf       ( school:CentroTerritorialePermanente school:ScuolaCarcerariaPrimariaESecondariaDiPrimoGrado );
-                                                 owl:versionInfo   "unstable"@en , "non stabile"@it
+                                                 owl:versionInfo   "unstable"
                                                ];
                             owl:onProperty     school:haPuntoDiErogazioneDelServizio;
-                            owl:versionInfo    "unstable"@en , "non stabile"@it
+                            owl:versionInfo    "unstable"
                           ];
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:IstitutoTecnicoPerGeometri
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Istituto Tecnico Per Geometri"@en , "Istituto Tecnico Per Geometri"@it;
         rdfs:subClassOf   school:IstitutoTecnico;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 <https://w3id.org/italia/data/public-organization/INDIRE>
         rdf:type        foaf:Agent , <http://dati.gov.it/onto/dcatapit#Agent> , owl:NamedIndividual;
         dct:identifier  "INDIRE";
         foaf:name       "Italian National Institute for Documentation, Innovation and Educational Research - INDIRE"@en , "Istituto Nazionale di Documentazione, Innovazione e Ricerca Educativa - INDIRE"@it .
 
+[ rdf:type            owl:Class;
+  rdfs:isDefinedBy    <https://w3id.org/italia/onto/School>;
+  rdfs:subClassOf     [ rdf:type            owl:Restriction;
+                        rdfs:isDefinedBy    <https://w3id.org/italia/onto/School>;
+                        owl:onProperty      school:haPuntoDiErogazioneDelServizio;
+                        owl:someValuesFrom  school:IstituzioneScolasticaDiPrimoCiclo;
+                        owl:versionInfo     "unstable"
+                      ];
+  owl:intersectionOf  ( school:IstitutoOmnicomprensivo school:IstituzioneScolasticaDiSecondoCiclo );
+  owl:versionInfo     "unstable"
+] .
+
 school:IstitutoDArte  rdf:type  owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Istituto D Arte"@en , "Istituto D Arte"@it;
         rdfs:subClassOf   school:PuntoDiErogazioneDelServizio , school:IstituzioneScolasticaDiSecondoCiclo;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:SezioneCarceraria
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Sezione Carceraria"@en , "Sezione Carceraria"@it;
         rdfs:subClassOf   school:PuntoDiErogazioneDelServizio , school:IstituzioneScolasticaPerAdulti , school:IstituzioneScolasticaDiSecondoCiclo;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:IstitutoTecnicoPerIlTurismo
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Istituto Tecnico Per Il Turismo"@en , "Istituto Tecnico Per Il Turismo"@it;
         rdfs:subClassOf   school:IstitutoTecnico;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:IstitutoProfessionalePerIServiziCommercialiETuristici
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Istituto Professionale Per I Servizi Commerciali E Turistici"@en , "Istituto Professionale Per I Servizi Commerciali E Turistici"@it;
         rdfs:subClassOf   school:IstitutoProfessionale;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:IstitutoTecnico
         rdf:type          owl:Class;
@@ -256,62 +251,62 @@ school:IstitutoTecnico
                             owl:allValuesFrom  [ rdf:type          owl:Class;
                                                  rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
                                                  owl:unionOf       ( school:SezioneCarceraria school:SezioneSerale );
-                                                 owl:versionInfo   "unstable"@en , "non stabile"@it
+                                                 owl:versionInfo   "unstable"
                                                ];
                             owl:onProperty     school:haPuntoDiErogazioneDelServizio;
-                            owl:versionInfo    "unstable"@en , "non stabile"@it
+                            owl:versionInfo    "unstable"
                           ];
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:IstitutoTecnicoCommerciale
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Istituto Tecnico Commerciale"@en , "Istituto Tecnico Commerciale"@it;
         rdfs:subClassOf   school:IstitutoTecnico;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:IstituzioneScolasticaDiSecondoCiclo
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Istituzione Scolastica Di Secondo Ciclo"@en , "Istituzione Scolastica Di Secondo Ciclo"@it;
         rdfs:subClassOf   school:IstituzioneScolastica;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:IstitutoTecnicoNautico
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Istituto Tecnico Nautico"@en , "Istituto Tecnico Nautico"@it;
         rdfs:subClassOf   school:IstitutoTecnico;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:ScuolaPrimaria
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Scuola Primaria"@en , "Scuola Primaria"@it;
         rdfs:subClassOf   school:PuntoDiErogazioneDelServizio;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:IstitutoOmnicomprensivo
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Istituto Omnicomprensivo"@en , "Istituto Omnicomprensivo"@it;
         rdfs:subClassOf   school:IstitutoDiRiferimento;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
-
-<https://w3id.org/italia/data/project/OntoPiA>
-        rdf:type  admsapit:Project , owl:NamedIndividual;
-        l0:name   "OntoPiA - la rete di ontologie della pubblica amministrazione italiana"@it .
+        owl:versionInfo   "unstable" .
 
 school:IstitutoTecnicoAgrario
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Istituto Tecnico Agrario"@en , "Istituto Tecnico Agrario"@it;
         rdfs:subClassOf   school:IstitutoTecnico;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
+
+<https://w3id.org/italia/data/project/OntoPiA>
+        rdf:type  admsapit:Project , owl:NamedIndividual;
+        l0:name   "OntoPiA - la rete di ontologie della pubblica amministrazione italiana"@it .
 
 rdf:first  rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "first"@en , "first"@it;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:Liceo  rdf:type    owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
@@ -322,60 +317,66 @@ school:Liceo  rdf:type    owl:Class;
                             owl:allValuesFrom  [ rdf:type          owl:Class;
                                                  rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
                                                  owl:unionOf       ( school:SezioneCarceraria school:SezioneSerale );
-                                                 owl:versionInfo   "unstable"@en , "non stabile"@it
+                                                 owl:versionInfo   "unstable"
                                                ];
                             owl:onProperty     school:haPuntoDiErogazioneDelServizio;
-                            owl:versionInfo    "unstable"@en , "non stabile"@it
+                            owl:versionInfo    "unstable"
                           ];
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:ScuolaSecondariaDiPrimoGrado
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Scuola Secondaria Di Primo Grado"@en , "Scuola Secondaria Di Primo Grado"@it;
         rdfs:subClassOf   school:PuntoDiErogazioneDelServizio;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:Convitto  rdf:type  owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Convitto"@en , "Convitto"@it;
         rdfs:subClassOf   school:IstituzioneScolastica;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:IstitutoProfessionalePerIServiziSociali
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Istituto Professionale Per I Servizi Sociali"@en , "Istituto Professionale Per I Servizi Sociali"@it;
         rdfs:subClassOf   school:IstitutoProfessionale;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:LiceoArtistico
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Liceo Artistico"@en , "Liceo Artistico"@it;
         rdfs:subClassOf   school:Liceo;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:IstitutoTecnicoIndustriale
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Istituto Tecnico Industriale"@en , "Istituto Tecnico Industriale"@it;
         rdfs:subClassOf   school:IstitutoTecnico;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:haSede  rdf:type   owl:ObjectProperty;
         rdfs:domain       school:IstituzioneScolastica;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "ha Sede"@en , "ha Sede"@it;
         rdfs:range        school:SedeIstituzioneScolastica;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:IstitutoTecnicoAeronautico
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Istituto Tecnico Aeronautico"@en , "Istituto Tecnico Aeronautico"@it;
         rdfs:subClassOf   school:IstitutoTecnico;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
+
+school:LiceoClassico  rdf:type  owl:Class;
+        rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
+        rdfs:label        "Liceo Classico"@en , "Liceo Classico"@it;
+        rdfs:subClassOf   school:Liceo , school:IstituzioneScolasticaDiSecondoCiclo;
+        owl:versionInfo   "unstable" .
 
 school:IstitutoDiRiferimento
         rdf:type          owl:Class;
@@ -386,47 +387,41 @@ school:IstitutoDiRiferimento
                             rdfs:isDefinedBy    <https://w3id.org/italia/onto/School>;
                             owl:onProperty      school:haPuntoDiErogazioneDelServizio;
                             owl:someValuesFrom  school:PuntoDiErogazioneDelServizio;
-                            owl:versionInfo     "unstable"@en , "non stabile"@it
+                            owl:versionInfo     "unstable"
                           ];
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:IstitutoProfessionalePerLIndustriaELeAttivitaMarinare
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Istituto Professionale Per L Industria E Le Attivita Marinare"@en , "Istituto Professionale Per L Industria E Le Attivita Marinare"@it;
         rdfs:subClassOf   school:IstitutoProfessionale;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:IstitutoProfessionalePerLAgricolturaELAmbiente
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Istituto Professionale Per L Agricoltura EL Ambiente"@en , "Istituto Professionale Per L Agricoltura EL Ambiente"@it;
         rdfs:subClassOf   school:IstitutoProfessionale;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:IstituzioneScolasticaPerAdulti
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Istituzione Scolastica Per Adulti"@en , "Istituzione Scolastica Per Adulti"@it;
         rdfs:subClassOf   school:IstituzioneScolastica;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
-
-school:LiceoClassico  rdf:type  owl:Class;
-        rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
-        rdfs:label        "Liceo Classico"@en , "Liceo Classico"@it;
-        rdfs:subClassOf   school:Liceo , school:IstituzioneScolasticaDiSecondoCiclo;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 rdfs:isDefinedBy  rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "is Defined By"@en , "is Defined By"@it;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:ScuolaMagistrale
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Scuola Magistrale"@en , "Scuola Magistrale"@it;
         rdfs:subClassOf   school:PuntoDiErogazioneDelServizio , school:IstituzioneScolasticaDiSecondoCiclo;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 <https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab>
         rdf:type        foaf:Agent , <http://dati.gov.it/onto/dcatapit#Agent> , owl:NamedIndividual;
@@ -438,11 +433,11 @@ school:ScuolaPerUtenzaConBisogniSpeciali
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Scuola Per Utenza Con Bisogni Speciali"@en , "Scuola Per Utenza Con Bisogni Speciali"@it;
         rdfs:subClassOf   school:IstituzioneScolastica;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 rdfs:subClassOf  rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "sub Class Of"@en , "sub Class Of"@it;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:IstitutoComprensivo
         rdf:type          owl:Class;
@@ -455,31 +450,31 @@ school:IstitutoComprensivo
                                                     rdfs:isDefinedBy    <https://w3id.org/italia/onto/School>;
                                                     owl:onProperty      school:haPuntoDiErogazioneDelServizio;
                                                     owl:someValuesFrom  school:ScuolaInfanzia;
-                                                    owl:versionInfo     "unstable"@en , "non stabile"@it
+                                                    owl:versionInfo     "unstable"
                                                   ]
                                                   [ rdf:type            owl:Restriction;
                                                     rdfs:isDefinedBy    <https://w3id.org/italia/onto/School>;
                                                     owl:onProperty      school:haPuntoDiErogazioneDelServizio;
                                                     owl:someValuesFrom  school:ScuolaPrimaria;
-                                                    owl:versionInfo     "unstable"@en , "non stabile"@it
+                                                    owl:versionInfo     "unstable"
                                                   ]
                                                   [ rdf:type            owl:Restriction;
                                                     rdfs:isDefinedBy    <https://w3id.org/italia/onto/School>;
                                                     owl:onProperty      school:haPuntoDiErogazioneDelServizio;
                                                     owl:someValuesFrom  school:ScuolaSecondariaDiPrimoGrado;
-                                                    owl:versionInfo     "unstable"@en , "non stabile"@it
+                                                    owl:versionInfo     "unstable"
                                                   ]
                                                 );
-                            owl:versionInfo     "unstable"@en , "non stabile"@it
+                            owl:versionInfo     "unstable"
                           ];
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:IstitutoProfessionalePerLaCinematografiaELaTelevisione
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Istituto Professionale Per La Cinematografia E La Televisione"@en , "Istituto Professionale Per La Cinematografia E La Televisione"@it;
         rdfs:subClassOf   school:IstitutoProfessionale;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 <https://w3id.org/italia/data/distribution/School-AP_IT-RDF-XML>
         rdf:type          admsapit:SemanticAssetDistribution , owl:NamedIndividual;
@@ -492,7 +487,7 @@ school:IstitutoProfessionalePerLaCinematografiaELaTelevisione
 
 rdf:subject  rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "subject"@en , "subject"@it;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 <https://w3id.org/italia/data/distribution/School-AP_IT-RDF-TURTLE>
         rdf:type          owl:NamedIndividual , admsapit:SemanticAssetDistribution;
@@ -505,7 +500,7 @@ rdf:subject  rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
 
 rdf:type  rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "type"@en , "type"@it;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:CircoloDidattico
         rdf:type          owl:Class;
@@ -518,18 +513,18 @@ school:CircoloDidattico
                                                     rdfs:isDefinedBy    <https://w3id.org/italia/onto/School>;
                                                     owl:onProperty      school:haPuntoDiErogazioneDelServizio;
                                                     owl:someValuesFrom  school:ScuolaInfanzia;
-                                                    owl:versionInfo     "unstable"@en , "non stabile"@it
+                                                    owl:versionInfo     "unstable"
                                                   ]
                                                   [ rdf:type            owl:Restriction;
                                                     rdfs:isDefinedBy    <https://w3id.org/italia/onto/School>;
                                                     owl:onProperty      school:haPuntoDiErogazioneDelServizio;
                                                     owl:someValuesFrom  school:ScuolaPrimaria;
-                                                    owl:versionInfo     "unstable"@en , "non stabile"@it
+                                                    owl:versionInfo     "unstable"
                                                   ]
                                                 );
-                            owl:versionInfo     "unstable"@en , "non stabile"@it
+                            owl:versionInfo     "unstable"
                           ];
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:IstitutoProfessionale
         rdf:type          owl:Class;
@@ -541,25 +536,25 @@ school:IstitutoProfessionale
                             owl:allValuesFrom  [ rdf:type          owl:Class;
                                                  rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
                                                  owl:unionOf       ( school:SezioneCarceraria school:SezioneSerale );
-                                                 owl:versionInfo   "unstable"@en , "non stabile"@it
+                                                 owl:versionInfo   "unstable"
                                                ];
                             owl:onProperty     school:haPuntoDiErogazioneDelServizio;
-                            owl:versionInfo    "unstable"@en , "non stabile"@it
+                            owl:versionInfo    "unstable"
                           ];
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:IstituzioneScolasticaDiPrimoCiclo
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Istituzione Scolastica Di Primo Ciclo"@en , "Istituzione Scolastica Di Primo Ciclo"@it;
         rdfs:subClassOf   school:IstituzioneScolastica;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:SezioneSerale  rdf:type  owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Sezione Serale"@en , "Sezione Serale"@it;
         rdfs:subClassOf   school:PuntoDiErogazioneDelServizio , school:IstituzioneScolasticaPerAdulti , school:IstituzioneScolasticaDiSecondoCiclo;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:SedeIstituzioneScolastica
         rdf:type          owl:Class;
@@ -570,44 +565,32 @@ school:SedeIstituzioneScolastica
                             rdfs:isDefinedBy   <https://w3id.org/italia/onto/School>;
                             owl:allValuesFrom  <https://w3id.org/italia/onto/CLV/Address>;
                             owl:onProperty     <https://w3id.org/italia/onto/CLV/hasAddress>;
-                            owl:versionInfo    "unstable"@en , "non stabile"@it
+                            owl:versionInfo    "unstable"
                           ];
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 rdfs:subPropertyOf  rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "sub Property Of"@en , "sub Property Of"@it;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:ScuolaParitaria
         rdf:type          owl:Class;
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Scuola Paritaria"@en , "Scuola Paritaria"@it;
         rdfs:subClassOf   <https://w3id.org/italia/onto/COV/PrivateOrganization> , school:IstituzioneScolastica;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 rdfs:seeAlso  rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "see Also"@en , "see Also"@it;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 rdf:rest  rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "rest"@en , "rest"@it;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 rdfs:label  rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "label"@en , "label"@it;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
-
-[ rdf:type            owl:Class;
-  rdfs:isDefinedBy    <https://w3id.org/italia/onto/School>;
-  rdfs:subClassOf     [ rdf:type            owl:Restriction;
-                        rdfs:isDefinedBy    <https://w3id.org/italia/onto/School>;
-                        owl:onProperty      school:haPuntoDiErogazioneDelServizio;
-                        owl:someValuesFrom  school:IstituzioneScolasticaDiPrimoCiclo;
-                        owl:versionInfo     "unstable"@en , "non stabile"@it
-                      ];
-  owl:intersectionOf  ( school:IstitutoOmnicomprensivo school:IstituzioneScolasticaDiSecondoCiclo );
-  owl:versionInfo     "unstable"@en , "non stabile"@it
-] .
+        owl:versionInfo   "unstable" .
 
 <https://w3id.org/italia/data/contact-point/INDIRE>
         rdf:type        vcard:Organization , vcard:Kind , <http://dati.gov.it/onto/dcatapit#Organization> , owl:NamedIndividual;
@@ -628,24 +611,24 @@ school:IstitutoMagistrale
         rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "Istituto Magistrale"@en , "Istituto Magistrale"@it;
         rdfs:subClassOf   school:PuntoDiErogazioneDelServizio , school:IstituzioneScolasticaDiSecondoCiclo;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:haPuntoDiErogazioneDiSezioneSeraleOCarceraria
         rdf:type            owl:ObjectProperty;
         rdfs:domain         [ rdf:type          owl:Class;
                               rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
                               owl:unionOf       ( school:IstitutoProfessionale school:IstitutoTecnico school:Liceo );
-                              owl:versionInfo   "unstable"@en , "non stabile"@it
+                              owl:versionInfo   "unstable"
                             ];
         rdfs:isDefinedBy    <https://w3id.org/italia/onto/School>;
         rdfs:label          "ha Punto Di Erogazione Di Sezione Serale O Carceraria"@en , "ha Punto Di Erogazione Di Sezione Serale O Carceraria"@it;
         rdfs:range          [ rdf:type          owl:Class;
                               rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
                               owl:unionOf       ( school:SezioneCarceraria school:SezioneSerale );
-                              owl:versionInfo   "unstable"@en , "non stabile"@it
+                              owl:versionInfo   "unstable"
                             ];
         rdfs:subPropertyOf  school:haPuntoDiErogazioneDelServizio;
-        owl:versionInfo     "unstable"@en , "non stabile"@it .
+        owl:versionInfo     "unstable" .
 
 school:IstituzioneScolastica
         rdf:type          owl:Class;
@@ -656,13 +639,25 @@ school:IstituzioneScolastica
                             rdfs:isDefinedBy    <https://w3id.org/italia/onto/School>;
                             owl:onProperty      school:haSede;
                             owl:someValuesFrom  school:SedeIstituzioneScolastica;
-                            owl:versionInfo     "unstable"@en , "non stabile"@it
+                            owl:versionInfo     "unstable"
                           ];
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
+
+[ rdf:type            owl:Class;
+  rdfs:isDefinedBy    <https://w3id.org/italia/onto/School>;
+  rdfs:subClassOf     [ rdf:type            owl:Restriction;
+                        rdfs:isDefinedBy    <https://w3id.org/italia/onto/School>;
+                        owl:onProperty      school:haPuntoDiErogazioneDelServizio;
+                        owl:someValuesFrom  school:IstituzioneScolasticaDiSecondoCiclo;
+                        owl:versionInfo     "unstable"
+                      ];
+  owl:intersectionOf  ( school:IstitutoOmnicomprensivo school:IstituzioneScolasticaDiPrimoCiclo );
+  owl:versionInfo     "unstable"
+] .
 
 rdf:predicate  rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
         rdfs:label        "predicate"@en , "predicate"@it;
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
 
 school:IstitutoDiIstruzioneSecondariaSuperiore
         rdf:type          owl:Class;
@@ -674,9 +669,14 @@ school:IstitutoDiIstruzioneSecondariaSuperiore
                             owl:allValuesFrom  [ rdf:type          owl:Class;
                                                  rdfs:isDefinedBy  <https://w3id.org/italia/onto/School>;
                                                  owl:unionOf       ( school:IstitutoProfessionale school:IstitutoTecnico school:Liceo );
-                                                 owl:versionInfo   "unstable"@en , "non stabile"@it
+                                                 owl:versionInfo   "unstable"
                                                ];
                             owl:onProperty     school:haPuntoDiErogazioneDelServizio;
-                            owl:versionInfo    "unstable"@en , "non stabile"@it
+                            owl:versionInfo    "unstable"
                           ];
-        owl:versionInfo   "unstable"@en , "non stabile"@it .
+        owl:versionInfo   "unstable" .
+
+<https://w3id.org/italia/data/public-organization/PCM-1RSIZZ>
+        rdf:type        foaf:Agent , <http://dati.gov.it/onto/dcatapit#Agent>;
+        dct:identifier  "PCM-1RSIZZ";
+        foaf:name       "Digital Transformation Department of the Presidency of the Council of Ministers"@en , "Dipartimento per la Trasformazione Digitale della Presidenza del Consiglio dei Ministri"@it .

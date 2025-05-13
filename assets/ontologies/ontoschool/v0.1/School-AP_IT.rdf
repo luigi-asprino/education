@@ -153,8 +153,7 @@
     <admsapit:hasContributor rdf:resource="https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab"/>
   </owl:Ontology>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoDArte">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Istituto D Arte</rdfs:label>
     <rdfs:label xml:lang="it">Istituto D Arte</rdfs:label>
@@ -166,8 +165,7 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstituzioneScolasticaPerAdulti">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Istituzione Scolastica Per Adulti</rdfs:label>
     <rdfs:label xml:lang="it">Istituzione Scolastica Per Adulti</rdfs:label>
@@ -176,8 +174,7 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/ScuolaSecondariaDiPrimoGrado">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Scuola Secondaria Di Primo Grado</rdfs:label>
     <rdfs:label xml:lang="it">Scuola Secondaria Di Primo Grado</rdfs:label>
@@ -186,20 +183,17 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoDiIstruzioneSecondariaSuperiore">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Istituto Di Istruzione Secondaria Superiore</rdfs:label>
     <rdfs:label xml:lang="it">Istituto Di Istruzione Secondaria Superiore</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-        <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+        <owl:versionInfo>unstable</owl:versionInfo>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
         <owl:allValuesFrom>
           <owl:Class>
-            <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-            <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+            <owl:versionInfo>unstable</owl:versionInfo>
             <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
             <owl:unionOf rdf:parseType="Collection">
               <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoProfessionale"/>
@@ -221,20 +215,17 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoTecnico">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Istituto Tecnico</rdfs:label>
     <rdfs:label xml:lang="it">Istituto Tecnico</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-        <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+        <owl:versionInfo>unstable</owl:versionInfo>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
         <owl:allValuesFrom>
           <owl:Class>
-            <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-            <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+            <owl:versionInfo>unstable</owl:versionInfo>
             <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
             <owl:unionOf rdf:parseType="Collection">
               <owl:Class rdf:about="https://w3id.org/italia/onto/School/SezioneCarceraria"/>
@@ -255,15 +246,13 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/SedeCentraleDellaScuolaDelPrimoGrado">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Sede Centrale Della Scuola Del Primo Grado</rdfs:label>
     <rdfs:label xml:lang="it">Sede Centrale Della Scuola Del Primo Grado</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-        <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+        <owl:versionInfo>unstable</owl:versionInfo>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
         <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/School/ScuolaSecondariaDiPrimoGrado"/>
         <owl:onProperty>
@@ -279,8 +268,7 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiSecondoCiclo">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Istituzione Scolastica Di Secondo Ciclo</rdfs:label>
     <rdfs:label xml:lang="it">Istituzione Scolastica Di Secondo Ciclo</rdfs:label>
@@ -289,8 +277,7 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoMagistrale">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Istituto Magistrale</rdfs:label>
     <rdfs:label xml:lang="it">Istituto Magistrale</rdfs:label>
@@ -300,8 +287,7 @@
     <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiSecondoCiclo"/>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/LiceoArtistico">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Liceo Artistico</rdfs:label>
     <rdfs:label xml:lang="it">Liceo Artistico</rdfs:label>
@@ -310,8 +296,7 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/PuntoDiErogazioneDelServizio">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="it">Plesso</rdfs:label>
     <rdfs:subClassOf>
@@ -319,8 +304,7 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiPrimoCiclo">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Istituzione Scolastica Di Primo Ciclo</rdfs:label>
     <rdfs:label xml:lang="it">Istituzione Scolastica Di Primo Ciclo</rdfs:label>
@@ -329,8 +313,7 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoProfessionalePerLIndustriaELArtigianato">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:subClassOf>
       <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoProfessionale"/>
@@ -339,28 +322,24 @@
     <rdfs:label xml:lang="it">Istituto Professionale Per L'Industria E L'Artigianato</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/ScuolaInfanzia">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Scuola Infanzia</rdfs:label>
     <rdfs:label xml:lang="it">Scuola Infanzia</rdfs:label>
     <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/PuntoDiErogazioneDelServizio"/>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoProfessionale">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Istituto Professionale</rdfs:label>
     <rdfs:label xml:lang="it">Istituto Professionale</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-        <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+        <owl:versionInfo>unstable</owl:versionInfo>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
         <owl:allValuesFrom>
           <owl:Class>
-            <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-            <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+            <owl:versionInfo>unstable</owl:versionInfo>
             <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
             <owl:unionOf rdf:parseType="Collection">
               <owl:Class rdf:about="https://w3id.org/italia/onto/School/SezioneCarceraria"/>
@@ -377,8 +356,7 @@
     <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiSecondoCiclo"/>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/CentroTerritorialePermanente">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Centro Territoriale Permanente</rdfs:label>
     <rdfs:label xml:lang="it">Centro Territoriale Permanente</rdfs:label>
@@ -387,102 +365,18 @@
     <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiPrimoCiclo"/>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoTecnicoNautico">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Istituto Tecnico Nautico</rdfs:label>
     <rdfs:label xml:lang="it">Istituto Tecnico Nautico</rdfs:label>
     <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstitutoTecnico"/>
   </owl:Class>
-  <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoProfessionalePerLaCinematografiaELaTelevisione">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstitutoProfessionale"/>
-    <rdfs:label xml:lang="en">Istituto Professionale Per La Cinematografia E La Televisione</rdfs:label>
-    <rdfs:label xml:lang="it">Istituto Professionale Per La Cinematografia E La Televisione</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://w3id.org/italia/onto/School/ScuolaParitaria">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-    <rdfs:label xml:lang="en">Scuola Paritaria</rdfs:label>
-    <rdfs:label xml:lang="it">Scuola Paritaria</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/COV/PrivateOrganization"/>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstituzioneScolastica"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoTecnicoAeronautico">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-    <rdfs:label xml:lang="en">Istituto Tecnico Aeronautico</rdfs:label>
-    <rdfs:label xml:lang="it">Istituto Tecnico Aeronautico</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstitutoTecnico"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://w3id.org/italia/onto/School/ScuolaMagistrale">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-    <rdfs:label xml:lang="en">Scuola Magistrale</rdfs:label>
-    <rdfs:label xml:lang="it">Scuola Magistrale</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/PuntoDiErogazioneDelServizio"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiSecondoCiclo"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoTecnicoCommerciale">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-    <rdfs:label xml:lang="en">Istituto Tecnico Commerciale</rdfs:label>
-    <rdfs:label xml:lang="it">Istituto Tecnico Commerciale</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstitutoTecnico"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://w3id.org/italia/onto/School/SezioneCarceraria">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-    <rdfs:label xml:lang="en">Sezione Carceraria</rdfs:label>
-    <rdfs:label xml:lang="it">Sezione Carceraria</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/PuntoDiErogazioneDelServizio"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolasticaPerAdulti"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiSecondoCiclo"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoTecnicoPerIlTurismo">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-    <rdfs:label xml:lang="en">Istituto Tecnico Per Il Turismo</rdfs:label>
-    <rdfs:label xml:lang="it">Istituto Tecnico Per Il Turismo</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstitutoTecnico"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoTecnicoIndustriale">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-    <rdfs:label xml:lang="en">Istituto Tecnico Industriale</rdfs:label>
-    <rdfs:label xml:lang="it">Istituto Tecnico Industriale</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstitutoTecnico"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://w3id.org/italia/onto/School/LiceoScientifico">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-    <rdfs:label xml:lang="en">Liceo Scientifico</rdfs:label>
-    <rdfs:label xml:lang="it">Liceo Scientifico</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="https://w3id.org/italia/onto/School/Liceo"/>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiSecondoCiclo"/>
-  </owl:Class>
   <owl:Class>
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-        <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+        <owl:versionInfo>unstable</owl:versionInfo>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
         <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiSecondoCiclo"/>
         <owl:onProperty>
@@ -495,16 +389,86 @@
       <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiPrimoCiclo"/>
     </owl:intersectionOf>
   </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoProfessionalePerLaCinematografiaELaTelevisione">
+    <owl:versionInfo>unstable</owl:versionInfo>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstitutoProfessionale"/>
+    <rdfs:label xml:lang="en">Istituto Professionale Per La Cinematografia E La Televisione</rdfs:label>
+    <rdfs:label xml:lang="it">Istituto Professionale Per La Cinematografia E La Televisione</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/onto/School/ScuolaParitaria">
+    <owl:versionInfo>unstable</owl:versionInfo>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
+    <rdfs:label xml:lang="en">Scuola Paritaria</rdfs:label>
+    <rdfs:label xml:lang="it">Scuola Paritaria</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/COV/PrivateOrganization"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstituzioneScolastica"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoTecnicoAeronautico">
+    <owl:versionInfo>unstable</owl:versionInfo>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
+    <rdfs:label xml:lang="en">Istituto Tecnico Aeronautico</rdfs:label>
+    <rdfs:label xml:lang="it">Istituto Tecnico Aeronautico</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstitutoTecnico"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/onto/School/ScuolaMagistrale">
+    <owl:versionInfo>unstable</owl:versionInfo>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
+    <rdfs:label xml:lang="en">Scuola Magistrale</rdfs:label>
+    <rdfs:label xml:lang="it">Scuola Magistrale</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/PuntoDiErogazioneDelServizio"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiSecondoCiclo"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoTecnicoCommerciale">
+    <owl:versionInfo>unstable</owl:versionInfo>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
+    <rdfs:label xml:lang="en">Istituto Tecnico Commerciale</rdfs:label>
+    <rdfs:label xml:lang="it">Istituto Tecnico Commerciale</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstitutoTecnico"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/onto/School/SezioneCarceraria">
+    <owl:versionInfo>unstable</owl:versionInfo>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
+    <rdfs:label xml:lang="en">Sezione Carceraria</rdfs:label>
+    <rdfs:label xml:lang="it">Sezione Carceraria</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/PuntoDiErogazioneDelServizio"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolasticaPerAdulti"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiSecondoCiclo"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoTecnicoPerIlTurismo">
+    <owl:versionInfo>unstable</owl:versionInfo>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
+    <rdfs:label xml:lang="en">Istituto Tecnico Per Il Turismo</rdfs:label>
+    <rdfs:label xml:lang="it">Istituto Tecnico Per Il Turismo</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstitutoTecnico"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoTecnicoIndustriale">
+    <owl:versionInfo>unstable</owl:versionInfo>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
+    <rdfs:label xml:lang="en">Istituto Tecnico Industriale</rdfs:label>
+    <rdfs:label xml:lang="it">Istituto Tecnico Industriale</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstitutoTecnico"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/italia/onto/School/LiceoScientifico">
+    <owl:versionInfo>unstable</owl:versionInfo>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
+    <rdfs:label xml:lang="en">Liceo Scientifico</rdfs:label>
+    <rdfs:label xml:lang="it">Liceo Scientifico</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="https://w3id.org/italia/onto/School/Liceo"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiSecondoCiclo"/>
+  </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoDiRiferimento">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Istituto Di Riferimento</rdfs:label>
     <rdfs:label xml:lang="it">Istituto Di Riferimento</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-        <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+        <owl:versionInfo>unstable</owl:versionInfo>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
         <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/School/PuntoDiErogazioneDelServizio"/>
         <owl:onProperty>
@@ -517,20 +481,17 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/SedeCentraleDellaScuolaDelSecondoGrado">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Sede Centrale Della Scuola Del Secondo Grado</rdfs:label>
     <rdfs:label xml:lang="it">Sede Centrale Della Scuola Del Secondo Grado</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-        <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+        <owl:versionInfo>unstable</owl:versionInfo>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
         <owl:allValuesFrom>
           <owl:Class>
-            <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-            <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+            <owl:versionInfo>unstable</owl:versionInfo>
             <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
             <owl:unionOf rdf:parseType="Collection">
               <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoProfessionale"/>
@@ -548,8 +509,7 @@
     <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstitutoDiRiferimento"/>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/Convitto">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Convitto</rdfs:label>
     <rdfs:label xml:lang="it">Convitto</rdfs:label>
@@ -558,20 +518,17 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/CircoloDidattico">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Circolo Didattico</rdfs:label>
     <rdfs:label xml:lang="it">Circolo Didattico</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-        <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+        <owl:versionInfo>unstable</owl:versionInfo>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
         <owl:intersectionOf rdf:parseType="Collection">
           <owl:Restriction>
-            <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-            <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+            <owl:versionInfo>unstable</owl:versionInfo>
             <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
             <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/School/ScuolaInfanzia"/>
             <owl:onProperty>
@@ -579,8 +536,7 @@
             </owl:onProperty>
           </owl:Restriction>
           <owl:Restriction>
-            <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-            <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+            <owl:versionInfo>unstable</owl:versionInfo>
             <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
             <owl:someValuesFrom>
               <owl:Class rdf:about="https://w3id.org/italia/onto/School/ScuolaPrimaria"/>
@@ -596,8 +552,7 @@
     <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstitutoDiRiferimento"/>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/ScuolaPerUtenzaConBisogniSpeciali">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Scuola Per Utenza Con Bisogni Speciali</rdfs:label>
     <rdfs:label xml:lang="it">Scuola Per Utenza Con Bisogni Speciali</rdfs:label>
@@ -605,29 +560,8 @@
       <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstituzioneScolastica"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class>
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-        <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-        <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiPrimoCiclo"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/School/haPuntoDiErogazioneDelServizio"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <owl:intersectionOf rdf:parseType="Collection">
-      <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoOmnicomprensivo"/>
-      <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiSecondoCiclo"/>
-    </owl:intersectionOf>
-  </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/SezioneSerale">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Sezione Serale</rdfs:label>
     <rdfs:label xml:lang="it">Sezione Serale</rdfs:label>
@@ -636,27 +570,24 @@
     <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiSecondoCiclo"/>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoOmnicomprensivo">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Istituto Omnicomprensivo</rdfs:label>
     <rdfs:label xml:lang="it">Istituto Omnicomprensivo</rdfs:label>
     <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstitutoDiRiferimento"/>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/CentroProvincialiIstruzioneDegliAdulti">
+    <owl:versionInfo>unstable</owl:versionInfo>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
+    <rdfs:label xml:lang="en">Centro Provinciali Istruzione Degli Adulti</rdfs:label>
     <rdfs:label xml:lang="it">Centro Provinciali Istruzione Degli Adulti</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiPrimoCiclo"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstitutoDiRiferimento"/>
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-        <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+        <owl:versionInfo>unstable</owl:versionInfo>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
         <owl:allValuesFrom>
           <owl:Class>
-            <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-            <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+            <owl:versionInfo>unstable</owl:versionInfo>
             <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
             <owl:unionOf rdf:parseType="Collection">
               <owl:Class rdf:about="https://w3id.org/italia/onto/School/CentroTerritorialePermanente"/>
@@ -669,22 +600,19 @@
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
     <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolasticaPerAdulti"/>
-    <rdfs:label xml:lang="en">Centro Provinciali Istruzione Degli Adulti</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiPrimoCiclo"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstitutoDiRiferimento"/>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoTecnicoPerGeometri">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Istituto Tecnico Per Geometri</rdfs:label>
     <rdfs:label xml:lang="it">Istituto Tecnico Per Geometri</rdfs:label>
     <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstitutoTecnico"/>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/Educandato">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Educandato</rdfs:label>
     <rdfs:label xml:lang="it">Educandato</rdfs:label>
@@ -693,15 +621,13 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstituzioneScolastica">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Istituzione Scolastica</rdfs:label>
     <rdfs:label xml:lang="it">Istituzione Scolastica</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-        <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+        <owl:versionInfo>unstable</owl:versionInfo>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
         <owl:someValuesFrom>
           <owl:Class rdf:about="https://w3id.org/italia/onto/School/SedeIstituzioneScolastica"/>
@@ -714,39 +640,34 @@
     <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/COV/Organization"/>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoTecnicoAgrario">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Istituto Tecnico Agrario</rdfs:label>
     <rdfs:label xml:lang="it">Istituto Tecnico Agrario</rdfs:label>
     <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstitutoTecnico"/>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoProfessionalePerIServiziAlberghieriERistorazione">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Istituto Professionale Per I Servizi Alberghieri E Ristorazione</rdfs:label>
     <rdfs:label xml:lang="it">Istituto Professionale Per I Servizi Alberghieri E Ristorazione</rdfs:label>
     <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstitutoProfessionale"/>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoTecnicoPerAttivitaSociali">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Istituto Tecnico Per Attivita Sociali</rdfs:label>
     <rdfs:label xml:lang="it">Istituto Tecnico Per Attivita Sociali</rdfs:label>
     <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstitutoTecnico"/>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/SedeIstituzioneScolastica">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Sede Istituzione Scolastica</rdfs:label>
     <rdfs:label xml:lang="it">Sede Istituzione Scolastica</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-        <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+        <owl:versionInfo>unstable</owl:versionInfo>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
         <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/CLV/Address"/>
         <owl:onProperty rdf:resource="https://w3id.org/italia/onto/CLV/hasAddress"/>
@@ -755,8 +676,7 @@
     <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"/>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/ScuolaCarcerariaPrimariaESecondariaDiPrimoGrado">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Scuola Carceraria Primaria E Secondaria Di Primo Grado</rdfs:label>
     <rdfs:label xml:lang="it">Scuola Carceraria Primaria E Secondaria Di Primo Grado</rdfs:label>
@@ -765,8 +685,7 @@
     <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiPrimoCiclo"/>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/LiceoClassico">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Liceo Classico</rdfs:label>
     <rdfs:label xml:lang="it">Liceo Classico</rdfs:label>
@@ -775,29 +694,43 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiSecondoCiclo"/>
   </owl:Class>
+  <owl:Class>
+    <owl:versionInfo>unstable</owl:versionInfo>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:versionInfo>unstable</owl:versionInfo>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
+        <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiPrimoCiclo"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/School/haPuntoDiErogazioneDelServizio"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:intersectionOf rdf:parseType="Collection">
+      <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoOmnicomprensivo"/>
+      <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiSecondoCiclo"/>
+    </owl:intersectionOf>
+  </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoProfessionalePerLAgricolturaELAmbiente">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Istituto Professionale Per L Agricoltura EL Ambiente</rdfs:label>
     <rdfs:label xml:lang="it">Istituto Professionale Per L Agricoltura EL Ambiente</rdfs:label>
     <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstitutoProfessionale"/>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/Liceo">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Liceo</rdfs:label>
     <rdfs:label xml:lang="it">Liceo</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-        <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+        <owl:versionInfo>unstable</owl:versionInfo>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
         <owl:allValuesFrom>
           <owl:Class>
-            <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-            <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+            <owl:versionInfo>unstable</owl:versionInfo>
             <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
             <owl:unionOf rdf:parseType="Collection">
               <owl:Class rdf:about="https://w3id.org/italia/onto/School/SezioneCarceraria"/>
@@ -814,44 +747,38 @@
     <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiSecondoCiclo"/>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoProfessionalePerLIndustriaELeAttivitaMarinare">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Istituto Professionale Per L Industria E Le Attivita Marinare</rdfs:label>
     <rdfs:label xml:lang="it">Istituto Professionale Per L Industria E Le Attivita Marinare</rdfs:label>
     <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstitutoProfessionale"/>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/ScuolaPrimaria">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Scuola Primaria</rdfs:label>
     <rdfs:label xml:lang="it">Scuola Primaria</rdfs:label>
     <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/PuntoDiErogazioneDelServizio"/>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoProfessionalePerIServiziCommercialiETuristici">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Istituto Professionale Per I Servizi Commerciali E Turistici</rdfs:label>
     <rdfs:label xml:lang="it">Istituto Professionale Per I Servizi Commerciali E Turistici</rdfs:label>
     <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstitutoProfessionale"/>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoComprensivo">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Istituto Comprensivo</rdfs:label>
     <rdfs:label xml:lang="it">Istituto Comprensivo</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-        <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+        <owl:versionInfo>unstable</owl:versionInfo>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
         <owl:intersectionOf rdf:parseType="Collection">
           <owl:Restriction>
-            <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-            <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+            <owl:versionInfo>unstable</owl:versionInfo>
             <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
             <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/School/ScuolaInfanzia"/>
             <owl:onProperty>
@@ -859,8 +786,7 @@
             </owl:onProperty>
           </owl:Restriction>
           <owl:Restriction>
-            <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-            <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+            <owl:versionInfo>unstable</owl:versionInfo>
             <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
             <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/School/ScuolaPrimaria"/>
             <owl:onProperty>
@@ -868,8 +794,7 @@
             </owl:onProperty>
           </owl:Restriction>
           <owl:Restriction>
-            <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-            <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+            <owl:versionInfo>unstable</owl:versionInfo>
             <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
             <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/School/ScuolaSecondariaDiPrimoGrado"/>
             <owl:onProperty>
@@ -883,16 +808,14 @@
     <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstitutoDiRiferimento"/>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoProfessionalePerIServiziSociali">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">Istituto Professionale Per I Servizi Sociali</rdfs:label>
     <rdfs:label xml:lang="it">Istituto Professionale Per I Servizi Sociali</rdfs:label>
     <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstitutoProfessionale"/>
   </owl:Class>
   <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/School/haPuntoDiErogazioneDelServizio">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">ha Punto Di Erogazione Del Servizio</rdfs:label>
     <rdfs:label xml:lang="it">ha Punto Di Erogazione Del Servizio</rdfs:label>
@@ -900,8 +823,7 @@
     <rdfs:domain rdf:resource="https://w3id.org/italia/onto/School/IstitutoDiRiferimento"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/School/haSede">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">ha Sede</rdfs:label>
     <rdfs:label xml:lang="it">ha Sede</rdfs:label>
@@ -909,15 +831,13 @@
     <rdfs:domain rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolastica"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/School/haPuntoDiErogazioneDiSezioneSeraleOCarceraria">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">ha Punto Di Erogazione Di Sezione Serale O Carceraria</rdfs:label>
     <rdfs:label xml:lang="it">ha Punto Di Erogazione Di Sezione Serale O Carceraria</rdfs:label>
     <rdfs:range>
       <owl:Class>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-        <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+        <owl:versionInfo>unstable</owl:versionInfo>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
         <owl:unionOf rdf:parseType="Collection">
           <owl:Class rdf:about="https://w3id.org/italia/onto/School/SezioneCarceraria"/>
@@ -927,8 +847,7 @@
     </rdfs:range>
     <rdfs:domain>
       <owl:Class>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-        <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+        <owl:versionInfo>unstable</owl:versionInfo>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
         <owl:unionOf rdf:parseType="Collection">
           <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoProfessionale"/>
@@ -940,99 +859,85 @@
     <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/School/haPuntoDiErogazioneDelServizio"/>
   </owl:ObjectProperty>
   <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">comment</rdfs:label>
     <rdfs:label xml:lang="it">comment</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">is Defined By</rdfs:label>
     <rdfs:label xml:lang="it">is Defined By</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#first">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">first</rdfs:label>
     <rdfs:label xml:lang="it">first</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#object">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">object</rdfs:label>
     <rdfs:label xml:lang="it">object</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">subject</rdfs:label>
     <rdfs:label xml:lang="it">subject</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subPropertyOf">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">sub Property Of</rdfs:label>
     <rdfs:label xml:lang="it">sub Property Of</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#domain">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">domain</rdfs:label>
     <rdfs:label xml:lang="it">domain</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">type</rdfs:label>
     <rdfs:label xml:lang="it">type</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">see Also</rdfs:label>
     <rdfs:label xml:lang="it">see Also</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">label</rdfs:label>
     <rdfs:label xml:lang="it">label</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">sub Class Of</rdfs:label>
     <rdfs:label xml:lang="it">sub Class Of</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#range">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">range</rdfs:label>
     <rdfs:label xml:lang="it">range</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">predicate</rdfs:label>
     <rdfs:label xml:lang="it">predicate</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest">
-    <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    <owl:versionInfo xml:lang="it">non stabile</owl:versionInfo>
+    <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
     <rdfs:label xml:lang="en">rest</rdfs:label>
     <rdfs:label xml:lang="it">rest</rdfs:label>
