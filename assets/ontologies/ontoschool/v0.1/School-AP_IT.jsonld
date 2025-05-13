@@ -1,0 +1,3234 @@
+{
+    "@graph": [
+        {
+            "@id": "https://w3id.org/italia/data/project/NDC",
+            "l0:name": {
+                "@language": "it",
+                "@value": "National Data Catalog - schema.gov.it"
+            },
+            "@type": [
+                "admsapit:Project",
+                "owl:NamedIndividual"
+            ]
+        },
+        {
+            "@id": "school:CentroTerritorialePermanente",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Centro Territoriale Permanente"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Centro Territoriale Permanente"
+                }
+            ],
+            "rdfs:subClassOf": [
+                {
+                    "@id": "school:PuntoDiErogazioneDelServizio"
+                },
+                {
+                    "@id": "school:IstituzioneScolasticaPerAdulti"
+                },
+                {
+                    "@id": "school:IstituzioneScolasticaDiPrimoCiclo"
+                }
+            ],
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "https://w3id.org/italia/onto/School",
+            "dct:creator": [
+                {
+                    "@id": "https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab"
+                },
+                {
+                    "@id": "https://w3id.org/italia/data/public-organization/INDIRE"
+                }
+            ],
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "Versione 0.1 - aggiornata il 19/05/2025 - Primo rilascio"
+                },
+                {
+                    "@language": "en",
+                    "@value": "Version 0.1 - updated on 19th of May 2025 - First release"
+                }
+            ],
+            "owl:imports": [
+                {
+                    "@id": "https://w3id.org/italia/onto/CLV/1.0"
+                },
+                {
+                    "@id": "https://w3id.org/italia/onto/COV/0.12"
+                },
+                {
+                    "@id": "https://w3id.org/italia/onto/RO/0.3"
+                },
+                {
+                    "@id": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"
+                }
+            ],
+            "admsapit:hasOntologyLanguage": {
+                "@id": "admsapit:OWL"
+            },
+            "admsapit:status": [
+                "published",
+                "catalogued"
+            ],
+            "admsapit:last": {
+                "@id": "school:0.1"
+            },
+            "rdfs:comment": [
+                {
+                    "@language": "en",
+                    "@value": "This ontology describes the Italian school system."
+                },
+                {
+                    "@language": "it",
+                    "@value": "Questa ontologia che descrive il sistema scolastico italiano."
+                }
+            ],
+            "admsapit:hasTask": [
+                {
+                    "@id": "admsapit:QueryFormulationTask"
+                },
+                {
+                    "@id": "admsapit:AnnotationTask"
+                }
+            ],
+            "admsapit:hasSemanticAssetDistribution": [
+                {
+                    "@id": "https://w3id.org/italia/data/distribution/School-AP_IT-JSON-LD"
+                },
+                {
+                    "@id": "https://w3id.org/italia/data/distribution/School-AP_IT-RDF-TURTLE"
+                },
+                {
+                    "@id": "https://w3id.org/italia/data/distribution/School-AP_IT-RDF-XML"
+                }
+            ],
+            "dct:modified": {
+                "@value": "2025-05-19",
+                "@type": "xsd:date"
+            },
+            "@type": [
+                "owl:Ontology",
+                "owl:NamedIndividual",
+                "admsapit:SemanticAsset"
+            ],
+            "dct:rightsHolder": {
+                "@id": "https://w3id.org/italia/data/public-organization/INDIRE"
+            },
+            "admsapit:semanticAssetInUse": [
+                {
+                    "@id": "https://w3id.org/italia/data/project/OntoPiA"
+                },
+                {
+                    "@id": "https://w3id.org/italia/data/project/NDC"
+                }
+            ],
+            "dcat:theme": {
+                "@id": "http://publications.europa.eu/resource/authority/data-theme/EDUC"
+            },
+            "dct:issued": {
+                "@value": "2025-05-19",
+                "@type": "xsd:date"
+            },
+            "prov:wasDerivedFrom": {
+                "@id": "school:0.1"
+            },
+            "admsapit:hasKeyClass": {
+                "@id": "school:IstituzioneScolastica"
+            },
+            "admsapit:prefix": "school",
+            "dct:publisher": [
+                {
+                    "@id": "https://w3id.org/italia/data/public-organization/PCM-1RSIZZ"
+                },
+                {
+                    "@id": "https://w3id.org/italia/data/public-organization/INDIRE"
+                }
+            ],
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "School-AP_IT"
+                },
+                {
+                    "@language": "it",
+                    "@value": "School-AP_IT"
+                }
+            ],
+            "dct:identifier": "https://w3id.org/italia/onto/School",
+            "dcat:contactPoint": {
+                "@id": "https://w3id.org/italia/data/contact-point/INDIRE"
+            },
+            "dct:title": [
+                {
+                    "@language": "it",
+                    "@value": "School-AP_IT"
+                },
+                {
+                    "@language": "en",
+                    "@value": "School-AP_IT"
+                }
+            ],
+            "admsapit:target": [
+                "Imprese",
+                "Pubbliche Amministrazioni"
+            ],
+            "dct:description": [
+                {
+                    "@language": "en",
+                    "@value": "This ontology describes the Italian school system."
+                },
+                {
+                    "@language": "it",
+                    "@value": "Questa ontologia che descrive il sistema scolastico italiano."
+                }
+            ],
+            "admsapit:type": {
+                "@id": "admsapit:DomainOntology"
+            },
+            "admsapit:acronym": "School-AP_IT",
+            "dct:accrualPeriodicity": {
+                "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+            },
+            "admsapit:prev": {
+                "@id": "school:0.1"
+            },
+            "admsapit:hasContributor": [
+                {
+                    "@id": "https://w3id.org/italia/data/public-organization/INDIRE"
+                },
+                {
+                    "@id": "https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab"
+                }
+            ],
+            "dcat:keyword": "scuola",
+            "dct:language": [
+                {
+                    "@id": "http://publications.europa.eu/resource/authority/language/ITA"
+                },
+                {
+                    "@id": "http://publications.europa.eu/resource/authority/language/ENG"
+                }
+            ],
+            "admsapit:hasFormalityLevel": {
+                "@id": "admsapit:Formal"
+            },
+            "admsapit:officialURI": {
+                "@value": "https://w3id.org/italia/onto/School",
+                "@type": "xsd:anyURI"
+            },
+            "owl:versionIRI": {
+                "@id": "school:0.1"
+            }
+        },
+        {
+            "@id": "school:PuntoDiErogazioneDelServizio",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": {
+                "@language": "it",
+                "@value": "Plesso"
+            },
+            "rdfs:subClassOf": {
+                "@id": "school:IstituzioneScolastica"
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "school:IstituzioneScolasticaPerAdulti",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Istituzione Scolastica Per Adulti"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Istituzione Scolastica Per Adulti"
+                }
+            ],
+            "rdfs:subClassOf": {
+                "@id": "school:IstituzioneScolastica"
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "school:IstituzioneScolasticaDiPrimoCiclo",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Istituzione Scolastica Di Primo Ciclo"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Istituzione Scolastica Di Primo Ciclo"
+                }
+            ],
+            "rdfs:subClassOf": {
+                "@id": "school:IstituzioneScolastica"
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "school:IstitutoProfessionale",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Istituto Professionale"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Istituto Professionale"
+                }
+            ],
+            "rdfs:subClassOf": [
+                {
+                    "@id": "_:b47"
+                },
+                {
+                    "@id": "school:PuntoDiErogazioneDelServizio"
+                },
+                {
+                    "@id": "school:IstituzioneScolasticaDiSecondoCiclo"
+                }
+            ],
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "school:IstituzioneScolasticaDiSecondoCiclo",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Istituzione Scolastica Di Secondo Ciclo"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Istituzione Scolastica Di Secondo Ciclo"
+                }
+            ],
+            "rdfs:subClassOf": {
+                "@id": "school:IstituzioneScolastica"
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "school:LiceoScientifico",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Liceo Scientifico"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Liceo Scientifico"
+                }
+            ],
+            "rdfs:subClassOf": [
+                {
+                    "@id": "school:Liceo"
+                },
+                {
+                    "@id": "school:IstituzioneScolasticaDiSecondoCiclo"
+                }
+            ],
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "school:Liceo",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Liceo"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Liceo"
+                }
+            ],
+            "rdfs:subClassOf": [
+                {
+                    "@id": "_:b32"
+                },
+                {
+                    "@id": "school:PuntoDiErogazioneDelServizio"
+                },
+                {
+                    "@id": "school:IstituzioneScolasticaDiSecondoCiclo"
+                }
+            ],
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "_:b3",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "owl:someValuesFrom": {
+                "@id": "school:ScuolaPrimaria"
+            },
+            "owl:onProperty": {
+                "@id": "school:haPuntoDiErogazioneDelServizio"
+            },
+            "@type": "owl:Restriction"
+        },
+        {
+            "@id": "school:ScuolaPrimaria",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Scuola Primaria"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Scuola Primaria"
+                }
+            ],
+            "rdfs:subClassOf": {
+                "@id": "school:PuntoDiErogazioneDelServizio"
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "school:haPuntoDiErogazioneDelServizio",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "ha Punto Di Erogazione Del Servizio"
+                },
+                {
+                    "@language": "it",
+                    "@value": "ha Punto Di Erogazione Del Servizio"
+                }
+            ],
+            "rdfs:range": {
+                "@id": "school:PuntoDiErogazioneDelServizio"
+            },
+            "rdfs:domain": {
+                "@id": "school:IstitutoDiRiferimento"
+            },
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "_:b4",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "owl:unionOf": {
+                "@list": [
+                    {
+                        "@id": "school:SezioneCarceraria"
+                    },
+                    {
+                        "@id": "school:SezioneSerale"
+                    }
+                ]
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "school:ScuolaInfanzia",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Scuola Infanzia"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Scuola Infanzia"
+                }
+            ],
+            "rdfs:subClassOf": {
+                "@id": "school:PuntoDiErogazioneDelServizio"
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "school:IstitutoProfessionalePerIServiziAlberghieriERistorazione",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Istituto Professionale Per I Servizi Alberghieri E Ristorazione"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Istituto Professionale Per I Servizi Alberghieri E Ristorazione"
+                }
+            ],
+            "rdfs:subClassOf": {
+                "@id": "school:IstitutoProfessionale"
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "rdfs:domain",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "domain"
+                },
+                {
+                    "@language": "it",
+                    "@value": "domain"
+                }
+            ]
+        },
+        {
+            "@id": "school:IstitutoDiRiferimento",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Istituto Di Riferimento"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Istituto Di Riferimento"
+                }
+            ],
+            "rdfs:subClassOf": [
+                {
+                    "@id": "_:b34"
+                },
+                {
+                    "@id": "school:IstituzioneScolastica"
+                }
+            ],
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "school:IstitutoProfessionalePerLIndustriaELArtigianato",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:subClassOf": {
+                "@id": "school:IstitutoProfessionale"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Istituto Professionale Per L'Industria E L'Artigianato"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Istituto Professionale Per L'Industria E L'Artigianato"
+                }
+            ],
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "school:IstitutoTecnico",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Istituto Tecnico"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Istituto Tecnico"
+                }
+            ],
+            "rdfs:subClassOf": [
+                {
+                    "@id": "_:b26"
+                },
+                {
+                    "@id": "school:PuntoDiErogazioneDelServizio"
+                },
+                {
+                    "@id": "school:IstituzioneScolasticaDiSecondoCiclo"
+                }
+            ],
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "rdf:object",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "object"
+                },
+                {
+                    "@language": "it",
+                    "@value": "object"
+                }
+            ]
+        },
+        {
+            "@id": "_:b8",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "owl:someValuesFrom": {
+                "@id": "school:ScuolaSecondariaDiPrimoGrado"
+            },
+            "owl:onProperty": {
+                "@id": "school:haPuntoDiErogazioneDelServizio"
+            },
+            "@type": "owl:Restriction"
+        },
+        {
+            "@id": "school:ScuolaSecondariaDiPrimoGrado",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Scuola Secondaria Di Primo Grado"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Scuola Secondaria Di Primo Grado"
+                }
+            ],
+            "rdfs:subClassOf": {
+                "@id": "school:PuntoDiErogazioneDelServizio"
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab",
+            "foaf:name": [
+                {
+                    "@language": "it",
+                    "@value": "Istituto di Scienze e Tecnologie della Cognizione del CNR - Semantic Technology Lab (STLab)"
+                },
+                {
+                    "@language": "en",
+                    "@value": "Institute of Cognitive Sciences and Technologies of the Italian Research Council (CNR) - Semantic Technology Laboratory (STLab)"
+                }
+            ],
+            "dct:identifier": "cnr - Z6HZEH - STLab",
+            "@type": [
+                "foaf:Agent",
+                "http://dati.gov.it/onto/dcatapit#Agent",
+                "owl:NamedIndividual"
+            ]
+        },
+        {
+            "@id": "https://w3id.org/italia/data/distribution/School-AP_IT-JSON-LD",
+            "dct:title": [
+                {
+                    "@language": "it",
+                    "@value": "Distribuzione JSON-LD ontologia School-AP_IT"
+                },
+                {
+                    "@language": "en",
+                    "@value": "JSON-LD distribution of the School-AP_IT Ontology"
+                }
+            ],
+            "dcat:downloadURL": {
+                "@id": "https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/School/latest/School-AP_IT.jsonld"
+            },
+            "dct:format": {
+                "@id": "http://publications.europa.eu/resource/authority/file-type/JSON_LD"
+            },
+            "dct:description": [
+                {
+                    "@language": "en",
+                    "@value": "This is the distribution in JSON-LD of the school ontology"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Questa è la distribuzione JSON-LD dell'ontologia della scuola"
+                }
+            ],
+            "@type": [
+                "admsapit:SemanticAssetDistribution",
+                "owl:NamedIndividual"
+            ],
+            "dct:license": {
+                "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+            },
+            "dcat:accessURL": {
+                "@id": "https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/School/latest"
+            }
+        },
+        {
+            "@id": "https://w3id.org/italia/data/public-organization/INDIRE",
+            "foaf:name": [
+                {
+                    "@language": "en",
+                    "@value": "Italian National Institute for Documentation, Innovation and Educational Research - INDIRE"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Istituto Nazionale di Documentazione, Innovazione e Ricerca Educativa - INDIRE"
+                }
+            ],
+            "dct:identifier": "INDIRE",
+            "@type": [
+                "foaf:Agent",
+                "http://dati.gov.it/onto/dcatapit#Agent",
+                "owl:NamedIndividual"
+            ]
+        },
+        {
+            "@id": "https://w3id.org/italia/data/project/OntoPiA",
+            "l0:name": {
+                "@language": "it",
+                "@value": "OntoPiA - la rete di ontologie della pubblica amministrazione italiana"
+            },
+            "@type": [
+                "admsapit:Project",
+                "owl:NamedIndividual"
+            ]
+        },
+        {
+            "@id": "school:IstituzioneScolastica",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Istituzione Scolastica"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Istituzione Scolastica"
+                }
+            ],
+            "rdfs:subClassOf": [
+                {
+                    "@id": "_:b55"
+                },
+                {
+                    "@id": "https://w3id.org/italia/onto/COV/Organization"
+                }
+            ],
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "https://w3id.org/italia/data/public-organization/PCM-1RSIZZ",
+            "foaf:name": [
+                {
+                    "@language": "en",
+                    "@value": "Digital Transformation Department of the Presidency of the Council of Ministers"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Dipartimento per la Trasformazione Digitale della Presidenza del Consiglio dei Ministri"
+                }
+            ],
+            "dct:identifier": "PCM-1RSIZZ",
+            "@type": [
+                "foaf:Agent",
+                "http://dati.gov.it/onto/dcatapit#Agent"
+            ]
+        },
+        {
+            "@id": "https://w3id.org/italia/data/contact-point/INDIRE",
+            "vcard:hasEmail": {
+                "@id": "mailto:urp@indire.it"
+            },
+            "vcard:fn": "Ufficio Relazioni con il Pubblico - INDIRE",
+            "@type": [
+                "vcard:Organization",
+                "vcard:Kind",
+                "http://dati.gov.it/onto/dcatapit#Organization",
+                "owl:NamedIndividual"
+            ]
+        },
+        {
+            "@id": "https://w3id.org/italia/data/distribution/School-AP_IT-RDF-TURTLE",
+            "dct:title": [
+                {
+                    "@language": "it",
+                    "@value": "Distribuzione RDF/Turtle ontologia School-AP_IT"
+                },
+                {
+                    "@language": "en",
+                    "@value": "RDF/Turtle distribution of School-AP_IT Ontology"
+                }
+            ],
+            "dct:description": [
+                {
+                    "@language": "en",
+                    "@value": "This is the distribution in RDF/turtle of the persons ontology"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Questa è la distribuzione RDF/Turtle dell'ontologia delle persone"
+                }
+            ],
+            "dcat:downloadURL": {
+                "@id": "https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/School/latest/School-AP_IT.ttl"
+            },
+            "@type": [
+                "owl:NamedIndividual",
+                "admsapit:SemanticAssetDistribution"
+            ],
+            "dct:format": {
+                "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"
+            },
+            "dct:license": {
+                "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+            },
+            "dcat:accessURL": {
+                "@id": "https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/School/latest"
+            }
+        },
+        {
+            "@id": "https://w3id.org/italia/data/distribution/School-AP_IT-RDF-XML",
+            "@type": [
+                "admsapit:SemanticAssetDistribution",
+                "owl:NamedIndividual"
+            ],
+            "dcat:accessURL": {
+                "@id": "https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/School/latest"
+            },
+            "dct:description": [
+                {
+                    "@language": "it",
+                    "@value": "Questa è la distribuzione RDF/XML dell'ontologia delle persone"
+                },
+                {
+                    "@language": "en",
+                    "@value": "This is the distribution in RDF/XML of the persons ontology"
+                }
+            ],
+            "dcat:downloadURL": {
+                "@id": "https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/School/latest/School-AP_IT.rdf"
+            },
+            "dct:title": [
+                {
+                    "@language": "it",
+                    "@value": "Distribuzione RDF/XML ontologia School-AP_IT"
+                },
+                {
+                    "@language": "en",
+                    "@value": "RDF/XML distribution of School-AP_IT Ontology"
+                }
+            ],
+            "dct:format": {
+                "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_XML"
+            },
+            "dct:license": {
+                "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+            }
+        },
+        {
+            "@id": "rdfs:comment",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "comment"
+                },
+                {
+                    "@language": "it",
+                    "@value": "comment"
+                }
+            ]
+        },
+        {
+            "@id": "school:Educandato",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Educandato"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Educandato"
+                }
+            ],
+            "rdfs:subClassOf": {
+                "@id": "school:IstituzioneScolastica"
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "_:b9",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "owl:someValuesFrom": {
+                "@id": "school:IstituzioneScolasticaDiSecondoCiclo"
+            },
+            "owl:onProperty": {
+                "@id": "school:haPuntoDiErogazioneDelServizio"
+            },
+            "@type": "owl:Restriction"
+        },
+        {
+            "@id": "school:SezioneCarceraria",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Sezione Carceraria"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Sezione Carceraria"
+                }
+            ],
+            "rdfs:subClassOf": [
+                {
+                    "@id": "school:PuntoDiErogazioneDelServizio"
+                },
+                {
+                    "@id": "school:IstituzioneScolasticaPerAdulti"
+                },
+                {
+                    "@id": "school:IstituzioneScolasticaDiSecondoCiclo"
+                }
+            ],
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "school:ScuolaCarcerariaPrimariaESecondariaDiPrimoGrado",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Scuola Carceraria Primaria E Secondaria Di Primo Grado"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Scuola Carceraria Primaria E Secondaria Di Primo Grado"
+                }
+            ],
+            "rdfs:subClassOf": [
+                {
+                    "@id": "school:PuntoDiErogazioneDelServizio"
+                },
+                {
+                    "@id": "school:IstituzioneScolasticaPerAdulti"
+                },
+                {
+                    "@id": "school:IstituzioneScolasticaDiPrimoCiclo"
+                }
+            ],
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "rdfs:range",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "range"
+                },
+                {
+                    "@language": "it",
+                    "@value": "range"
+                }
+            ]
+        },
+        {
+            "@id": "school:SedeCentraleDellaScuolaDelPrimoGrado",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Sede Centrale Della Scuola Del Primo Grado"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Sede Centrale Della Scuola Del Primo Grado"
+                }
+            ],
+            "rdfs:subClassOf": [
+                {
+                    "@id": "_:b12"
+                },
+                {
+                    "@id": "school:IstituzioneScolasticaDiPrimoCiclo"
+                },
+                {
+                    "@id": "school:IstitutoDiRiferimento"
+                }
+            ],
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "_:b12",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "owl:allValuesFrom": {
+                "@id": "school:ScuolaSecondariaDiPrimoGrado"
+            },
+            "owl:onProperty": {
+                "@id": "school:haPuntoDiErogazioneDelServizio"
+            },
+            "@type": "owl:Restriction"
+        },
+        {
+            "@id": "school:IstitutoTecnicoPerAttivitaSociali",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Istituto Tecnico Per Attivita Sociali"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Istituto Tecnico Per Attivita Sociali"
+                }
+            ],
+            "rdfs:subClassOf": {
+                "@id": "school:IstitutoTecnico"
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "_:b15",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "owl:unionOf": {
+                "@list": [
+                    {
+                        "@id": "school:IstitutoProfessionale"
+                    },
+                    {
+                        "@id": "school:IstitutoTecnico"
+                    },
+                    {
+                        "@id": "school:Liceo"
+                    }
+                ]
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "school:SedeCentraleDellaScuolaDelSecondoGrado",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Sede Centrale Della Scuola Del Secondo Grado"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Sede Centrale Della Scuola Del Secondo Grado"
+                }
+            ],
+            "rdfs:subClassOf": [
+                {
+                    "@id": "_:b16"
+                },
+                {
+                    "@id": "school:IstituzioneScolasticaDiSecondoCiclo"
+                },
+                {
+                    "@id": "school:IstitutoDiRiferimento"
+                }
+            ],
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "_:b16",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "owl:allValuesFrom": {
+                "@id": "_:b24"
+            },
+            "owl:onProperty": {
+                "@id": "school:haPuntoDiErogazioneDelServizio"
+            },
+            "@type": "owl:Restriction"
+        },
+        {
+            "@id": "school:CentroProvincialiIstruzioneDegliAdulti",
+            "@type": "owl:Class",
+            "rdfs:label": [
+                {
+                    "@language": "it",
+                    "@value": "Centro Provinciali Istruzione Degli Adulti"
+                },
+                {
+                    "@language": "en",
+                    "@value": "Centro Provinciali Istruzione Degli Adulti"
+                }
+            ],
+            "rdfs:subClassOf": [
+                {
+                    "@id": "school:IstituzioneScolasticaDiPrimoCiclo"
+                },
+                {
+                    "@id": "school:IstitutoDiRiferimento"
+                },
+                {
+                    "@id": "school:IstituzioneScolasticaPerAdulti"
+                },
+                {
+                    "@id": "_:b17"
+                }
+            ],
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            }
+        },
+        {
+            "@id": "_:b17",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "owl:allValuesFrom": {
+                "@id": "_:b22"
+            },
+            "owl:onProperty": {
+                "@id": "school:haPuntoDiErogazioneDelServizio"
+            },
+            "@type": "owl:Restriction"
+        },
+        {
+            "@id": "school:IstitutoTecnicoPerGeometri",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Istituto Tecnico Per Geometri"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Istituto Tecnico Per Geometri"
+                }
+            ],
+            "rdfs:subClassOf": {
+                "@id": "school:IstitutoTecnico"
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "_:b20",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "owl:someValuesFrom": {
+                "@id": "school:ScuolaInfanzia"
+            },
+            "owl:onProperty": {
+                "@id": "school:haPuntoDiErogazioneDelServizio"
+            },
+            "@type": "owl:Restriction"
+        },
+        {
+            "@id": "school:IstitutoDArte",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Istituto D Arte"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Istituto D Arte"
+                }
+            ],
+            "rdfs:subClassOf": [
+                {
+                    "@id": "school:PuntoDiErogazioneDelServizio"
+                },
+                {
+                    "@id": "school:IstituzioneScolasticaDiSecondoCiclo"
+                }
+            ],
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "_:b21",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "@type": "owl:Class",
+            "owl:intersectionOf": {
+                "@list": [
+                    {
+                        "@id": "_:b20"
+                    },
+                    {
+                        "@id": "_:b23"
+                    },
+                    {
+                        "@id": "_:b8"
+                    }
+                ]
+            }
+        },
+        {
+            "@id": "_:b22",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "owl:unionOf": {
+                "@list": [
+                    {
+                        "@id": "school:CentroTerritorialePermanente"
+                    },
+                    {
+                        "@id": "school:ScuolaCarcerariaPrimariaESecondariaDiPrimoGrado"
+                    }
+                ]
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "_:b23",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "owl:someValuesFrom": {
+                "@id": "school:ScuolaPrimaria"
+            },
+            "owl:onProperty": {
+                "@id": "school:haPuntoDiErogazioneDelServizio"
+            },
+            "@type": "owl:Restriction"
+        },
+        {
+            "@id": "school:IstitutoProfessionalePerIServiziCommercialiETuristici",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Istituto Professionale Per I Servizi Commerciali E Turistici"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Istituto Professionale Per I Servizi Commerciali E Turistici"
+                }
+            ],
+            "rdfs:subClassOf": {
+                "@id": "school:IstitutoProfessionale"
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "school:IstitutoTecnicoPerIlTurismo",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Istituto Tecnico Per Il Turismo"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Istituto Tecnico Per Il Turismo"
+                }
+            ],
+            "rdfs:subClassOf": {
+                "@id": "school:IstitutoTecnico"
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "_:b24",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "owl:unionOf": {
+                "@list": [
+                    {
+                        "@id": "school:IstitutoProfessionale"
+                    },
+                    {
+                        "@id": "school:IstitutoTecnico"
+                    },
+                    {
+                        "@id": "school:Liceo"
+                    }
+                ]
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "_:b26",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "owl:allValuesFrom": {
+                "@id": "_:b4"
+            },
+            "owl:onProperty": {
+                "@id": "school:haPuntoDiErogazioneDelServizio"
+            },
+            "@type": "owl:Restriction"
+        },
+        {
+            "@id": "school:IstitutoTecnicoCommerciale",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Istituto Tecnico Commerciale"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Istituto Tecnico Commerciale"
+                }
+            ],
+            "rdfs:subClassOf": {
+                "@id": "school:IstitutoTecnico"
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "school:IstitutoTecnicoNautico",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Istituto Tecnico Nautico"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Istituto Tecnico Nautico"
+                }
+            ],
+            "rdfs:subClassOf": {
+                "@id": "school:IstitutoTecnico"
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "school:IstitutoOmnicomprensivo",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Istituto Omnicomprensivo"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Istituto Omnicomprensivo"
+                }
+            ],
+            "rdfs:subClassOf": {
+                "@id": "school:IstitutoDiRiferimento"
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "_:b29",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "owl:someValuesFrom": {
+                "@id": "school:ScuolaInfanzia"
+            },
+            "owl:onProperty": {
+                "@id": "school:haPuntoDiErogazioneDelServizio"
+            },
+            "@type": "owl:Restriction"
+        },
+        {
+            "@id": "_:b30",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "owl:allValuesFrom": {
+                "@id": "_:b31"
+            },
+            "owl:onProperty": {
+                "@id": "school:haPuntoDiErogazioneDelServizio"
+            },
+            "@type": "owl:Restriction"
+        },
+        {
+            "@id": "_:b31",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "owl:unionOf": {
+                "@list": [
+                    {
+                        "@id": "school:IstitutoProfessionale"
+                    },
+                    {
+                        "@id": "school:IstitutoTecnico"
+                    },
+                    {
+                        "@id": "school:Liceo"
+                    }
+                ]
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "school:IstitutoTecnicoAgrario",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Istituto Tecnico Agrario"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Istituto Tecnico Agrario"
+                }
+            ],
+            "rdfs:subClassOf": {
+                "@id": "school:IstitutoTecnico"
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "rdf:first",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "first"
+                },
+                {
+                    "@language": "it",
+                    "@value": "first"
+                }
+            ]
+        },
+        {
+            "@id": "_:b32",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "owl:allValuesFrom": {
+                "@id": "_:b46"
+            },
+            "owl:onProperty": {
+                "@id": "school:haPuntoDiErogazioneDelServizio"
+            },
+            "@type": "owl:Restriction"
+        },
+        {
+            "@id": "school:Convitto",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Convitto"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Convitto"
+                }
+            ],
+            "rdfs:subClassOf": {
+                "@id": "school:IstituzioneScolastica"
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "school:IstitutoProfessionalePerIServiziSociali",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Istituto Professionale Per I Servizi Sociali"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Istituto Professionale Per I Servizi Sociali"
+                }
+            ],
+            "rdfs:subClassOf": {
+                "@id": "school:IstitutoProfessionale"
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "_:b34",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "owl:someValuesFrom": {
+                "@id": "school:PuntoDiErogazioneDelServizio"
+            },
+            "owl:onProperty": {
+                "@id": "school:haPuntoDiErogazioneDelServizio"
+            },
+            "@type": "owl:Restriction"
+        },
+        {
+            "@id": "school:LiceoArtistico",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Liceo Artistico"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Liceo Artistico"
+                }
+            ],
+            "rdfs:subClassOf": {
+                "@id": "school:Liceo"
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "school:SezioneSerale",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Sezione Serale"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Sezione Serale"
+                }
+            ],
+            "rdfs:subClassOf": [
+                {
+                    "@id": "school:PuntoDiErogazioneDelServizio"
+                },
+                {
+                    "@id": "school:IstituzioneScolasticaPerAdulti"
+                },
+                {
+                    "@id": "school:IstituzioneScolasticaDiSecondoCiclo"
+                }
+            ],
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "school:IstitutoTecnicoIndustriale",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Istituto Tecnico Industriale"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Istituto Tecnico Industriale"
+                }
+            ],
+            "rdfs:subClassOf": {
+                "@id": "school:IstitutoTecnico"
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "school:haSede",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "ha Sede"
+                },
+                {
+                    "@language": "it",
+                    "@value": "ha Sede"
+                }
+            ],
+            "rdfs:range": {
+                "@id": "school:SedeIstituzioneScolastica"
+            },
+            "rdfs:domain": {
+                "@id": "school:IstituzioneScolastica"
+            },
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "school:SedeIstituzioneScolastica",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Sede Istituzione Scolastica"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Sede Istituzione Scolastica"
+                }
+            ],
+            "rdfs:subClassOf": [
+                {
+                    "@id": "_:b48"
+                },
+                {
+                    "@id": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
+                }
+            ],
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "school:IstitutoTecnicoAeronautico",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Istituto Tecnico Aeronautico"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Istituto Tecnico Aeronautico"
+                }
+            ],
+            "rdfs:subClassOf": {
+                "@id": "school:IstitutoTecnico"
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "_:b37",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "@type": "owl:Class",
+            "owl:intersectionOf": {
+                "@list": [
+                    {
+                        "@id": "_:b29"
+                    },
+                    {
+                        "@id": "_:b3"
+                    }
+                ]
+            }
+        },
+        {
+            "@id": "school:IstitutoProfessionalePerLAgricolturaELAmbiente",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Istituto Professionale Per L Agricoltura EL Ambiente"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Istituto Professionale Per L Agricoltura EL Ambiente"
+                }
+            ],
+            "rdfs:subClassOf": {
+                "@id": "school:IstitutoProfessionale"
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "school:IstitutoProfessionalePerLIndustriaELeAttivitaMarinare",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Istituto Professionale Per L Industria E Le Attivita Marinare"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Istituto Professionale Per L Industria E Le Attivita Marinare"
+                }
+            ],
+            "rdfs:subClassOf": {
+                "@id": "school:IstitutoProfessionale"
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "school:LiceoClassico",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Liceo Classico"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Liceo Classico"
+                }
+            ],
+            "rdfs:subClassOf": [
+                {
+                    "@id": "school:Liceo"
+                },
+                {
+                    "@id": "school:IstituzioneScolasticaDiSecondoCiclo"
+                }
+            ],
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "school:ScuolaMagistrale",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Scuola Magistrale"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Scuola Magistrale"
+                }
+            ],
+            "rdfs:subClassOf": [
+                {
+                    "@id": "school:PuntoDiErogazioneDelServizio"
+                },
+                {
+                    "@id": "school:IstituzioneScolasticaDiSecondoCiclo"
+                }
+            ],
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "rdfs:isDefinedBy",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "is Defined By"
+                },
+                {
+                    "@language": "it",
+                    "@value": "is Defined By"
+                }
+            ]
+        },
+        {
+            "@id": "_:b41",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:subClassOf": {
+                "@id": "_:b42"
+            },
+            "@type": "owl:Class",
+            "owl:intersectionOf": {
+                "@list": [
+                    {
+                        "@id": "school:IstitutoOmnicomprensivo"
+                    },
+                    {
+                        "@id": "school:IstituzioneScolasticaDiSecondoCiclo"
+                    }
+                ]
+            }
+        },
+        {
+            "@id": "_:b42",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "owl:someValuesFrom": {
+                "@id": "school:IstituzioneScolasticaDiPrimoCiclo"
+            },
+            "owl:onProperty": {
+                "@id": "school:haPuntoDiErogazioneDelServizio"
+            },
+            "@type": "owl:Restriction"
+        },
+        {
+            "@id": "school:ScuolaPerUtenzaConBisogniSpeciali",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Scuola Per Utenza Con Bisogni Speciali"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Scuola Per Utenza Con Bisogni Speciali"
+                }
+            ],
+            "rdfs:subClassOf": {
+                "@id": "school:IstituzioneScolastica"
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "rdfs:subClassOf",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "sub Class Of"
+                },
+                {
+                    "@language": "it",
+                    "@value": "sub Class Of"
+                }
+            ]
+        },
+        {
+            "@id": "school:IstitutoComprensivo",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Istituto Comprensivo"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Istituto Comprensivo"
+                }
+            ],
+            "rdfs:subClassOf": [
+                {
+                    "@id": "_:b21"
+                },
+                {
+                    "@id": "school:IstituzioneScolasticaDiPrimoCiclo"
+                },
+                {
+                    "@id": "school:IstitutoDiRiferimento"
+                }
+            ],
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "school:IstitutoProfessionalePerLaCinematografiaELaTelevisione",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:subClassOf": {
+                "@id": "school:IstitutoProfessionale"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Istituto Professionale Per La Cinematografia E La Televisione"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Istituto Professionale Per La Cinematografia E La Televisione"
+                }
+            ],
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "rdf:subject",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "subject"
+                },
+                {
+                    "@language": "it",
+                    "@value": "subject"
+                }
+            ]
+        },
+        {
+            "@id": "_:b46",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "owl:unionOf": {
+                "@list": [
+                    {
+                        "@id": "school:SezioneCarceraria"
+                    },
+                    {
+                        "@id": "school:SezioneSerale"
+                    }
+                ]
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "rdf:type",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "type"
+                },
+                {
+                    "@language": "it",
+                    "@value": "type"
+                }
+            ]
+        },
+        {
+            "@id": "school:CircoloDidattico",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Circolo Didattico"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Circolo Didattico"
+                }
+            ],
+            "rdfs:subClassOf": [
+                {
+                    "@id": "_:b37"
+                },
+                {
+                    "@id": "school:IstituzioneScolasticaDiPrimoCiclo"
+                },
+                {
+                    "@id": "school:IstitutoDiRiferimento"
+                }
+            ],
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "_:b47",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "owl:allValuesFrom": {
+                "@id": "_:b54"
+            },
+            "owl:onProperty": {
+                "@id": "school:haPuntoDiErogazioneDelServizio"
+            },
+            "@type": "owl:Restriction"
+        },
+        {
+            "@id": "_:b48",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "owl:allValuesFrom": {
+                "@id": "https://w3id.org/italia/onto/CLV/Address"
+            },
+            "owl:onProperty": {
+                "@id": "https://w3id.org/italia/onto/CLV/hasAddress"
+            },
+            "@type": "owl:Restriction"
+        },
+        {
+            "@id": "rdfs:subPropertyOf",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "sub Property Of"
+                },
+                {
+                    "@language": "it",
+                    "@value": "sub Property Of"
+                }
+            ]
+        },
+        {
+            "@id": "_:b49",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "owl:unionOf": {
+                "@list": [
+                    {
+                        "@id": "school:SezioneCarceraria"
+                    },
+                    {
+                        "@id": "school:SezioneSerale"
+                    }
+                ]
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "_:b50",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:subClassOf": {
+                "@id": "_:b9"
+            },
+            "@type": "owl:Class",
+            "owl:intersectionOf": {
+                "@list": [
+                    {
+                        "@id": "school:IstitutoOmnicomprensivo"
+                    },
+                    {
+                        "@id": "school:IstituzioneScolasticaDiPrimoCiclo"
+                    }
+                ]
+            }
+        },
+        {
+            "@id": "school:ScuolaParitaria",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Scuola Paritaria"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Scuola Paritaria"
+                }
+            ],
+            "rdfs:subClassOf": [
+                {
+                    "@id": "https://w3id.org/italia/onto/COV/PrivateOrganization"
+                },
+                {
+                    "@id": "school:IstituzioneScolastica"
+                }
+            ],
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "rdf:rest",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "rest"
+                },
+                {
+                    "@language": "it",
+                    "@value": "rest"
+                }
+            ]
+        },
+        {
+            "@id": "rdfs:seeAlso",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "see Also"
+                },
+                {
+                    "@language": "it",
+                    "@value": "see Also"
+                }
+            ]
+        },
+        {
+            "@id": "rdfs:label",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "label"
+                },
+                {
+                    "@language": "it",
+                    "@value": "label"
+                }
+            ]
+        },
+        {
+            "@id": "_:b54",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "owl:unionOf": {
+                "@list": [
+                    {
+                        "@id": "school:SezioneCarceraria"
+                    },
+                    {
+                        "@id": "school:SezioneSerale"
+                    }
+                ]
+            },
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "school:IstitutoMagistrale",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Istituto Magistrale"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Istituto Magistrale"
+                }
+            ],
+            "rdfs:subClassOf": [
+                {
+                    "@id": "school:PuntoDiErogazioneDelServizio"
+                },
+                {
+                    "@id": "school:IstituzioneScolasticaDiSecondoCiclo"
+                }
+            ],
+            "@type": "owl:Class"
+        },
+        {
+            "@id": "_:b55",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "owl:someValuesFrom": {
+                "@id": "school:SedeIstituzioneScolastica"
+            },
+            "owl:onProperty": {
+                "@id": "school:haSede"
+            },
+            "@type": "owl:Restriction"
+        },
+        {
+            "@id": "school:haPuntoDiErogazioneDiSezioneSeraleOCarceraria",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "ha Punto Di Erogazione Di Sezione Serale O Carceraria"
+                },
+                {
+                    "@language": "it",
+                    "@value": "ha Punto Di Erogazione Di Sezione Serale O Carceraria"
+                }
+            ],
+            "rdfs:range": {
+                "@id": "_:b49"
+            },
+            "rdfs:domain": {
+                "@id": "_:b15"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "school:haPuntoDiErogazioneDelServizio"
+            },
+            "@type": "owl:ObjectProperty"
+        },
+        {
+            "@id": "rdf:predicate",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "predicate"
+                },
+                {
+                    "@language": "it",
+                    "@value": "predicate"
+                }
+            ]
+        },
+        {
+            "@id": "school:IstitutoDiIstruzioneSecondariaSuperiore",
+            "owl:versionInfo": [
+                {
+                    "@language": "en",
+                    "@value": "unstable"
+                },
+                {
+                    "@language": "it",
+                    "@value": "non stabile"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "https://w3id.org/italia/onto/School"
+            },
+            "rdfs:label": [
+                {
+                    "@language": "en",
+                    "@value": "Istituto Di Istruzione Secondaria Superiore"
+                },
+                {
+                    "@language": "it",
+                    "@value": "Istituto Di Istruzione Secondaria Superiore"
+                }
+            ],
+            "rdfs:subClassOf": [
+                {
+                    "@id": "_:b30"
+                },
+                {
+                    "@id": "school:IstituzioneScolasticaDiSecondoCiclo"
+                },
+                {
+                    "@id": "school:IstitutoDiRiferimento"
+                }
+            ],
+            "@type": "owl:Class"
+        }
+    ],
+    "@context": {
+        "admsapit": "https://w3id.org/italia/onto/ADMS/",
+        "l0": "https://w3id.org/italia/onto/l0/",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "vcard": "http://www.w3.org/2006/vcard/ns#",
+        "dct": "http://purl.org/dc/terms/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "school": "https://w3id.org/italia/onto/School/",
+        "xml": "http://www.w3.org/XML/1998/namespace",
+        "dcat": "http://www.w3.org/ns/dcat#",
+        "prov": "http://www.w3.org/ns/prov#",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "@vocab": "https://w3id.org/italia/onto/School/"
+    }
+}
