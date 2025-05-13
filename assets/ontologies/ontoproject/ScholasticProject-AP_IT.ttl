@@ -1,0 +1,248 @@
+@prefix : <https://w3id.org/italia/onto/ScholasticProject/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sproject: <https://w3id.org/italia/onto/ScholasticProject/> .
+@base <https://w3id.org/italia/onto/ScholasticProject/> .
+
+<https://w3id.org/italia/onto/ScholasticProject> rdf:type owl:Ontology ;
+
+                                        dc:description <https://raw.githubusercontent.com/luigi-asprino/education/refs/heads/main/assets/ontologies/ontoproject/ScholasticProject.png> ;
+                                       dct:creator <https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab> ,
+                                                                                 <https://w3id.org/italia/data/public-organization/INDIRE> ;
+                                       dct:description "Questa ontologia che descrive i progetti realizzati dalle scuole italiane."@it ,
+                                                                                     "This ontology describes the projects conducted by Italian schools."@en ;
+                                      rdfs:comment "Questa ontologia che descrive i progetti realizzati dalle scuole italiane."@it ,
+                                                                                     "This ontology describes the projects conducted by Italian schools."@en ;
+                                                                                     dct:identifier "https://w3id.org/italia/onto/School" ;
+                                                                                     dct:issued "2025-05-19"^^xsd:date ;
+                                                                                     dct:modified "2025-05-19"^^xsd:date ;
+                                                                                     dct:language <http://publications.europa.eu/resource/authority/language/ENG> ,
+                                                 <http://publications.europa.eu/resource/authority/language/ITA> ;
+                                                 dct:publisher <https://w3id.org/italia/data/public-organization/PCM-1RSIZZ>;
+                                                 dct:rightsHolder <https://w3id.org/italia/data/public-organization/INDIRE> ;
+                                                 dct:title "ScholasticProject-AP_IT"@it ;
+                                                 dct:title "ScholasticProject-AP_IT"@en ;
+                                                 rdfs:label "ScholasticProject-AP_IT"@it ;
+                                                 rdfs:label "ScholasticProject-AP_IT"@en ;
+                                                 owl:versionInfo "Version 0.1 - updated on 19th of May 2025 - First release"@en ,
+                                                 "Versione 0.1 - aggiornata il 19/05/2025 - Primo rilascio"@en ;
+                                                 dcat:contactPoint <https://w3id.org/italia/data/contact-point/INDIRE> ;
+                                                 dcat:keyword "scuola", "project" ;
+                                                 dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDUC> ;
+                                                 prov:wasDerivedFrom <https://w3id.org/italia/onto/ScholasticProject/0.1> ;
+                                                 admsapit:acronym "ScholasticProject-AP_IT" ;
+                                    admsapit:hasContributor <https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab> ;
+                                    admsapit:hasFormalityLevel admsapit:Formal ;
+                                    admsapit:hasKeyClass :ScholasticProject  ;
+                                    admsapit:hasOntologyLanguage admsapit:OWL ;
+                                    admsapit:hasSemanticAssetDistribution <https://w3id.org/italia/data/distribution/ScholasticProject-AP_IT-JSON-LD> ,
+                                                                          <https://w3id.org/italia/data/distribution/ScholasticProject-AP_IT-RDF-TURTLE> ,
+                                                                          <https://w3id.org/italia/data/distribution/ScholasticProject-AP_IT-RDF-XML> ;
+                                    admsapit:hasTask admsapit:AnnotationTask ,
+                                                     admsapit:QueryFormulationTask ;
+                                    admsapit:last <https://w3id.org/italia/onto/ScholasticProject/0.1> ;
+                                    admsapit:officialURI "https://w3id.org/italia/onto/ScholasticProject"^^xsd:anyURI ;
+                                    admsapit:prefix "sproject" ;
+                                    admsapit:prev <https://w3id.org/italia/onto/ScholasticProject/0.1> ;
+                                    admsapit:semanticAssetInUse <https://w3id.org/italia/data/project/NDC> ,
+                                                                <https://w3id.org/italia/data/project/OntoPiA> ;
+                                    admsapit:status "catalogued" ,
+                                                    "published" ;
+                                    admsapit:target "Imprese" ,
+                                                    "Pubbliche Amministrazioni" ;
+                                    admsapit:type admsapit:DomainOntology ;
+
+dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+
+                                                  owl:versionIRI <https://w3id.org/italia/onto/ScholasticProject/0.1> ;
+                                                  owl:imports <https://w3id.org/italia/onto/School> ,
+                                                              <https://w3id.org/italia/onto/Project/0.3> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/italia/onto/ScholasticProject/conductsScholasticProject
+sproject:conductsScholasticProject rdf:type owl:ObjectProperty ;
+                                   rdfs:domain <https://w3id.org/italia/onto/School/IstituzioneScolastica> ;
+                                   rdfs:range sproject:ScholasticProject ;
+                                   rdfs:comment "La proprietà lega una istituzione scolastica ai progetti da essa realizzati."@it ,
+                                                "Property that links a scholastic institution to one of its projects."@en ;
+                                   rdfs:label "conduce progetto scolastico"@it ,
+                                              "conducts scholastic project"@en .
+
+
+###  https://w3id.org/italia/onto/ScholasticProject/hasScholasticProjectScope
+sproject:hasScholasticProjectScope rdf:type owl:ObjectProperty ;
+                                   rdfs:domain sproject:ScholasticProject ;
+                                   rdfs:range sproject:ScholasticProjectScope ;
+                                   rdfs:comment "La proprietà connette un progetto scolastico con i suoi ambiti di interesse."@it ,
+                                                "Property connects a scholastic project with its scope."@en ;
+                                   rdfs:label "ha ambito di progetto scolastico"@it ,
+                                              "has scholastic project scope"@en .
+
+
+###  https://w3id.org/italia/onto/ScholasticProject/hasScholasticProjectTheme
+sproject:hasScholasticProjectTheme rdf:type owl:ObjectProperty ;
+                                   rdfs:domain sproject:ScholasticProject ;
+                                   rdfs:range sproject:ScholasticProjectTheme ;
+                                   rdfs:comment "La proprietà connette un progetto scolastico con il suo tema."@it ,
+                                                "The property connects a school project with its theme."@en ,
+                                                "ha tema di progetto scolastico"@it ,
+                                                "has scholastic project theme"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/italia/onto/ScholasticProject/ScholasticProject
+sproject:ScholasticProject rdf:type owl:Class ;
+                           rdfs:subClassOf <https://w3id.org/italia/onto/Project/PublicInvestmentProject> ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty sproject:hasScholasticProjectScope ;
+                                             owl:allValuesFrom sproject:ScholasticProjectScope
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty sproject:hasScholasticProjectTheme ;
+                                             owl:allValuesFrom sproject:ScholasticProjectTheme
+                                           ] ;
+                           rdfs:comment "La classe che rappresenta i progetti di pubblico investimento realizzati da istituzioni scolastiche"@it ,
+                                        "This is the class that includes the projects conducted by the schools."@en ;
+                           rdfs:label "Progetto Scolastico"@it ,
+                                      "Scholastic Project"@en .
+
+
+###  https://w3id.org/italia/onto/ScholasticProject/ScholasticProjectScope
+sproject:ScholasticProjectScope rdf:type owl:Class ;
+                                rdfs:subClassOf <https://w3id.org/italia/onto/l0/Concept> ;
+                                rdfs:comment "La classe che include gli ambiti dei progetti scolastici."@it ,
+                                             "This is the class of the Scholastic Project Scopes."@en ;
+                                rdfs:label "Ambito del Progetto Scolastico"@it ,
+                                           "Scholastic Project Scope"@en .
+
+
+###  https://w3id.org/italia/onto/ScholasticProject/ScholasticProjectTheme
+sproject:ScholasticProjectTheme rdf:type owl:Class ;
+                                rdfs:subClassOf <https://w3id.org/italia/onto/l0/Concept> ;
+                                rdfs:comment "Questa classe include i temi dei progetti scolastici."@it ,
+                                             "This is the class of the Themes of the Scholastic Project."@en ;
+                                rdfs:label "Scholastic Project Theme"@en ,
+                                           "Tema del Progetto Scolastico"@it .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
+
+
+### https://w3id.org/italia/data/public-organization/PCM-1RSIZZ
+<https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> rdf:type <http://dati.gov.it/onto/dcatapit#Agent> ,
+   foaf:Agent ;
+   dct:identifier "PCM-1RSIZZ" ;
+   foaf:name "Dipartimento per la Trasformazione Digitale della Presidenza del Consiglio dei Ministri"@it,
+   "Digital Transformation Department of the Presidency of the Council of Ministers"@en .
+
+
+
+###  https://w3id.org/italia/data/distribution/School-AP_IT-JSON-LD
+<https://w3id.org/italia/data/distribution/ScholasticProject-AP_IT-JSON-LD> rdf:type owl:NamedIndividual ,
+                                                                     admsapit:SemanticAssetDistribution ;
+                                                            dct:description "Questa è la distribuzione JSON-LD dell'ontologia dei progetti scolastici"@it ,
+                                                                            "This is the distribution in JSON-LD of the scholastic project ontology"@en ;
+                                                            dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+                                                            dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+                                                            dct:title "Distribuzione JSON-LD ontologia ScholasticProject-AP_IT"@it ,
+                                                                      "JSON-LD distribution of the ScholasticProject-AP_IT Ontology"@en ;
+                                                            dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/ScholasticProject/latest> ;
+                                                            dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/ScholasticProject/latest/ScholasticProject-AP_IT.jsonld> .
+
+
+###  https://w3id.org/italia/data/distribution/School-AP_IT-RDF-TURTLE
+<https://w3id.org/italia/data/distribution/ScholasticProject-AP_IT-RDF-TURTLE> rdf:type owl:NamedIndividual ,
+                                                                        admsapit:SemanticAssetDistribution ;
+                                                               dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia dei progetti scolastici"@it ,
+                                                                               "This is the distribution in RDF/turtle of the scholastic project ontology"@en ;
+                                                               dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+                                                               dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+                                                               dct:title "Distribuzione RDF/Turtle ontologia School-AP_IT"@it ,
+                                                                         "RDF/Turtle distribution of School-AP_IT Ontology"@en ;
+                                                               dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/ScholasticProject/latest> ;
+                                                               dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/ScholasticProject/latest/ScholasticProject-AP_IT.ttl> .
+
+
+###  https://w3id.org/italia/data/distribution/School-AP_IT-RDF-XML
+<https://w3id.org/italia/data/distribution/ScholasticProject-AP_IT-RDF-XML> rdf:type owl:NamedIndividual ,
+                                                                     admsapit:SemanticAssetDistribution ;
+                                                            dct:description "Questa è la distribuzione RDF/XML dell'ontologia dei progetti scolastici"@it ,
+                                                                            "This is the distribution in RDF/XML of the scholastic project ontology"@en ;
+                                                            dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
+                                                            dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+                                                            dct:title "Distribuzione RDF/XML ontologia ScholasticProject-AP_IT"@it ,
+                                                                      "RDF/XML distribution of ScholasticProject-AP_IT Ontology"@en ;
+                                                            dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/ScholasticProject/latest> ;
+                                                            dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/ScholasticProject/latest/ScholasticProject-AP_IT.rdf> .
+
+
+###  https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab
+<https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab> rdf:type owl:NamedIndividual ,
+                                                                                   <http://dati.gov.it/onto/dcatapit#Agent> ,
+                                                                                   foaf:Agent ;
+                                                                          dct:identifier "cnr - Z6HZEH - STLab" ;
+                                                                          foaf:name "Institute of Cognitive Sciences and Technologies of the Italian Research Council (CNR) - Semantic Technology Laboratory (STLab)"@en ,
+                                                                                    "Istituto di Scienze e Tecnologie della Cognizione del CNR - Semantic Technology Lab (STLab)"@it .
+
+
+###  https://w3id.org/italia/data/project/NDC
+<https://w3id.org/italia/data/project/NDC> rdf:type owl:NamedIndividual ,
+                                                    admsapit:Project ;
+                                           l0:name "National Data Catalog - schema.gov.it"@it .
+
+
+###  https://w3id.org/italia/data/project/OntoPiA
+<https://w3id.org/italia/data/project/OntoPiA> rdf:type owl:NamedIndividual ,
+                                                        admsapit:Project ;
+                                               l0:name "OntoPiA - la rete di ontologie della pubblica amministrazione italiana"@it .
+
+
+
+
+###  https://w3id.org/italia/onto/School
+<https://w3id.org/italia/onto/ScholasticProject> rdf:type owl:NamedIndividual ,
+                                            admsapit:SemanticAsset .
+
+
+                                            ###  https://w3id.org/italia/data/contact-point/ISTAT-NDC
+<https://w3id.org/italia/data/contact-point/INDIRE> rdf:type owl:NamedIndividual ,
+                                                                <http://dati.gov.it/onto/dcatapit#Organization> ,
+                                                                vcard:Kind ,
+                                                                vcard:Organization ;
+                                                       vcard:fn "Ufficio Relazioni con il Pubblico - INDIRE" ;
+                                                       vcard:hasEmail <mailto:urp@indire.it> .
+
+
+###  https://w3id.org/italia/data/public-organization/INDIRE
+<https://w3id.org/italia/data/public-organization/INDIRE> rdf:type owl:NamedIndividual ,
+                                                                  <http://dati.gov.it/onto/dcatapit#Agent> ,
+                                                                  foaf:Agent ;
+                                                         dct:identifier "INDIRE" ;
+                                                         foaf:name "Istituto Nazionale di Documentazione, Innovazione e Ricerca Educativa - INDIRE"@it ,
+                                                                   "Italian National Institute for Documentation, Innovation and Educational Research - INDIRE"@en .
+
+###  https://w3id.org/italia/data/public-organization/ISTAT
+<https://w3id.org/italia/data/public-organization/ISTAT> rdf:type owl:NamedIndividual ,
+                                                                  <http://dati.gov.it/onto/dcatapit#Agent> ,
+                                                                  foaf:Agent ;
+                                                         dct:identifier "ISTAT" ;
+                                                         foaf:name "Istituto Nazionale di Statistica - ISTAT"@it ,
+                                                                   "Italian National Institute of Statistics - ISTAT"@en .
+
+
+###  https://w3id.org/italia/data/contact-point/ISTAT-NDC
+<https://w3id.org/italia/data/contact-point/ISTAT-NDC> rdf:type owl:NamedIndividual ,
+                                                                <http://dati.gov.it/onto/dcatapit#Organization> ,
+                                                                vcard:Kind ,
+                                                                vcard:Organization ;
+                                                       vcard:fn "Segreteria Tecnica Istat - Progetto PNRR National Data Catalog" ;
+                                                       vcard:hasEmail <mailto:ndc-segr-tec@istat.it> .
