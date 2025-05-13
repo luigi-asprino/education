@@ -429,20 +429,6 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiSecondoCiclo"/>
   </owl:Class>
-  <owl:Class>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiPrimoCiclo"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/School/haPuntoDiErogazioneDelServizio"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <owl:intersectionOf rdf:parseType="Collection">
-      <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoOmnicomprensivo"/>
-      <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiSecondoCiclo"/>
-    </owl:intersectionOf>
-  </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoDiRiferimento">
     <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
@@ -483,6 +469,20 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiSecondoCiclo"/>
     <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/IstitutoDiRiferimento"/>
+  </owl:Class>
+  <owl:Class>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiSecondoCiclo"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/School/haPuntoDiErogazioneDelServizio"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:intersectionOf rdf:parseType="Collection">
+      <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoOmnicomprensivo"/>
+      <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiPrimoCiclo"/>
+    </owl:intersectionOf>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/Convitto">
     <owl:versionInfo>unstable</owl:versionInfo>
@@ -603,6 +603,20 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/COV/Organization"/>
   </owl:Class>
+  <owl:Class>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiPrimoCiclo"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/School/haPuntoDiErogazioneDelServizio"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:intersectionOf rdf:parseType="Collection">
+      <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoOmnicomprensivo"/>
+      <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiSecondoCiclo"/>
+    </owl:intersectionOf>
+  </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoTecnicoAgrario">
     <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
@@ -700,20 +714,6 @@
     <rdfs:label xml:lang="it">Scuola Primaria</rdfs:label>
     <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/School/PuntoDiErogazioneDelServizio"/>
   </owl:Class>
-  <owl:Class>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiSecondoCiclo"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/School/haPuntoDiErogazioneDelServizio"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <owl:intersectionOf rdf:parseType="Collection">
-      <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoOmnicomprensivo"/>
-      <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstituzioneScolasticaDiPrimoCiclo"/>
-    </owl:intersectionOf>
-  </owl:Class>
   <owl:Class rdf:about="https://w3id.org/italia/onto/School/IstitutoProfessionalePerIServiziCommercialiETuristici">
     <owl:versionInfo>unstable</owl:versionInfo>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
@@ -800,4 +800,18 @@
     </rdfs:domain>
     <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/School/haPuntoDiErogazioneDelServizio"/>
   </owl:ObjectProperty>
+  <vcard:Organization rdf:about="https://w3id.org/italia/data/contact-point/ISTAT-NDC">
+    <vcard:hasEmail rdf:resource="mailto:ndc-segr-tec@istat.it"/>
+    <vcard:fn>Segreteria Tecnica Istat - Progetto PNRR National Data Catalog</vcard:fn>
+    <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
+    <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Organization"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </vcard:Organization>
+  <foaf:Agent rdf:about="https://w3id.org/italia/data/public-organization/ISTAT">
+    <foaf:name xml:lang="en">Italian National Institute of Statistics - ISTAT</foaf:name>
+    <foaf:name xml:lang="it">Istituto Nazionale di Statistica - ISTAT</foaf:name>
+    <dct:identifier>ISTAT</dct:identifier>
+    <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </foaf:Agent>
 </rdf:RDF>

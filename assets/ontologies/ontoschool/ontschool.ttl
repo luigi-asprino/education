@@ -569,6 +569,22 @@ rdfs:label "Istituto Professionale Per La Cinematografia E La Televisione"@it, "
                                                          foaf:name "Istituto Nazionale di Documentazione, Innovazione e Ricerca Educativa - INDIRE"@it ,
                                                                    "Italian National Institute for Documentation, Innovation and Educational Research - INDIRE"@en .
 
+###  https://w3id.org/italia/data/public-organization/ISTAT
+<https://w3id.org/italia/data/public-organization/ISTAT> rdf:type owl:NamedIndividual ,
+                                                                  <http://dati.gov.it/onto/dcatapit#Agent> ,
+                                                                  foaf:Agent ;
+                                                         dct:identifier "ISTAT" ;
+                                                         foaf:name "Istituto Nazionale di Statistica - ISTAT"@it ,
+                                                                   "Italian National Institute of Statistics - ISTAT"@en .
+
+
+###  https://w3id.org/italia/data/contact-point/ISTAT-NDC
+<https://w3id.org/italia/data/contact-point/ISTAT-NDC> rdf:type owl:NamedIndividual ,
+                                                                <http://dati.gov.it/onto/dcatapit#Organization> ,
+                                                                vcard:Kind ,
+                                                                vcard:Organization ;
+                                                       vcard:fn "Segreteria Tecnica Istat - Progetto PNRR National Data Catalog" ;
+                                                       vcard:hasEmail <mailto:ndc-segr-tec@istat.it> .
 
 
 
