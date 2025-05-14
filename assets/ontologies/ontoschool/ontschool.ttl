@@ -20,9 +20,9 @@
                                        owl:versionIRI <https://w3id.org/italia/onto/School/0.1> ;
                                        owl:imports 
                                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> ,
-                                                   <https://w3id.org/italia/onto/CLV> ,
-                                                   <https://w3id.org/italia/onto/COV> ,
-                                                   <https://w3id.org/italia/onto/RO> ;
+                                                   <https://w3id.org/italia/onto/CLV/1.0> ,
+                                                   <https://w3id.org/italia/onto/COV/0.12> ,
+                                                   <https://w3id.org/italia/onto/RO/0.3> ;
                                         dc:description <https://raw.githubusercontent.com/luigi-asprino/education/refs/heads/main/assets/ontologies/ontoschool/School.png> ;
                                        dct:creator <https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab> ,
                                                                                  <https://w3id.org/italia/data/public-organization/INDIRE> ;
@@ -501,7 +501,7 @@ rdfs:label "Istituto Professionale Per La Cinematografia E La Televisione"@it, "
 ###  https://w3id.org/italia/data/distribution/School-AP_IT-RDF-TURTLE
 <https://w3id.org/italia/data/distribution/School-AP_IT-RDF-TURTLE> rdf:type owl:NamedIndividual ,
                                                                         admsapit:SemanticAssetDistribution ;
-                                                               dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia delle persone"@it ,
+                                                               dct:description "Questa è la distribuzione RDF/Turtle dell'ontologia della scuola"@it ,
                                                                                "This is the distribution in RDF/turtle of the persons ontology"@en ;
                                                                dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
                                                                dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
@@ -514,7 +514,7 @@ rdfs:label "Istituto Professionale Per La Cinematografia E La Televisione"@it, "
 ###  https://w3id.org/italia/data/distribution/School-AP_IT-RDF-XML
 <https://w3id.org/italia/data/distribution/School-AP_IT-RDF-XML> rdf:type owl:NamedIndividual ,
                                                                      admsapit:SemanticAssetDistribution ;
-                                                            dct:description "Questa è la distribuzione RDF/XML dell'ontologia delle persone"@it ,
+                                                            dct:description "Questa è la distribuzione RDF/XML dell'ontologia della scuola"@it ,
                                                                             "This is the distribution in RDF/XML of the persons ontology"@en ;
                                                             dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
                                                             dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;

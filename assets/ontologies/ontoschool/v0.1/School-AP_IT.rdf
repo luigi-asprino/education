@@ -4,7 +4,6 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:l0="https://w3id.org/italia/onto/l0/"
      xmlns:ns="http://www.w3.org/2006/vcard/ns#"
-     xmlns:CLV="https://w3id.org/italia/onto/CLV/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -18,9 +17,9 @@
     <owl:Ontology rdf:about="https://w3id.org/italia/onto/School">
         <owl:versionIRI rdf:resource="https://w3id.org/italia/onto/School/0.1"/>
         <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
-        <owl:imports rdf:resource="https://w3id.org/italia/onto/CLV"/>
-        <owl:imports rdf:resource="https://w3id.org/italia/onto/COV"/>
-        <owl:imports rdf:resource="https://w3id.org/italia/onto/RO"/>
+        <owl:imports rdf:resource="https://w3id.org/italia/onto/CLV/1.0"/>
+        <owl:imports rdf:resource="https://w3id.org/italia/onto/COV/0.12"/>
+        <owl:imports rdf:resource="https://w3id.org/italia/onto/RO/0.3"/>
         <dc:description rdf:resource="https://raw.githubusercontent.com/luigi-asprino/education/refs/heads/main/assets/ontologies/ontoschool/School.png"/>
         <terms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
         <terms:creator rdf:resource="https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab"/>
@@ -90,10 +89,262 @@
     
 
 
+    <!-- http://purl.org/dc/terms/accrualPeriodicity -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/accrualPeriodicity"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/format -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/format"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/language -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/language"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rightsHolder -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rightsHolder"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#fn -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#fn"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#hasEmail -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasEmail"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#accessURL -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#accessURL"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#contactPoint -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#contactPoint"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#downloadURL -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#downloadURL"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#keyword -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#keyword"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#theme -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#theme"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/acronym -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/acronym"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasContributor -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasContributor"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasFormalityLevel -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasFormalityLevel"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasKeyClass -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasKeyClass"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasOntologyLanguage -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasOntologyLanguage"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasTask -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasTask"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/last -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/last"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/officialURI -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/officialURI"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/prefix -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/prefix"/>
+    
+
+
     <!-- https://w3id.org/italia/onto/ADMS/prev -->
 
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/prev"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/semanticAssetInUse -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/semanticAssetInUse"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/status -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/status"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/target -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/target"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/type -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/type"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/name -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/l0/name"/>
     
 
 
@@ -112,13 +363,13 @@
     <!-- https://w3id.org/italia/onto/CLV/hasAddress -->
 
 
-    <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/hasAddress">
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CLV/hasAddress">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
         <rdfs:label xml:lang="en">has Address</rdfs:label>
         <rdfs:label xml:lang="it">has Address</rdfs:label>
         <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
@@ -186,31 +437,6 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Data properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-    
-
-
-    <!-- https://w3id.org/italia/onto/l0/name -->
-
-
-    <rdf:Description rdf:about="https://w3id.org/italia/onto/l0/name">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-        <rdfs:label xml:lang="en">name</rdfs:label>
-        <rdfs:label xml:lang="it">name</rdfs:label>
-        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    </rdf:Description>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -223,26 +449,26 @@
     <!-- http://dati.gov.it/onto/dcatapit#Agent -->
 
 
-    <rdf:Description rdf:about="http://dati.gov.it/onto/dcatapit#Agent">
+    <owl:Class rdf:about="http://dati.gov.it/onto/dcatapit#Agent">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
         <rdfs:label xml:lang="en">Agent</rdfs:label>
         <rdfs:label xml:lang="it">Agent</rdfs:label>
         <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://dati.gov.it/onto/dcatapit#Organization -->
 
 
-    <rdf:Description rdf:about="http://dati.gov.it/onto/dcatapit#Organization">
+    <owl:Class rdf:about="http://dati.gov.it/onto/dcatapit#Organization">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
         <rdfs:label xml:lang="en">Organization</rdfs:label>
         <rdfs:label xml:lang="it">Organization</rdfs:label>
         <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -262,104 +488,104 @@
     <!-- http://www.w3.org/2006/vcard/ns#Kind -->
 
 
-    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#Kind">
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Kind">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
         <rdfs:label xml:lang="en">Kind</rdfs:label>
         <rdfs:label xml:lang="it">Kind</rdfs:label>
         <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.w3.org/2006/vcard/ns#Organization -->
 
 
-    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#Organization">
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Organization">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
         <rdfs:label xml:lang="en">Organization</rdfs:label>
         <rdfs:label xml:lang="it">Organization</rdfs:label>
         <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/Agent -->
 
 
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent">
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
         <rdfs:label xml:lang="en">Agent</rdfs:label>
         <rdfs:label xml:lang="it">Agent</rdfs:label>
         <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- https://w3id.org/italia/onto/ADMS/Project -->
 
 
-    <rdf:Description rdf:about="https://w3id.org/italia/onto/ADMS/Project">
+    <owl:Class rdf:about="https://w3id.org/italia/onto/ADMS/Project">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
         <rdfs:label xml:lang="en">Project</rdfs:label>
         <rdfs:label xml:lang="it">Project</rdfs:label>
         <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- https://w3id.org/italia/onto/ADMS/SemanticAsset -->
 
 
-    <rdf:Description rdf:about="https://w3id.org/italia/onto/ADMS/SemanticAsset">
+    <owl:Class rdf:about="https://w3id.org/italia/onto/ADMS/SemanticAsset">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
         <rdfs:label xml:lang="en">Semantic Asset</rdfs:label>
         <rdfs:label xml:lang="it">Semantic Asset</rdfs:label>
         <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution -->
 
 
-    <rdf:Description rdf:about="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution">
+    <owl:Class rdf:about="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
         <rdfs:label xml:lang="en">Semantic Asset Distribution</rdfs:label>
         <rdfs:label xml:lang="it">Semantic Asset Distribution</rdfs:label>
         <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- https://w3id.org/italia/onto/CLV/Address -->
 
 
-    <rdf:Description rdf:about="https://w3id.org/italia/onto/CLV/Address">
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/Address">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
         <rdfs:label xml:lang="en">Address</rdfs:label>
         <rdfs:label xml:lang="it">Address</rdfs:label>
         <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- https://w3id.org/italia/onto/COV/Organization -->
 
 
-    <rdf:Description rdf:about="https://w3id.org/italia/onto/COV/Organization">
+    <owl:Class rdf:about="https://w3id.org/italia/onto/COV/Organization">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
         <rdfs:label xml:lang="en">Organization</rdfs:label>
         <rdfs:label xml:lang="it">Organization</rdfs:label>
         <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -1300,7 +1526,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/distribution/School-AP_IT-RDF-TURTLE">
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
-        <terms:description xml:lang="it">Questa è la distribuzione RDF/Turtle dell&apos;ontologia delle persone</terms:description>
+        <terms:description xml:lang="it">Questa è la distribuzione RDF/Turtle dell&apos;ontologia della scuola</terms:description>
         <terms:description xml:lang="en">This is the distribution in RDF/turtle of the persons ontology</terms:description>
         <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
         <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
@@ -1322,7 +1548,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/distribution/School-AP_IT-RDF-XML">
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
-        <terms:description xml:lang="it">Questa è la distribuzione RDF/XML dell&apos;ontologia delle persone</terms:description>
+        <terms:description xml:lang="it">Questa è la distribuzione RDF/XML dell&apos;ontologia della scuola</terms:description>
         <terms:description xml:lang="en">This is the distribution in RDF/XML of the persons ontology</terms:description>
         <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
         <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
@@ -1362,12 +1588,12 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/project/NDC">
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/Project"/>
-        <l0:name xml:lang="it">National Data Catalog - schema.gov.it</l0:name>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
         <rdfs:label xml:lang="en">NDC</rdfs:label>
         <rdfs:label xml:lang="it">NDC</rdfs:label>
         <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
+        <l0:name xml:lang="it">National Data Catalog - schema.gov.it</l0:name>
     </owl:NamedIndividual>
     
 
@@ -1377,12 +1603,12 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/project/OntoPiA">
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/Project"/>
-        <l0:name xml:lang="it">OntoPiA - la rete di ontologie della pubblica amministrazione italiana</l0:name>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
         <rdfs:label xml:lang="en">Onto Pi A</rdfs:label>
         <rdfs:label xml:lang="it">Onto Pi A</rdfs:label>
         <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
+        <l0:name xml:lang="it">OntoPiA - la rete di ontologie della pubblica amministrazione italiana</l0:name>
     </owl:NamedIndividual>
     
 

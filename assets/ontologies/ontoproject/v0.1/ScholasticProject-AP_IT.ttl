@@ -1,0 +1,598 @@
+@prefix : <https://w3id.org/italia/onto/ScholasticProject#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/italia/onto/ScholasticProject#> .
+
+<https://w3id.org/italia/onto/ScholasticProject> rdf:type owl:Ontology ;
+                                                  owl:versionIRI <https://w3id.org/italia/onto/ScholasticProject/0.1> ;
+                                                  owl:imports <https://w3id.org/italia/onto/School> ,
+                                                              <https://w3id.org/italia/onto/Project/0.3> ;
+                                                  <http://purl.org/dc/elements/1.1/description> <https://raw.githubusercontent.com/luigi-asprino/education/refs/heads/main/assets/ontologies/ontoproject/ScholasticProject.png> ;
+                                                  <http://purl.org/dc/terms/accrualPeriodicity> <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+                                                  <http://purl.org/dc/terms/creator> <https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab> ,
+                                                                                     <https://w3id.org/italia/data/public-organization/INDIRE> ;
+                                                  <http://purl.org/dc/terms/description> "Questa ontologia che descrive i progetti realizzati dalle scuole italiane."@it ,
+                                                                                         "This ontology describes the projects conducted by Italian schools."@en ;
+                                                  <http://purl.org/dc/terms/identifier> "https://w3id.org/italia/onto/School" ;
+                                                  <http://purl.org/dc/terms/issued> "2025-05-19"^^xsd:date ;
+                                                  <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG> ,
+                                                                                      <http://publications.europa.eu/resource/authority/language/ITA> ;
+                                                  <http://purl.org/dc/terms/modified> "2025-05-19"^^xsd:date ;
+                                                  <http://purl.org/dc/terms/publisher> <https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> ;
+                                                  <http://purl.org/dc/terms/rightsHolder> <https://w3id.org/italia/data/public-organization/INDIRE> ;
+                                                  <http://purl.org/dc/terms/title> "ScholasticProject-AP_IT"@en ,
+                                                                                   "ScholasticProject-AP_IT"@it ;
+                                                  rdfs:comment "Questa ontologia che descrive i progetti realizzati dalle scuole italiane."@it ,
+                                                               "This ontology describes the projects conducted by Italian schools."@en ;
+                                                  rdfs:label "ScholasticProject-AP_IT"@en ,
+                                                             "ScholasticProject-AP_IT"@it ;
+                                                  owl:versionInfo "Version 0.1 - updated on 19th of May 2025 - First release"@en ,
+                                                                  "Versione 0.1 - aggiornata il 19/05/2025 - Primo rilascio"@en ;
+                                                  <http://www.w3.org/ns/dcat#contactPoint> <https://w3id.org/italia/data/contact-point/INDIRE> ;
+                                                  <http://www.w3.org/ns/dcat#keyword> "project" ,
+                                                                                      "scuola" ;
+                                                  <http://www.w3.org/ns/dcat#theme> <http://publications.europa.eu/resource/authority/data-theme/EDUC> ;
+                                                  <http://www.w3.org/ns/prov#wasDerivedFrom> <https://w3id.org/italia/onto/ScholasticProject/0.1> ;
+                                                  <https://w3id.org/italia/onto/ADMS/acronym> "ScholasticProject-AP_IT" ;
+                                                  <https://w3id.org/italia/onto/ADMS/hasContributor> <https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab> ;
+                                                  <https://w3id.org/italia/onto/ADMS/hasFormalityLevel> <https://w3id.org/italia/onto/ADMS/Formal> ;
+                                                  <https://w3id.org/italia/onto/ADMS/hasKeyClass> <https://w3id.org/italia/onto/ScholasticProject/ScholasticProject> ;
+                                                  <https://w3id.org/italia/onto/ADMS/hasOntologyLanguage> <https://w3id.org/italia/onto/ADMS/OWL> ;
+                                                  <https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> <https://w3id.org/italia/data/distribution/ScholasticProject-AP_IT-JSON-LD> ,
+                                                                                                                   <https://w3id.org/italia/data/distribution/ScholasticProject-AP_IT-RDF-TURTLE> ,
+                                                                                                                   <https://w3id.org/italia/data/distribution/ScholasticProject-AP_IT-RDF-XML> ;
+                                                  <https://w3id.org/italia/onto/ADMS/hasTask> <https://w3id.org/italia/onto/ADMS/AnnotationTask> ,
+                                                                                              <https://w3id.org/italia/onto/ADMS/QueryFormulationTask> ;
+                                                  <https://w3id.org/italia/onto/ADMS/last> <https://w3id.org/italia/onto/ScholasticProject/0.1> ;
+                                                  <https://w3id.org/italia/onto/ADMS/officialURI> "https://w3id.org/italia/onto/ScholasticProject"^^xsd:anyURI ;
+                                                  <https://w3id.org/italia/onto/ADMS/prefix> "sproject" ;
+                                                  <https://w3id.org/italia/onto/ADMS/prev> <https://w3id.org/italia/onto/ScholasticProject/0.1> ;
+                                                  <https://w3id.org/italia/onto/ADMS/semanticAssetInUse> <https://w3id.org/italia/data/project/NDC> ,
+                                                                                                         <https://w3id.org/italia/data/project/OntoPiA> ;
+                                                  <https://w3id.org/italia/onto/ADMS/status> "catalogued" ,
+                                                                                             "published" ;
+                                                  <https://w3id.org/italia/onto/ADMS/target> "Imprese" ,
+                                                                                             "Pubbliche Amministrazioni" ;
+                                                  <https://w3id.org/italia/onto/ADMS/type> <https://w3id.org/italia/onto/ADMS/DomainOntology> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/accrualPeriodicity
+<http://purl.org/dc/terms/accrualPeriodicity> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/format
+<http://purl.org/dc/terms/format> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/language
+<http://purl.org/dc/terms/language> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rightsHolder
+<http://purl.org/dc/terms/rightsHolder> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2006/vcard/ns#fn
+<http://www.w3.org/2006/vcard/ns#fn> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2006/vcard/ns#hasEmail
+<http://www.w3.org/2006/vcard/ns#hasEmail> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#accessURL
+<http://www.w3.org/ns/dcat#accessURL> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#contactPoint
+<http://www.w3.org/ns/dcat#contactPoint> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#downloadURL
+<http://www.w3.org/ns/dcat#downloadURL> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#keyword
+<http://www.w3.org/ns/dcat#keyword> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#theme
+<http://www.w3.org/ns/dcat#theme> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#wasDerivedFrom
+<http://www.w3.org/ns/prov#wasDerivedFrom> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/acronym
+<https://w3id.org/italia/onto/ADMS/acronym> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/hasContributor
+<https://w3id.org/italia/onto/ADMS/hasContributor> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/hasFormalityLevel
+<https://w3id.org/italia/onto/ADMS/hasFormalityLevel> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/hasKeyClass
+<https://w3id.org/italia/onto/ADMS/hasKeyClass> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/hasOntologyLanguage
+<https://w3id.org/italia/onto/ADMS/hasOntologyLanguage> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution
+<https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/hasTask
+<https://w3id.org/italia/onto/ADMS/hasTask> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/last
+<https://w3id.org/italia/onto/ADMS/last> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/officialURI
+<https://w3id.org/italia/onto/ADMS/officialURI> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/prefix
+<https://w3id.org/italia/onto/ADMS/prefix> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/prev
+<https://w3id.org/italia/onto/ADMS/prev> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/semanticAssetInUse
+<https://w3id.org/italia/onto/ADMS/semanticAssetInUse> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/status
+<https://w3id.org/italia/onto/ADMS/status> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/target
+<https://w3id.org/italia/onto/ADMS/target> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/ADMS/type
+<https://w3id.org/italia/onto/ADMS/type> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/italia/onto/l0/name
+<https://w3id.org/italia/onto/l0/name> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/italia/onto/ScholasticProject/conductsScholasticProject
+<https://w3id.org/italia/onto/ScholasticProject/conductsScholasticProject> rdf:type owl:ObjectProperty ;
+                                                                           rdfs:domain <https://w3id.org/italia/onto/School/IstituzioneScolastica> ;
+                                                                           rdfs:range <https://w3id.org/italia/onto/ScholasticProject/ScholasticProject> ;
+                                                                           rdfs:comment "La proprietà lega una istituzione scolastica ai progetti da essa realizzati."@it ,
+                                                                                        "Property that links a scholastic institution to one of its projects."@en ;
+                                                                           rdfs:isDefinedBy <https://w3id.org/italia/onto/ScholasticProject> ;
+                                                                           rdfs:label "conduce progetto scolastico"@it ,
+                                                                                      "conducts Scholastic Project"@en ,
+                                                                                      "conducts Scholastic Project"@it ,
+                                                                                      "conducts scholastic project"@en ;
+                                                                           owl:versionInfo "provvisoria"@it ,
+                                                                                           "unstable"@en .
+
+
+###  https://w3id.org/italia/onto/ScholasticProject/hasScholasticProjectScope
+<https://w3id.org/italia/onto/ScholasticProject/hasScholasticProjectScope> rdf:type owl:ObjectProperty ;
+                                                                           rdfs:domain <https://w3id.org/italia/onto/ScholasticProject/ScholasticProject> ;
+                                                                           rdfs:range <https://w3id.org/italia/onto/ScholasticProject/ScholasticProjectScope> ;
+                                                                           rdfs:comment "La proprietà connette un progetto scolastico con i suoi ambiti di interesse."@it ,
+                                                                                        "Property connects a scholastic project with its scope."@en ;
+                                                                           rdfs:isDefinedBy <https://w3id.org/italia/onto/ScholasticProject> ;
+                                                                           rdfs:label "ha ambito di progetto scolastico"@it ,
+                                                                                      "has Scholastic Project Scope"@en ,
+                                                                                      "has Scholastic Project Scope"@it ,
+                                                                                      "has scholastic project scope"@en ;
+                                                                           owl:versionInfo "provvisoria"@it ,
+                                                                                           "unstable"@en .
+
+
+###  https://w3id.org/italia/onto/ScholasticProject/hasScholasticProjectTheme
+<https://w3id.org/italia/onto/ScholasticProject/hasScholasticProjectTheme> rdf:type owl:ObjectProperty ;
+                                                                           rdfs:domain <https://w3id.org/italia/onto/ScholasticProject/ScholasticProject> ;
+                                                                           rdfs:range <https://w3id.org/italia/onto/ScholasticProject/ScholasticProjectTheme> ;
+                                                                           rdfs:comment "La proprietà connette un progetto scolastico con il suo tema."@it ,
+                                                                                        "The property connects a school project with its theme."@en ,
+                                                                                        "ha tema di progetto scolastico"@it ,
+                                                                                        "has scholastic project theme"@en ;
+                                                                           rdfs:isDefinedBy <https://w3id.org/italia/onto/ScholasticProject> ;
+                                                                           rdfs:label "has Scholastic Project Theme"@en ,
+                                                                                      "has Scholastic Project Theme"@it ;
+                                                                           owl:versionInfo "provvisoria"@it ,
+                                                                                           "unstable"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://dati.gov.it/onto/dcatapit#Agent
+<http://dati.gov.it/onto/dcatapit#Agent> rdf:type owl:Class ;
+                                         rdfs:isDefinedBy <https://w3id.org/italia/onto/ScholasticProject> ;
+                                         rdfs:label "Agent"@en ,
+                                                    "Agent"@it ;
+                                         owl:versionInfo "provvisoria"@it ,
+                                                         "unstable"@en .
+
+
+###  http://dati.gov.it/onto/dcatapit#Organization
+<http://dati.gov.it/onto/dcatapit#Organization> rdf:type owl:Class ;
+                                                rdfs:isDefinedBy <https://w3id.org/italia/onto/ScholasticProject> ;
+                                                rdfs:label "Organization"@en ,
+                                                           "Organization"@it ;
+                                                owl:versionInfo "provvisoria"@it ,
+                                                                "unstable"@en .
+
+
+###  http://www.w3.org/2006/vcard/ns#Kind
+<http://www.w3.org/2006/vcard/ns#Kind> rdf:type owl:Class ;
+                                       rdfs:isDefinedBy <https://w3id.org/italia/onto/ScholasticProject> ;
+                                       rdfs:label "Kind"@en ,
+                                                  "Kind"@it ;
+                                       owl:versionInfo "provvisoria"@it ,
+                                                       "unstable"@en .
+
+
+###  http://www.w3.org/2006/vcard/ns#Organization
+<http://www.w3.org/2006/vcard/ns#Organization> rdf:type owl:Class ;
+                                               rdfs:isDefinedBy <https://w3id.org/italia/onto/ScholasticProject> ;
+                                               rdfs:label "Organization"@en ,
+                                                          "Organization"@it ;
+                                               owl:versionInfo "provvisoria"@it ,
+                                                               "unstable"@en .
+
+
+###  http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class ;
+                                  rdfs:isDefinedBy <https://w3id.org/italia/onto/ScholasticProject> ;
+                                  rdfs:label "Agent"@en ,
+                                             "Agent"@it ;
+                                  owl:versionInfo "provvisoria"@it ,
+                                                  "unstable"@en .
+
+
+###  https://w3id.org/italia/onto/ADMS/Project
+<https://w3id.org/italia/onto/ADMS/Project> rdf:type owl:Class ;
+                                            rdfs:isDefinedBy <https://w3id.org/italia/onto/ScholasticProject> ;
+                                            rdfs:label "Project"@en ,
+                                                       "Project"@it ;
+                                            owl:versionInfo "provvisoria"@it ,
+                                                            "unstable"@en .
+
+
+###  https://w3id.org/italia/onto/ADMS/SemanticAsset
+<https://w3id.org/italia/onto/ADMS/SemanticAsset> rdf:type owl:Class ;
+                                                  rdfs:isDefinedBy <https://w3id.org/italia/onto/ScholasticProject> ;
+                                                  rdfs:label "Semantic Asset"@en ,
+                                                             "Semantic Asset"@it ;
+                                                  owl:versionInfo "provvisoria"@it ,
+                                                                  "unstable"@en .
+
+
+###  https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution
+<https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution> rdf:type owl:Class ;
+                                                              rdfs:isDefinedBy <https://w3id.org/italia/onto/ScholasticProject> ;
+                                                              rdfs:label "Semantic Asset Distribution"@en ,
+                                                                         "Semantic Asset Distribution"@it ;
+                                                              owl:versionInfo "provvisoria"@it ,
+                                                                              "unstable"@en .
+
+
+###  https://w3id.org/italia/onto/Project/PublicInvestmentProject
+<https://w3id.org/italia/onto/Project/PublicInvestmentProject> rdf:type owl:Class ;
+                                                               rdfs:isDefinedBy <https://w3id.org/italia/onto/ScholasticProject> ;
+                                                               rdfs:label "Public Investment Project"@en ,
+                                                                          "Public Investment Project"@it ;
+                                                               owl:versionInfo "provvisoria"@it ,
+                                                                               "unstable"@en .
+
+
+###  https://w3id.org/italia/onto/ScholasticProject/ScholasticProject
+<https://w3id.org/italia/onto/ScholasticProject/ScholasticProject> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf <https://w3id.org/italia/onto/Project/PublicInvestmentProject> ,
+                                                                                   [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty <https://w3id.org/italia/onto/ScholasticProject/hasScholasticProjectScope> ;
+                                                                                     owl:allValuesFrom <https://w3id.org/italia/onto/ScholasticProject/ScholasticProjectScope>
+                                                                                   ] ,
+                                                                                   [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty <https://w3id.org/italia/onto/ScholasticProject/hasScholasticProjectTheme> ;
+                                                                                     owl:allValuesFrom <https://w3id.org/italia/onto/ScholasticProject/ScholasticProjectTheme>
+                                                                                   ] ;
+                                                                   rdfs:comment "La classe che rappresenta i progetti di pubblico investimento realizzati da istituzioni scolastiche"@it ,
+                                                                                "This is the class that includes the projects conducted by the schools."@en ;
+                                                                   rdfs:isDefinedBy <https://w3id.org/italia/onto/ScholasticProject> ;
+                                                                   rdfs:label "Progetto Scolastico"@it ,
+                                                                              "Scholastic Project"@en ,
+                                                                              "Scholastic Project"@it ;
+                                                                   owl:versionInfo "provvisoria"@it ,
+                                                                                   "unstable"@en .
+
+
+###  https://w3id.org/italia/onto/ScholasticProject/ScholasticProjectScope
+<https://w3id.org/italia/onto/ScholasticProject/ScholasticProjectScope> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf <https://w3id.org/italia/onto/l0/Concept> ;
+                                                                        rdfs:comment "La classe che include gli ambiti dei progetti scolastici."@it ,
+                                                                                     "This is the class of the Scholastic Project Scopes."@en ;
+                                                                        rdfs:isDefinedBy <https://w3id.org/italia/onto/ScholasticProject> ;
+                                                                        rdfs:label "Ambito del Progetto Scolastico"@it ,
+                                                                                   "Scholastic Project Scope"@en ,
+                                                                                   "Scholastic Project Scope"@it ;
+                                                                        owl:versionInfo "provvisoria"@it ,
+                                                                                        "unstable"@en .
+
+
+###  https://w3id.org/italia/onto/ScholasticProject/ScholasticProjectTheme
+<https://w3id.org/italia/onto/ScholasticProject/ScholasticProjectTheme> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf <https://w3id.org/italia/onto/l0/Concept> ;
+                                                                        rdfs:comment "Questa classe include i temi dei progetti scolastici."@it ,
+                                                                                     "This is the class of the Themes of the Scholastic Project."@en ;
+                                                                        rdfs:isDefinedBy <https://w3id.org/italia/onto/ScholasticProject> ;
+                                                                        rdfs:label "Scholastic Project Theme"@en ,
+                                                                                   "Scholastic Project Theme"@it ,
+                                                                                   "Tema del Progetto Scolastico"@it ;
+                                                                        owl:versionInfo "provvisoria"@it ,
+                                                                                        "unstable"@en .
+
+
+###  https://w3id.org/italia/onto/School/IstituzioneScolastica
+<https://w3id.org/italia/onto/School/IstituzioneScolastica> rdf:type owl:Class ;
+                                                            rdfs:isDefinedBy <https://w3id.org/italia/onto/ScholasticProject> ;
+                                                            rdfs:label "Istituzione Scolastica"@en ,
+                                                                       "Istituzione Scolastica"@it ;
+                                                            owl:versionInfo "provvisoria"@it ,
+                                                                            "unstable"@en .
+
+
+###  https://w3id.org/italia/onto/l0/Concept
+<https://w3id.org/italia/onto/l0/Concept> rdf:type owl:Class ;
+                                          rdfs:isDefinedBy <https://w3id.org/italia/onto/ScholasticProject> ;
+                                          rdfs:label "Concept"@en ,
+                                                     "Concept"@it ;
+                                          owl:versionInfo "provvisoria"@it ,
+                                                          "unstable"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/italia/data/contact-point/INDIRE
+<https://w3id.org/italia/data/contact-point/INDIRE> rdf:type owl:NamedIndividual ,
+                                                             <http://dati.gov.it/onto/dcatapit#Organization> ,
+                                                             <http://www.w3.org/2006/vcard/ns#Kind> ,
+                                                             <http://www.w3.org/2006/vcard/ns#Organization> ;
+                                                    rdfs:isDefinedBy <https://w3id.org/italia/onto/ScholasticProject> ;
+                                                    rdfs:label "INDIRE"@en ,
+                                                               "INDIRE"@it ;
+                                                    owl:versionInfo "provvisoria"@it ,
+                                                                    "unstable"@en ;
+                                                    <http://www.w3.org/2006/vcard/ns#fn> "Ufficio Relazioni con il Pubblico - INDIRE" ;
+                                                    <http://www.w3.org/2006/vcard/ns#hasEmail> <mailto:urp@indire.it> .
+
+
+###  https://w3id.org/italia/data/contact-point/ISTAT-NDC
+<https://w3id.org/italia/data/contact-point/ISTAT-NDC> rdf:type owl:NamedIndividual ,
+                                                                <http://dati.gov.it/onto/dcatapit#Organization> ,
+                                                                <http://www.w3.org/2006/vcard/ns#Kind> ,
+                                                                <http://www.w3.org/2006/vcard/ns#Organization> ;
+                                                       rdfs:isDefinedBy <https://w3id.org/italia/onto/ScholasticProject> ;
+                                                       rdfs:label "ISTAT - NDC"@en ,
+                                                                  "ISTAT - NDC"@it ;
+                                                       owl:versionInfo "provvisoria"@it ,
+                                                                       "unstable"@en ;
+                                                       <http://www.w3.org/2006/vcard/ns#fn> "Segreteria Tecnica Istat - Progetto PNRR National Data Catalog" ;
+                                                       <http://www.w3.org/2006/vcard/ns#hasEmail> <mailto:ndc-segr-tec@istat.it> .
+
+
+###  https://w3id.org/italia/data/distribution/ScholasticProject-AP_IT-JSON-LD
+<https://w3id.org/italia/data/distribution/ScholasticProject-AP_IT-JSON-LD> rdf:type owl:NamedIndividual ,
+                                                                                     <https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution> ;
+                                                                            <http://purl.org/dc/terms/description> "Questa è la distribuzione JSON-LD dell'ontologia dei progetti scolastici"@it ,
+                                                                                                                   "This is the distribution in JSON-LD of the scholastic project ontology"@en ;
+                                                                            <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+                                                                            <http://purl.org/dc/terms/license> <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+                                                                            <http://purl.org/dc/terms/title> "Distribuzione JSON-LD ontologia ScholasticProject-AP_IT"@it ,
+                                                                                                             "JSON-LD distribution of the ScholasticProject-AP_IT Ontology"@en ;
+                                                                            rdfs:isDefinedBy <https://w3id.org/italia/onto/ScholasticProject> ;
+                                                                            rdfs:label "Scholastic Project - AP _ IT - JSON - LD"@en ,
+                                                                                       "Scholastic Project - AP _ IT - JSON - LD"@it ;
+                                                                            owl:versionInfo "provvisoria"@it ,
+                                                                                            "unstable"@en ;
+                                                                            <http://www.w3.org/ns/dcat#accessURL> <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/ScholasticProject/latest> ;
+                                                                            <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/ScholasticProject/latest/ScholasticProject-AP_IT.jsonld> .
+
+
+###  https://w3id.org/italia/data/distribution/ScholasticProject-AP_IT-RDF-TURTLE
+<https://w3id.org/italia/data/distribution/ScholasticProject-AP_IT-RDF-TURTLE> rdf:type owl:NamedIndividual ,
+                                                                                        <https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution> ;
+                                                                               <http://purl.org/dc/terms/description> "Questa è la distribuzione RDF/Turtle dell'ontologia dei progetti scolastici"@it ,
+                                                                                                                      "This is the distribution in RDF/turtle of the scholastic project ontology"@en ;
+                                                                               <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+                                                                               <http://purl.org/dc/terms/license> <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+                                                                               <http://purl.org/dc/terms/title> "Distribuzione RDF/Turtle ontologia School-AP_IT"@it ,
+                                                                                                                "RDF/Turtle distribution of School-AP_IT Ontology"@en ;
+                                                                               rdfs:isDefinedBy <https://w3id.org/italia/onto/ScholasticProject> ;
+                                                                               rdfs:label "Scholastic Project - AP _ IT - RDF - TURTLE"@en ,
+                                                                                          "Scholastic Project - AP _ IT - RDF - TURTLE"@it ;
+                                                                               owl:versionInfo "provvisoria"@it ,
+                                                                                               "unstable"@en ;
+                                                                               <http://www.w3.org/ns/dcat#accessURL> <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/ScholasticProject/latest> ;
+                                                                               <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/ScholasticProject/latest/ScholasticProject-AP_IT.ttl> .
+
+
+###  https://w3id.org/italia/data/distribution/ScholasticProject-AP_IT-RDF-XML
+<https://w3id.org/italia/data/distribution/ScholasticProject-AP_IT-RDF-XML> rdf:type owl:NamedIndividual ,
+                                                                                     <https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution> ;
+                                                                            <http://purl.org/dc/terms/description> "Questa è la distribuzione RDF/XML dell'ontologia dei progetti scolastici"@it ,
+                                                                                                                   "This is the distribution in RDF/XML of the scholastic project ontology"@en ;
+                                                                            <http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
+                                                                            <http://purl.org/dc/terms/license> <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+                                                                            <http://purl.org/dc/terms/title> "Distribuzione RDF/XML ontologia ScholasticProject-AP_IT"@it ,
+                                                                                                             "RDF/XML distribution of ScholasticProject-AP_IT Ontology"@en ;
+                                                                            rdfs:isDefinedBy <https://w3id.org/italia/onto/ScholasticProject> ;
+                                                                            rdfs:label "Scholastic Project - AP _ IT - RDF - XML"@en ,
+                                                                                       "Scholastic Project - AP _ IT - RDF - XML"@it ;
+                                                                            owl:versionInfo "provvisoria"@it ,
+                                                                                            "unstable"@en ;
+                                                                            <http://www.w3.org/ns/dcat#accessURL> <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/ScholasticProject/latest> ;
+                                                                            <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/ScholasticProject/latest/ScholasticProject-AP_IT.rdf> .
+
+
+###  https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab
+<https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab> rdf:type owl:NamedIndividual ,
+                                                                                   <http://dati.gov.it/onto/dcatapit#Agent> ,
+                                                                                   <http://xmlns.com/foaf/0.1/Agent> ;
+                                                                          <http://purl.org/dc/terms/identifier> "cnr - Z6HZEH - STLab" ;
+                                                                          rdfs:isDefinedBy <https://w3id.org/italia/onto/ScholasticProject> ;
+                                                                          rdfs:label "stlab"@en ,
+                                                                                     "stlab"@it ;
+                                                                          owl:versionInfo "provvisoria"@it ,
+                                                                                          "unstable"@en ;
+                                                                          <http://xmlns.com/foaf/0.1/name> "Institute of Cognitive Sciences and Technologies of the Italian Research Council (CNR) - Semantic Technology Laboratory (STLab)"@en ,
+                                                                                                           "Istituto di Scienze e Tecnologie della Cognizione del CNR - Semantic Technology Lab (STLab)"@it .
+
+
+###  https://w3id.org/italia/data/project/NDC
+<https://w3id.org/italia/data/project/NDC> rdf:type owl:NamedIndividual ,
+                                                    <https://w3id.org/italia/onto/ADMS/Project> ;
+                                           rdfs:isDefinedBy <https://w3id.org/italia/onto/ScholasticProject> ;
+                                           rdfs:label "NDC"@en ,
+                                                      "NDC"@it ;
+                                           owl:versionInfo "provvisoria"@it ,
+                                                           "unstable"@en ;
+                                           <https://w3id.org/italia/onto/l0/name> "National Data Catalog - schema.gov.it"@it .
+
+
+###  https://w3id.org/italia/data/project/OntoPiA
+<https://w3id.org/italia/data/project/OntoPiA> rdf:type owl:NamedIndividual ,
+                                                        <https://w3id.org/italia/onto/ADMS/Project> ;
+                                               rdfs:isDefinedBy <https://w3id.org/italia/onto/ScholasticProject> ;
+                                               rdfs:label "Onto Pi A"@en ,
+                                                          "Onto Pi A"@it ;
+                                               owl:versionInfo "provvisoria"@it ,
+                                                               "unstable"@en ;
+                                               <https://w3id.org/italia/onto/l0/name> "OntoPiA - la rete di ontologie della pubblica amministrazione italiana"@it .
+
+
+###  https://w3id.org/italia/data/public-organization/INDIRE
+<https://w3id.org/italia/data/public-organization/INDIRE> rdf:type owl:NamedIndividual ,
+                                                                   <http://dati.gov.it/onto/dcatapit#Agent> ,
+                                                                   <http://xmlns.com/foaf/0.1/Agent> ;
+                                                          <http://purl.org/dc/terms/identifier> "INDIRE" ;
+                                                          rdfs:isDefinedBy <https://w3id.org/italia/onto/ScholasticProject> ;
+                                                          rdfs:label "INDIRE"@en ,
+                                                                     "INDIRE"@it ;
+                                                          owl:versionInfo "provvisoria"@it ,
+                                                                          "unstable"@en ;
+                                                          <http://xmlns.com/foaf/0.1/name> "Istituto Nazionale di Documentazione, Innovazione e Ricerca Educativa - INDIRE"@it ,
+                                                                                           "Italian National Institute for Documentation, Innovation and Educational Research - INDIRE"@en .
+
+
+###  https://w3id.org/italia/data/public-organization/ISTAT
+<https://w3id.org/italia/data/public-organization/ISTAT> rdf:type owl:NamedIndividual ,
+                                                                  <http://dati.gov.it/onto/dcatapit#Agent> ,
+                                                                  <http://xmlns.com/foaf/0.1/Agent> ;
+                                                         <http://purl.org/dc/terms/identifier> "ISTAT" ;
+                                                         rdfs:isDefinedBy <https://w3id.org/italia/onto/ScholasticProject> ;
+                                                         rdfs:label "ISTAT"@en ,
+                                                                    "ISTAT"@it ;
+                                                         owl:versionInfo "provvisoria"@it ,
+                                                                         "unstable"@en ;
+                                                         <http://xmlns.com/foaf/0.1/name> "Istituto Nazionale di Statistica - ISTAT"@it ,
+                                                                                          "Italian National Institute of Statistics - ISTAT"@en .
+
+
+###  https://w3id.org/italia/data/public-organization/PCM-1RSIZZ
+<https://w3id.org/italia/data/public-organization/PCM-1RSIZZ> rdf:type owl:NamedIndividual ,
+                                                                       <http://dati.gov.it/onto/dcatapit#Agent> ,
+                                                                       <http://xmlns.com/foaf/0.1/Agent> ;
+                                                              <http://purl.org/dc/terms/identifier> "PCM-1RSIZZ" ;
+                                                              rdfs:isDefinedBy <https://w3id.org/italia/onto/ScholasticProject> ;
+                                                              rdfs:label "PCM - 1 RSIZZ"@en ,
+                                                                         "PCM - 1 RSIZZ"@it ;
+                                                              owl:versionInfo "provvisoria"@it ,
+                                                                              "unstable"@en ;
+                                                              <http://xmlns.com/foaf/0.1/name> "Digital Transformation Department of the Presidency of the Council of Ministers"@en ,
+                                                                                               "Dipartimento per la Trasformazione Digitale della Presidenza del Consiglio dei Ministri"@it .
+
+
+###  https://w3id.org/italia/onto/ScholasticProject
+<https://w3id.org/italia/onto/ScholasticProject> rdf:type owl:NamedIndividual ,
+                                                          <https://w3id.org/italia/onto/ADMS/SemanticAsset> ;
+                                                 rdfs:isDefinedBy <https://w3id.org/italia/onto/ScholasticProject> ;
+                                                 rdfs:label "Scholastic Project"@en ,
+                                                            "Scholastic Project"@it ;
+                                                 owl:versionInfo "provvisoria"@it ,
+                                                                 "unstable"@en .
+
+
+###  Generated by the OWL API (version 5.5.1.2024-09-07T21:41:32Z) https://github.com/owlcs/owlapi/
