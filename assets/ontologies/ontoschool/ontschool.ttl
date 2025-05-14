@@ -20,9 +20,9 @@
                                        owl:versionIRI <https://w3id.org/italia/onto/School/0.1> ;
                                        owl:imports 
                                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl> ,
-                                                   <https://w3id.org/italia/onto/CLV/1.0> ,
-                                                   <https://w3id.org/italia/onto/COV/0.12> ,
-                                                   <https://w3id.org/italia/onto/RO/0.3> ;
+                                                   <https://w3id.org/italia/onto/CLV> ,
+                                                   <https://w3id.org/italia/onto/COV> ,
+                                                   <https://w3id.org/italia/onto/RO> ;
                                         dc:description <https://raw.githubusercontent.com/luigi-asprino/education/refs/heads/main/assets/ontologies/ontoschool/School.png> ;
                                        dct:creator <https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab> ,
                                                                                  <https://w3id.org/italia/data/public-organization/INDIRE> ;
