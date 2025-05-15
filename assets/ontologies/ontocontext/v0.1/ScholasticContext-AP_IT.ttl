@@ -320,6 +320,16 @@ xsd:date rdf:type rdfs:Datatype .
 <https://w3id.org/italia/onto/MU/Value> rdf:type owl:Class .
 
 
+###  https://w3id.org/italia/onto/ScholasticContext/Accessibility
+<https://w3id.org/italia/onto/ScholasticContext/Accessibility> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <https://w3id.org/italia/onto/ScholasticContext/StatisticVariable> ;
+                                                               rdfs:isDefinedBy <https://w3id.org/italia/onto/ScholasticContext> ;
+                                                               rdfs:label "Accessibility"@en ,
+                                                                          "Accessibility"@it ;
+                                                               owl:versionInfo "provvisoria"@it ,
+                                                                               "unstable"@en .
+
+
 ###  https://w3id.org/italia/onto/ScholasticContext/CatchmentArea
 <https://w3id.org/italia/onto/ScholasticContext/CatchmentArea> rdf:type owl:Class ;
                                                                rdfs:subClassOf <https://w3id.org/italia/onto/CLV/Feature> ;
@@ -333,6 +343,26 @@ xsd:date rdf:type rdfs:Datatype .
                                                                                "unstable"@en .
 
 
+###  https://w3id.org/italia/onto/ScholasticContext/Economy
+<https://w3id.org/italia/onto/ScholasticContext/Economy> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <https://w3id.org/italia/onto/ScholasticContext/StatisticVariable> ;
+                                                         rdfs:isDefinedBy <https://w3id.org/italia/onto/ScholasticContext> ;
+                                                         rdfs:label "Economy"@en ,
+                                                                    "Economy"@it ;
+                                                         owl:versionInfo "provvisoria"@it ,
+                                                                         "unstable"@en .
+
+
+###  https://w3id.org/italia/onto/ScholasticContext/Population
+<https://w3id.org/italia/onto/ScholasticContext/Population> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <https://w3id.org/italia/onto/ScholasticContext/StatisticVariable> ;
+                                                            rdfs:isDefinedBy <https://w3id.org/italia/onto/ScholasticContext> ;
+                                                            rdfs:label "Population"@en ,
+                                                                       "Population"@it ;
+                                                            owl:versionInfo "provvisoria"@it ,
+                                                                            "unstable"@en .
+
+
 ###  https://w3id.org/italia/onto/ScholasticContext/ScholasticContext
 <https://w3id.org/italia/onto/ScholasticContext/ScholasticContext> rdf:type owl:Class ;
                                                                    rdfs:subClassOf <https://w3id.org/italia/onto/l0/Description> ;
@@ -344,6 +374,16 @@ xsd:date rdf:type rdfs:Datatype .
                                                                               "Scholastic Context"@it ;
                                                                    owl:versionInfo "provvisoria"@it ,
                                                                                    "unstable"@en .
+
+
+###  https://w3id.org/italia/onto/ScholasticContext/Security
+<https://w3id.org/italia/onto/ScholasticContext/Security> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <https://w3id.org/italia/onto/ScholasticContext/StatisticVariable> ;
+                                                          rdfs:isDefinedBy <https://w3id.org/italia/onto/ScholasticContext> ;
+                                                          rdfs:label "Security"@en ,
+                                                                     "Security"@it ;
+                                                          owl:versionInfo "provvisoria"@it ,
+                                                                          "unstable"@en .
 
 
 ###  https://w3id.org/italia/onto/ScholasticContext/StatisticIndicator
@@ -378,6 +418,16 @@ xsd:date rdf:type rdfs:Datatype .
                                                                               "Variabile Statistica"@it ;
                                                                    owl:versionInfo "provvisoria"@it ,
                                                                                    "unstable"@en .
+
+
+###  https://w3id.org/italia/onto/ScholasticContext/Urbanisation
+<https://w3id.org/italia/onto/ScholasticContext/Urbanisation> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <https://w3id.org/italia/onto/ScholasticContext/StatisticVariable> ;
+                                                              rdfs:isDefinedBy <https://w3id.org/italia/onto/ScholasticContext> ;
+                                                              rdfs:label "Urbanisation"@en ,
+                                                                         "Urbanisation"@it ;
+                                                              owl:versionInfo "provvisoria"@it ,
+                                                                              "unstable"@en .
 
 
 ###  https://w3id.org/italia/onto/School/IstituzioneScolastica

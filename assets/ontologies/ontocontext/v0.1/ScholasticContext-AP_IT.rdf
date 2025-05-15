@@ -525,6 +525,20 @@
     
 
 
+    <!-- https://w3id.org/italia/onto/ScholasticContext/Accessibility -->
+
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/ScholasticContext/Accessibility">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/ScholasticContext/StatisticVariable"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/ScholasticContext"/>
+        <rdfs:label xml:lang="en">Accessibility</rdfs:label>
+        <rdfs:label xml:lang="it">Accessibility</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/italia/onto/ScholasticContext/CatchmentArea -->
 
 
@@ -542,6 +556,34 @@
     
 
 
+    <!-- https://w3id.org/italia/onto/ScholasticContext/Economy -->
+
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/ScholasticContext/Economy">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/ScholasticContext/StatisticVariable"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/ScholasticContext"/>
+        <rdfs:label xml:lang="en">Economy</rdfs:label>
+        <rdfs:label xml:lang="it">Economy</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ScholasticContext/Population -->
+
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/ScholasticContext/Population">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/ScholasticContext/StatisticVariable"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/ScholasticContext"/>
+        <rdfs:label xml:lang="en">Population</rdfs:label>
+        <rdfs:label xml:lang="it">Population</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/italia/onto/ScholasticContext/ScholasticContext -->
 
 
@@ -553,6 +595,20 @@
         <rdfs:label xml:lang="it">Contesto Scolastico</rdfs:label>
         <rdfs:label xml:lang="en">Scholastic Context</rdfs:label>
         <rdfs:label xml:lang="it">Scholastic Context</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ScholasticContext/Security -->
+
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/ScholasticContext/Security">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/ScholasticContext/StatisticVariable"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/ScholasticContext"/>
+        <rdfs:label xml:lang="en">Security</rdfs:label>
+        <rdfs:label xml:lang="it">Security</rdfs:label>
         <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:Class>
@@ -599,6 +655,20 @@
         <rdfs:label xml:lang="en">Statistic Variable</rdfs:label>
         <rdfs:label xml:lang="it">Statistic Variable</rdfs:label>
         <rdfs:label xml:lang="it">Variabile Statistica</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ScholasticContext/Urbanisation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/ScholasticContext/Urbanisation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/ScholasticContext/StatisticVariable"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/ScholasticContext"/>
+        <rdfs:label xml:lang="en">Urbanisation</rdfs:label>
+        <rdfs:label xml:lang="it">Urbanisation</rdfs:label>
         <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:Class>

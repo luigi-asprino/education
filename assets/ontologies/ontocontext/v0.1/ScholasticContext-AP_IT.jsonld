@@ -1185,9 +1185,153 @@
         ]
     },
     {
+        "@id": "https://w3id.org/italia/onto/ScholasticContext/Accessibility",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/italia/onto/ScholasticContext/StatisticVariable"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+            {
+                "@id": "https://w3id.org/italia/onto/ScholasticContext"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@language": "en",
+                "@value": "Accessibility"
+            },
+            {
+                "@language": "it",
+                "@value": "Accessibility"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#versionInfo": [
+            {
+                "@language": "it",
+                "@value": "provvisoria"
+            },
+            {
+                "@language": "en",
+                "@value": "unstable"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/italia/onto/ScholasticContext/Economy",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/italia/onto/ScholasticContext/StatisticVariable"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+            {
+                "@id": "https://w3id.org/italia/onto/ScholasticContext"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@language": "en",
+                "@value": "Economy"
+            },
+            {
+                "@language": "it",
+                "@value": "Economy"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#versionInfo": [
+            {
+                "@language": "it",
+                "@value": "provvisoria"
+            },
+            {
+                "@language": "en",
+                "@value": "unstable"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/italia/onto/ScholasticContext/Population",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/italia/onto/ScholasticContext/StatisticVariable"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+            {
+                "@id": "https://w3id.org/italia/onto/ScholasticContext"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@language": "en",
+                "@value": "Population"
+            },
+            {
+                "@language": "it",
+                "@value": "Population"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#versionInfo": [
+            {
+                "@language": "it",
+                "@value": "provvisoria"
+            },
+            {
+                "@language": "en",
+                "@value": "unstable"
+            }
+        ]
+    },
+    {
         "@id": "https://w3id.org/italia/onto/l0/Description",
         "@type": [
             "http://www.w3.org/2002/07/owl#Class"
+        ]
+    },
+    {
+        "@id": "https://w3id.org/italia/onto/ScholasticContext/Security",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/italia/onto/ScholasticContext/StatisticVariable"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+            {
+                "@id": "https://w3id.org/italia/onto/ScholasticContext"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@language": "en",
+                "@value": "Security"
+            },
+            {
+                "@language": "it",
+                "@value": "Security"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#versionInfo": [
+            {
+                "@language": "it",
+                "@value": "provvisoria"
+            },
+            {
+                "@language": "en",
+                "@value": "unstable"
+            }
         ]
     },
     {
@@ -1232,6 +1376,42 @@
         "@id": "https://w3id.org/italia/onto/l0/Characteristic",
         "@type": [
             "http://www.w3.org/2002/07/owl#Class"
+        ]
+    },
+    {
+        "@id": "https://w3id.org/italia/onto/ScholasticContext/Urbanisation",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/italia/onto/ScholasticContext/StatisticVariable"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+            {
+                "@id": "https://w3id.org/italia/onto/ScholasticContext"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@language": "en",
+                "@value": "Urbanisation"
+            },
+            {
+                "@language": "it",
+                "@value": "Urbanisation"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#versionInfo": [
+            {
+                "@language": "it",
+                "@value": "provvisoria"
+            },
+            {
+                "@language": "en",
+                "@value": "unstable"
+            }
         ]
     },
     {
