@@ -116,14 +116,6 @@
             {
                 "@language": "it",
                 "@value": "School-AP_IT"
-            },
-            {
-                "@language": "en",
-                "@value": "School"
-            },
-            {
-                "@language": "it",
-                "@value": "School"
             }
         ],
         "http://www.w3.org/2002/07/owl#versionInfo": [
@@ -134,14 +126,6 @@
             {
                 "@language": "en",
                 "@value": "Versione 0.1 - aggiornata il 19/05/2025 - Primo rilascio"
-            },
-            {
-                "@language": "it",
-                "@value": "provvisoria"
-            },
-            {
-                "@language": "en",
-                "@value": "unstable"
             }
         ],
         "http://www.w3.org/ns/dcat#contactPoint": [
@@ -257,11 +241,6 @@
             {
                 "@id": "https://w3id.org/italia/onto/ADMS/DomainOntology"
             }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-            {
-                "@id": "https://w3id.org/italia/onto/School"
-            }
         ]
     },
     {
@@ -274,31 +253,6 @@
         "http://purl.org/dc/terms/identifier": [
             {
                 "@value": "cnr - Z6HZEH - STLab"
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-            {
-                "@id": "https://w3id.org/italia/onto/School"
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-            {
-                "@language": "en",
-                "@value": "stlab"
-            },
-            {
-                "@language": "it",
-                "@value": "stlab"
-            }
-        ],
-        "http://www.w3.org/2002/07/owl#versionInfo": [
-            {
-                "@language": "it",
-                "@value": "provvisoria"
-            },
-            {
-                "@language": "en",
-                "@value": "unstable"
             }
         ],
         "http://xmlns.com/foaf/0.1/name": [
@@ -324,31 +278,6 @@
                 "@value": "INDIRE"
             }
         ],
-        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-            {
-                "@id": "https://w3id.org/italia/onto/School"
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-            {
-                "@language": "en",
-                "@value": "INDIRE"
-            },
-            {
-                "@language": "it",
-                "@value": "INDIRE"
-            }
-        ],
-        "http://www.w3.org/2002/07/owl#versionInfo": [
-            {
-                "@language": "it",
-                "@value": "provvisoria"
-            },
-            {
-                "@language": "en",
-                "@value": "unstable"
-            }
-        ],
         "http://xmlns.com/foaf/0.1/name": [
             {
                 "@language": "it",
@@ -372,31 +301,6 @@
                 "@value": "PCM-1RSIZZ"
             }
         ],
-        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-            {
-                "@id": "https://w3id.org/italia/onto/School"
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-            {
-                "@language": "en",
-                "@value": "PCM - 1 RSIZZ"
-            },
-            {
-                "@language": "it",
-                "@value": "PCM - 1 RSIZZ"
-            }
-        ],
-        "http://www.w3.org/2002/07/owl#versionInfo": [
-            {
-                "@language": "it",
-                "@value": "provvisoria"
-            },
-            {
-                "@language": "en",
-                "@value": "unstable"
-            }
-        ],
         "http://xmlns.com/foaf/0.1/name": [
             {
                 "@language": "en",
@@ -415,31 +319,6 @@
             "http://dati.gov.it/onto/dcatapit#Organization",
             "http://www.w3.org/2006/vcard/ns#Kind",
             "http://www.w3.org/2006/vcard/ns#Organization"
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-            {
-                "@id": "https://w3id.org/italia/onto/School"
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-            {
-                "@language": "en",
-                "@value": "INDIRE"
-            },
-            {
-                "@language": "it",
-                "@value": "INDIRE"
-            }
-        ],
-        "http://www.w3.org/2002/07/owl#versionInfo": [
-            {
-                "@language": "it",
-                "@value": "provvisoria"
-            },
-            {
-                "@language": "en",
-                "@value": "unstable"
-            }
         ],
         "http://www.w3.org/2006/vcard/ns#fn": [
             {
@@ -527,31 +406,6 @@
                 "@value": "JSON-LD distribution of the School-AP_IT Ontology"
             }
         ],
-        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-            {
-                "@id": "https://w3id.org/italia/onto/School"
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-            {
-                "@language": "en",
-                "@value": "School - AP _ IT - JSON - LD"
-            },
-            {
-                "@language": "it",
-                "@value": "School - AP _ IT - JSON - LD"
-            }
-        ],
-        "http://www.w3.org/2002/07/owl#versionInfo": [
-            {
-                "@language": "it",
-                "@value": "provvisoria"
-            },
-            {
-                "@language": "en",
-                "@value": "unstable"
-            }
-        ],
         "http://www.w3.org/ns/dcat#accessURL": [
             {
                 "@id": "https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/School/latest"
@@ -597,31 +451,6 @@
             {
                 "@language": "en",
                 "@value": "RDF/Turtle distribution of School-AP_IT Ontology"
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-            {
-                "@id": "https://w3id.org/italia/onto/School"
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-            {
-                "@language": "en",
-                "@value": "School - AP _ IT - RDF - TURTLE"
-            },
-            {
-                "@language": "it",
-                "@value": "School - AP _ IT - RDF - TURTLE"
-            }
-        ],
-        "http://www.w3.org/2002/07/owl#versionInfo": [
-            {
-                "@language": "it",
-                "@value": "provvisoria"
-            },
-            {
-                "@language": "en",
-                "@value": "unstable"
             }
         ],
         "http://www.w3.org/ns/dcat#accessURL": [
@@ -671,31 +500,6 @@
                 "@value": "RDF/XML distribution of School-AP_IT Ontology"
             }
         ],
-        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-            {
-                "@id": "https://w3id.org/italia/onto/School"
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-            {
-                "@language": "en",
-                "@value": "School - AP _ IT - RDF - XML"
-            },
-            {
-                "@language": "it",
-                "@value": "School - AP _ IT - RDF - XML"
-            }
-        ],
-        "http://www.w3.org/2002/07/owl#versionInfo": [
-            {
-                "@language": "it",
-                "@value": "provvisoria"
-            },
-            {
-                "@language": "en",
-                "@value": "unstable"
-            }
-        ],
         "http://www.w3.org/ns/dcat#accessURL": [
             {
                 "@id": "https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/School/latest"
@@ -713,31 +517,6 @@
             "http://www.w3.org/2002/07/owl#NamedIndividual",
             "https://w3id.org/italia/onto/ADMS/Project"
         ],
-        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-            {
-                "@id": "https://w3id.org/italia/onto/School"
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-            {
-                "@language": "en",
-                "@value": "NDC"
-            },
-            {
-                "@language": "it",
-                "@value": "NDC"
-            }
-        ],
-        "http://www.w3.org/2002/07/owl#versionInfo": [
-            {
-                "@language": "it",
-                "@value": "provvisoria"
-            },
-            {
-                "@language": "en",
-                "@value": "unstable"
-            }
-        ],
         "https://w3id.org/italia/onto/l0/name": [
             {
                 "@language": "it",
@@ -750,31 +529,6 @@
         "@type": [
             "http://www.w3.org/2002/07/owl#NamedIndividual",
             "https://w3id.org/italia/onto/ADMS/Project"
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-            {
-                "@id": "https://w3id.org/italia/onto/School"
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-            {
-                "@language": "en",
-                "@value": "Onto Pi A"
-            },
-            {
-                "@language": "it",
-                "@value": "Onto Pi A"
-            }
-        ],
-        "http://www.w3.org/2002/07/owl#versionInfo": [
-            {
-                "@language": "it",
-                "@value": "provvisoria"
-            },
-            {
-                "@language": "en",
-                "@value": "unstable"
-            }
         ],
         "https://w3id.org/italia/onto/l0/name": [
             {
@@ -1015,31 +769,6 @@
         "@id": "https://w3id.org/italia/onto/CLV/hasAddress",
         "@type": [
             "http://www.w3.org/2002/07/owl#ObjectProperty"
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-            {
-                "@id": "https://w3id.org/italia/onto/School"
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-            {
-                "@language": "en",
-                "@value": "has Address"
-            },
-            {
-                "@language": "it",
-                "@value": "has Address"
-            }
-        ],
-        "http://www.w3.org/2002/07/owl#versionInfo": [
-            {
-                "@language": "it",
-                "@value": "provvisoria"
-            },
-            {
-                "@language": "en",
-                "@value": "unstable"
-            }
         ]
     },
     {
@@ -1541,369 +1270,66 @@
         "@id": "http://dati.gov.it/onto/dcatapit#Agent",
         "@type": [
             "http://www.w3.org/2002/07/owl#Class"
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-            {
-                "@id": "https://w3id.org/italia/onto/School"
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-            {
-                "@language": "en",
-                "@value": "Agent"
-            },
-            {
-                "@language": "it",
-                "@value": "Agent"
-            }
-        ],
-        "http://www.w3.org/2002/07/owl#versionInfo": [
-            {
-                "@language": "it",
-                "@value": "provvisoria"
-            },
-            {
-                "@language": "en",
-                "@value": "unstable"
-            }
         ]
     },
     {
         "@id": "http://dati.gov.it/onto/dcatapit#Organization",
         "@type": [
             "http://www.w3.org/2002/07/owl#Class"
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-            {
-                "@id": "https://w3id.org/italia/onto/School"
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-            {
-                "@language": "en",
-                "@value": "Organization"
-            },
-            {
-                "@language": "it",
-                "@value": "Organization"
-            }
-        ],
-        "http://www.w3.org/2002/07/owl#versionInfo": [
-            {
-                "@language": "it",
-                "@value": "provvisoria"
-            },
-            {
-                "@language": "en",
-                "@value": "unstable"
-            }
-        ]
-    },
-    {
-        "@id": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
-        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-            {
-                "@id": "https://w3id.org/italia/onto/School"
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-            {
-                "@language": "en",
-                "@value": "Physical Object"
-            },
-            {
-                "@language": "it",
-                "@value": "Physical Object"
-            }
-        ],
-        "http://www.w3.org/2002/07/owl#versionInfo": [
-            {
-                "@language": "it",
-                "@value": "provvisoria"
-            },
-            {
-                "@language": "en",
-                "@value": "unstable"
-            }
         ]
     },
     {
         "@id": "http://www.w3.org/2006/vcard/ns#Kind",
         "@type": [
             "http://www.w3.org/2002/07/owl#Class"
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-            {
-                "@id": "https://w3id.org/italia/onto/School"
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-            {
-                "@language": "en",
-                "@value": "Kind"
-            },
-            {
-                "@language": "it",
-                "@value": "Kind"
-            }
-        ],
-        "http://www.w3.org/2002/07/owl#versionInfo": [
-            {
-                "@language": "it",
-                "@value": "provvisoria"
-            },
-            {
-                "@language": "en",
-                "@value": "unstable"
-            }
         ]
     },
     {
         "@id": "http://www.w3.org/2006/vcard/ns#Organization",
         "@type": [
             "http://www.w3.org/2002/07/owl#Class"
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-            {
-                "@id": "https://w3id.org/italia/onto/School"
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-            {
-                "@language": "en",
-                "@value": "Organization"
-            },
-            {
-                "@language": "it",
-                "@value": "Organization"
-            }
-        ],
-        "http://www.w3.org/2002/07/owl#versionInfo": [
-            {
-                "@language": "it",
-                "@value": "provvisoria"
-            },
-            {
-                "@language": "en",
-                "@value": "unstable"
-            }
         ]
     },
     {
         "@id": "http://xmlns.com/foaf/0.1/Agent",
         "@type": [
             "http://www.w3.org/2002/07/owl#Class"
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-            {
-                "@id": "https://w3id.org/italia/onto/School"
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-            {
-                "@language": "en",
-                "@value": "Agent"
-            },
-            {
-                "@language": "it",
-                "@value": "Agent"
-            }
-        ],
-        "http://www.w3.org/2002/07/owl#versionInfo": [
-            {
-                "@language": "it",
-                "@value": "provvisoria"
-            },
-            {
-                "@language": "en",
-                "@value": "unstable"
-            }
         ]
     },
     {
         "@id": "https://w3id.org/italia/onto/ADMS/Project",
         "@type": [
             "http://www.w3.org/2002/07/owl#Class"
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-            {
-                "@id": "https://w3id.org/italia/onto/School"
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-            {
-                "@language": "en",
-                "@value": "Project"
-            },
-            {
-                "@language": "it",
-                "@value": "Project"
-            }
-        ],
-        "http://www.w3.org/2002/07/owl#versionInfo": [
-            {
-                "@language": "it",
-                "@value": "provvisoria"
-            },
-            {
-                "@language": "en",
-                "@value": "unstable"
-            }
         ]
     },
     {
         "@id": "https://w3id.org/italia/onto/ADMS/SemanticAsset",
         "@type": [
             "http://www.w3.org/2002/07/owl#Class"
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-            {
-                "@id": "https://w3id.org/italia/onto/School"
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-            {
-                "@language": "en",
-                "@value": "Semantic Asset"
-            },
-            {
-                "@language": "it",
-                "@value": "Semantic Asset"
-            }
-        ],
-        "http://www.w3.org/2002/07/owl#versionInfo": [
-            {
-                "@language": "it",
-                "@value": "provvisoria"
-            },
-            {
-                "@language": "en",
-                "@value": "unstable"
-            }
         ]
     },
     {
         "@id": "https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution",
         "@type": [
             "http://www.w3.org/2002/07/owl#Class"
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-            {
-                "@id": "https://w3id.org/italia/onto/School"
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-            {
-                "@language": "en",
-                "@value": "Semantic Asset Distribution"
-            },
-            {
-                "@language": "it",
-                "@value": "Semantic Asset Distribution"
-            }
-        ],
-        "http://www.w3.org/2002/07/owl#versionInfo": [
-            {
-                "@language": "it",
-                "@value": "provvisoria"
-            },
-            {
-                "@language": "en",
-                "@value": "unstable"
-            }
         ]
     },
     {
         "@id": "https://w3id.org/italia/onto/CLV/Address",
         "@type": [
             "http://www.w3.org/2002/07/owl#Class"
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-            {
-                "@id": "https://w3id.org/italia/onto/School"
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-            {
-                "@language": "en",
-                "@value": "Address"
-            },
-            {
-                "@language": "it",
-                "@value": "Address"
-            }
-        ],
-        "http://www.w3.org/2002/07/owl#versionInfo": [
-            {
-                "@language": "it",
-                "@value": "provvisoria"
-            },
-            {
-                "@language": "en",
-                "@value": "unstable"
-            }
         ]
     },
     {
         "@id": "https://w3id.org/italia/onto/COV/Organization",
         "@type": [
             "http://www.w3.org/2002/07/owl#Class"
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-            {
-                "@id": "https://w3id.org/italia/onto/School"
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-            {
-                "@language": "en",
-                "@value": "Organization"
-            },
-            {
-                "@language": "it",
-                "@value": "Organization"
-            }
-        ],
-        "http://www.w3.org/2002/07/owl#versionInfo": [
-            {
-                "@language": "it",
-                "@value": "provvisoria"
-            },
-            {
-                "@language": "en",
-                "@value": "unstable"
-            }
         ]
     },
     {
         "@id": "https://w3id.org/italia/onto/COV/PrivateOrganization",
         "@type": [
             "http://www.w3.org/2002/07/owl#Class"
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-            {
-                "@id": "https://w3id.org/italia/onto/School"
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-            {
-                "@language": "en",
-                "@value": "Private Organization"
-            },
-            {
-                "@language": "it",
-                "@value": "Private Organization"
-            }
-        ],
-        "http://www.w3.org/2002/07/owl#versionInfo": [
-            {
-                "@language": "it",
-                "@value": "provvisoria"
-            },
-            {
-                "@language": "en",
-                "@value": "unstable"
-            }
         ]
     },
     {
@@ -3824,31 +3250,6 @@
             "http://www.w3.org/2006/vcard/ns#Kind",
             "http://www.w3.org/2006/vcard/ns#Organization"
         ],
-        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-            {
-                "@id": "https://w3id.org/italia/onto/School"
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-            {
-                "@language": "en",
-                "@value": "ISTAT - NDC"
-            },
-            {
-                "@language": "it",
-                "@value": "ISTAT - NDC"
-            }
-        ],
-        "http://www.w3.org/2002/07/owl#versionInfo": [
-            {
-                "@language": "it",
-                "@value": "provvisoria"
-            },
-            {
-                "@language": "en",
-                "@value": "unstable"
-            }
-        ],
         "http://www.w3.org/2006/vcard/ns#fn": [
             {
                 "@value": "Segreteria Tecnica Istat - Progetto PNRR National Data Catalog"
@@ -3870,31 +3271,6 @@
         "http://purl.org/dc/terms/identifier": [
             {
                 "@value": "ISTAT"
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-            {
-                "@id": "https://w3id.org/italia/onto/School"
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-            {
-                "@language": "en",
-                "@value": "ISTAT"
-            },
-            {
-                "@language": "it",
-                "@value": "ISTAT"
-            }
-        ],
-        "http://www.w3.org/2002/07/owl#versionInfo": [
-            {
-                "@language": "it",
-                "@value": "provvisoria"
-            },
-            {
-                "@language": "en",
-                "@value": "unstable"
             }
         ],
         "http://xmlns.com/foaf/0.1/name": [

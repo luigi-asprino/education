@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/italia/onto/ScholasticProject#"
-     xml:base="https://w3id.org/italia/onto/ScholasticProject"
+<rdf:RDF xmlns="https://w3id.org/italia/onto/ScholasticContext#"
+     xml:base="https://w3id.org/italia/onto/ScholasticContext"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:l0="https://w3id.org/italia/onto/l0/"
      xmlns:ns="http://www.w3.org/2006/vcard/ns#"
@@ -14,16 +14,17 @@
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="https://w3id.org/italia/onto/ScholasticProject">
-        <owl:versionIRI rdf:resource="https://w3id.org/italia/onto/ScholasticProject/0.1"/>
+    <owl:Ontology rdf:about="https://w3id.org/italia/onto/ScholasticContext">
+        <owl:versionIRI rdf:resource="https://w3id.org/italia/onto/ScholasticContext/0.1"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/School"/>
-        <owl:imports rdf:resource="https://w3id.org/italia/onto/Project/0.3"/>
-        <dc:description rdf:resource="https://raw.githubusercontent.com/luigi-asprino/education/refs/heads/main/assets/ontologies/ontoproject/ScholasticProject.png"/>
+        <owl:imports rdf:resource="https://w3id.org/italia/onto/CLV/1.0"/>
+        <owl:imports rdf:resource="https://w3id.org/italia/onto/TI/0.8"/>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/luigi-asprino/education/refs/heads/main/assets/ontologies/ontocontext/ScholasticContext.png"/>
         <terms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
         <terms:creator rdf:resource="https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab"/>
         <terms:creator rdf:resource="https://w3id.org/italia/data/public-organization/INDIRE"/>
-        <terms:description xml:lang="it">Questa ontologia che descrive i progetti realizzati dalle scuole italiane.</terms:description>
-        <terms:description xml:lang="en">This ontology describes the projects conducted by Italian schools.</terms:description>
+        <terms:description xml:lang="it">Questa ontologia che descrive il contesto socio-economico dalle scuole italiane.</terms:description>
+        <terms:description xml:lang="en">This ontology describes the socio-economic context of the Italian schools.</terms:description>
         <terms:identifier>https://w3id.org/italia/onto/ScholasticProject</terms:identifier>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-19</terms:issued>
         <terms:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
@@ -31,33 +32,33 @@
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-19</terms:modified>
         <terms:publisher rdf:resource="https://w3id.org/italia/data/public-organization/PCM-1RSIZZ"/>
         <terms:rightsHolder rdf:resource="https://w3id.org/italia/data/public-organization/INDIRE"/>
-        <terms:title xml:lang="en">ScholasticProject-AP_IT</terms:title>
-        <terms:title xml:lang="it">ScholasticProject-AP_IT</terms:title>
-        <rdfs:comment xml:lang="it">Questa ontologia che descrive i progetti realizzati dalle scuole italiane.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This ontology describes the projects conducted by Italian schools.</rdfs:comment>
-        <rdfs:label xml:lang="en">ScholasticProject-AP_IT</rdfs:label>
-        <rdfs:label xml:lang="it">ScholasticProject-AP_IT</rdfs:label>
+        <terms:title xml:lang="en">ScholasticContext-AP_IT</terms:title>
+        <terms:title xml:lang="it">ScholasticContext-AP_IT</terms:title>
+        <rdfs:comment xml:lang="it">Questa ontologia che descrive il contesto socio-economico dalle scuole italiane.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This ontology describes the socio-economic context of the Italian schools.</rdfs:comment>
+        <rdfs:label xml:lang="en">ScholasticContext-AP_IT</rdfs:label>
+        <rdfs:label xml:lang="it">ScholasticContext-AP_IT</rdfs:label>
         <owl:versionInfo xml:lang="en">Version 0.1 - updated on 19th of May 2025 - First release</owl:versionInfo>
         <owl:versionInfo xml:lang="en">Versione 0.1 - aggiornata il 19/05/2025 - Primo rilascio</owl:versionInfo>
         <dcat:contactPoint rdf:resource="https://w3id.org/italia/data/contact-point/INDIRE"/>
-        <dcat:keyword>project</dcat:keyword>
         <dcat:keyword>scuola</dcat:keyword>
+        <dcat:keyword>socio-economic context</dcat:keyword>
         <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC"/>
-        <prov:wasDerivedFrom rdf:resource="https://w3id.org/italia/onto/ScholasticProject/0.1"/>
-        <ADMS:acronym>ScholasticProject-AP_IT</ADMS:acronym>
+        <prov:wasDerivedFrom rdf:resource="https://w3id.org/italia/onto/ScholasticContext/0.1"/>
+        <ADMS:acronym>ScholasticContext-AP_IT</ADMS:acronym>
         <ADMS:hasContributor rdf:resource="https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab"/>
         <ADMS:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
-        <ADMS:hasKeyClass rdf:resource="https://w3id.org/italia/onto/ScholasticProject/ScholasticProject"/>
+        <ADMS:hasKeyClass rdf:resource="https://w3id.org/italia/onto/ScholasticProject/ScholasticContext"/>
         <ADMS:hasOntologyLanguage rdf:resource="https://w3id.org/italia/onto/ADMS/OWL"/>
-        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/ScholasticProject-AP_IT-JSON-LD"/>
-        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/ScholasticProject-AP_IT-RDF-TURTLE"/>
-        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/ScholasticProject-AP_IT-RDF-XML"/>
+        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/ScholasticContext-AP_IT-JSON-LD"/>
+        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/ScholasticContext-AP_IT-RDF-TURTLE"/>
+        <ADMS:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/data/distribution/ScholasticContext-AP_IT-RDF-XML"/>
         <ADMS:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/AnnotationTask"/>
         <ADMS:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/QueryFormulationTask"/>
-        <ADMS:last rdf:resource="https://w3id.org/italia/onto/ScholasticProject/0.1"/>
-        <ADMS:officialURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/italia/onto/ScholasticProject</ADMS:officialURI>
-        <ADMS:prefix>sproject</ADMS:prefix>
-        <ADMS:prev rdf:resource="https://w3id.org/italia/onto/ScholasticProject/0.1"/>
+        <ADMS:last rdf:resource="https://w3id.org/italia/onto/ScholasticContext/0.1"/>
+        <ADMS:officialURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/italia/onto/ScholasticContext</ADMS:officialURI>
+        <ADMS:prefix>scontext</ADMS:prefix>
+        <ADMS:prev rdf:resource="https://w3id.org/italia/onto/ScholasticContext/0.1"/>
         <ADMS:semanticAssetInUse rdf:resource="https://w3id.org/italia/data/project/NDC"/>
         <ADMS:semanticAssetInUse rdf:resource="https://w3id.org/italia/data/project/OntoPiA"/>
         <ADMS:status>catalogued</ADMS:status>
@@ -378,60 +379,67 @@
     
 
 
-    <!-- https://w3id.org/italia/onto/ScholasticProject/conductsScholasticProject -->
+    <!-- https://w3id.org/italia/onto/ScholasticContext/hasCatchmentArea -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/ScholasticProject/conductsScholasticProject">
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/ScholasticContext/hasCatchmentArea">
         <rdfs:domain rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolastica"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/onto/ScholasticProject/ScholasticProject"/>
-        <rdfs:comment xml:lang="it">La proprietà lega una istituzione scolastica ai progetti da essa realizzati.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Property that links a scholastic institution to one of its projects.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/ScholasticProject"/>
-        <rdfs:label xml:lang="it">conduce progetto scolastico</rdfs:label>
-        <rdfs:label xml:lang="en">conducts Scholastic Project</rdfs:label>
-        <rdfs:label xml:lang="it">conducts Scholastic Project</rdfs:label>
-        <rdfs:label xml:lang="en">conducts scholastic project</rdfs:label>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/ScholasticContext/CatchmentArea"/>
+        <rdfs:comment xml:lang="it">Collega una istituzione scolastica al suo bacino di utenza.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It connects a school to its catchment area.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/ScholasticContext"/>
+        <rdfs:label xml:lang="it">ha bacino di utenza</rdfs:label>
+        <rdfs:label xml:lang="en">has Catchment Area</rdfs:label>
+        <rdfs:label xml:lang="it">has Catchment Area</rdfs:label>
+        <rdfs:label xml:lang="en">has catchment area</rdfs:label>
         <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/italia/onto/ScholasticProject/hasScholasticProjectScope -->
+    <!-- https://w3id.org/italia/onto/ScholasticContext/hasScholasticContext -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/ScholasticProject/hasScholasticProjectScope">
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/ScholasticProject/ScholasticProject"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/onto/ScholasticProject/ScholasticProjectScope"/>
-        <rdfs:comment xml:lang="it">La proprietà connette un progetto scolastico con i suoi ambiti di interesse.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Property connects a scholastic project with its scope.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/ScholasticProject"/>
-        <rdfs:label xml:lang="it">ha ambito di progetto scolastico</rdfs:label>
-        <rdfs:label xml:lang="en">has Scholastic Project Scope</rdfs:label>
-        <rdfs:label xml:lang="it">has Scholastic Project Scope</rdfs:label>
-        <rdfs:label xml:lang="en">has scholastic project scope</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/ScholasticContext/hasScholasticContext">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/School/IstituzioneScolastica"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/ScholasticContext/ScholasticContext"/>
+        <rdfs:comment xml:lang="it">Collega una istituzione scolastica al suo relativo contesto socio-economico.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It links a scholastic institution to its scholastic context.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/ScholasticContext"/>
+        <rdfs:label xml:lang="it">ha contesto scolastico</rdfs:label>
+        <rdfs:label xml:lang="en">has Scholastic Context</rdfs:label>
+        <rdfs:label xml:lang="it">has Scholastic Context</rdfs:label>
+        <rdfs:label xml:lang="en">has scholastic context</rdfs:label>
         <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/italia/onto/ScholasticProject/hasScholasticProjectTheme -->
+    <!-- https://w3id.org/italia/onto/ScholasticContext/hasVariable -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/ScholasticProject/hasScholasticProjectTheme">
-        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/ScholasticProject/ScholasticProject"/>
-        <rdfs:range rdf:resource="https://w3id.org/italia/onto/ScholasticProject/ScholasticProjectTheme"/>
-        <rdfs:comment xml:lang="it">La proprietà connette un progetto scolastico con il suo tema.</rdfs:comment>
-        <rdfs:comment xml:lang="en">The property connects a school project with its theme.</rdfs:comment>
-        <rdfs:comment xml:lang="it">ha tema di progetto scolastico</rdfs:comment>
-        <rdfs:comment xml:lang="en">has scholastic project theme</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/ScholasticProject"/>
-        <rdfs:label xml:lang="en">has Scholastic Project Theme</rdfs:label>
-        <rdfs:label xml:lang="it">has Scholastic Project Theme</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/ScholasticContext/hasVariable">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/ScholasticContext/StatisticIndicator"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/ScholasticContext/StatisticVariable"/>
+        <rdfs:comment xml:lang="it">Collega un indicatore statistico con le variabile da esso misurate.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It links a statistic indicator to its variable.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/ScholasticContext"/>
+        <rdfs:label xml:lang="it">ha variabile</rdfs:label>
+        <rdfs:label xml:lang="en">has Variable</rdfs:label>
+        <rdfs:label xml:lang="it">has Variable</rdfs:label>
+        <rdfs:label>has variable</rdfs:label>
         <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/onto/TI/atTime -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/TI/atTime"/>
     
 
 
@@ -503,70 +511,94 @@
     
 
 
-    <!-- https://w3id.org/italia/onto/Project/PublicInvestmentProject -->
+    <!-- https://w3id.org/italia/onto/CLV/Feature -->
 
 
-    <owl:Class rdf:about="https://w3id.org/italia/onto/Project/PublicInvestmentProject"/>
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/Feature"/>
     
 
 
-    <!-- https://w3id.org/italia/onto/ScholasticProject/ScholasticProject -->
+    <!-- https://w3id.org/italia/onto/MU/Value -->
 
 
-    <owl:Class rdf:about="https://w3id.org/italia/onto/ScholasticProject/ScholasticProject">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/Project/PublicInvestmentProject"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/ScholasticProject/hasScholasticProjectScope"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/ScholasticProject/ScholasticProjectScope"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/ScholasticProject/hasScholasticProjectTheme"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/italia/onto/ScholasticProject/ScholasticProjectTheme"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="it">La classe che rappresenta i progetti di pubblico investimento realizzati da istituzioni scolastiche</rdfs:comment>
-        <rdfs:comment xml:lang="en">This is the class that includes the projects conducted by the schools.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/ScholasticProject"/>
-        <rdfs:label xml:lang="it">Progetto Scolastico</rdfs:label>
-        <rdfs:label xml:lang="en">Scholastic Project</rdfs:label>
-        <rdfs:label xml:lang="it">Scholastic Project</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/italia/onto/MU/Value"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ScholasticContext/CatchmentArea -->
+
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/ScholasticContext/CatchmentArea">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/CLV/Feature"/>
+        <rdfs:comment xml:lang="it">L&apos;area da cui una località, come una città, un servizio o un&apos;istituzione, attrae una popolazione che utilizza i suoi servizi e le sue opportunità economiche.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The area from which a location, such as a city, service or institution, attracts a population that uses its services and economic opportunities.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/ScholasticContext"/>
+        <rdfs:label xml:lang="it">Bacino di utenza</rdfs:label>
+        <rdfs:label xml:lang="en">Catchment Area</rdfs:label>
+        <rdfs:label xml:lang="it">Catchment Area</rdfs:label>
         <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/italia/onto/ScholasticProject/ScholasticProjectScope -->
+    <!-- https://w3id.org/italia/onto/ScholasticContext/ScholasticContext -->
 
 
-    <owl:Class rdf:about="https://w3id.org/italia/onto/ScholasticProject/ScholasticProjectScope">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Concept"/>
-        <rdfs:comment xml:lang="it">La classe che include gli ambiti dei progetti scolastici.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This is the class of the Scholastic Project Scopes.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/ScholasticProject"/>
-        <rdfs:label xml:lang="it">Ambito del Progetto Scolastico</rdfs:label>
-        <rdfs:label xml:lang="en">Scholastic Project Scope</rdfs:label>
-        <rdfs:label xml:lang="it">Scholastic Project Scope</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/italia/onto/ScholasticContext/ScholasticContext">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Description"/>
+        <rdfs:comment xml:lang="it">Il contesto socio-economico di una istituzione scolastica.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The socio-economic context of a scholastic institution.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/ScholasticContext"/>
+        <rdfs:label xml:lang="it">Contesto Scolastico</rdfs:label>
+        <rdfs:label xml:lang="en">Scholastic Context</rdfs:label>
+        <rdfs:label xml:lang="it">Scholastic Context</rdfs:label>
         <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/italia/onto/ScholasticProject/ScholasticProjectTheme -->
+    <!-- https://w3id.org/italia/onto/ScholasticContext/StatisticIndicator -->
 
 
-    <owl:Class rdf:about="https://w3id.org/italia/onto/ScholasticProject/ScholasticProjectTheme">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Concept"/>
-        <rdfs:comment xml:lang="it">Questa classe include i temi dei progetti scolastici.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This is the class of the Themes of the Scholastic Project.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/ScholasticProject"/>
-        <rdfs:label xml:lang="en">Scholastic Project Theme</rdfs:label>
-        <rdfs:label xml:lang="it">Scholastic Project Theme</rdfs:label>
-        <rdfs:label xml:lang="it">Tema del Progetto Scolastico</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/italia/onto/ScholasticContext/StatisticIndicator">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/MU/Value"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/ScholasticContext/hasVariable"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/ScholasticContext/StatisticVariable"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/TI/atTime"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A statistic indicator is an observed value of a variable.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un indicatore statistico è il valore osservato di una certa variabile.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/ScholasticContext"/>
+        <rdfs:label xml:lang="it">Indicatore Statistico</rdfs:label>
+        <rdfs:label xml:lang="en">Statistic Indicator</rdfs:label>
+        <rdfs:label xml:lang="it">Statistic Indicator</rdfs:label>
+        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ScholasticContext/StatisticVariable -->
+
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/ScholasticContext/StatisticVariable">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:comment xml:lang="en">A variable is any characteristic that can be measured.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una variabile statistica è una qualsiasi caratteristica che può essere misurata.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/ScholasticContext"/>
+        <rdfs:label xml:lang="en">Statistic Variable</rdfs:label>
+        <rdfs:label xml:lang="it">Statistic Variable</rdfs:label>
+        <rdfs:label xml:lang="it">Variabile Statistica</rdfs:label>
         <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:Class>
@@ -580,10 +612,24 @@
     
 
 
-    <!-- https://w3id.org/italia/onto/l0/Concept -->
+    <!-- https://w3id.org/italia/onto/TI/TimeInterval -->
 
 
-    <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Concept"/>
+    <owl:Class rdf:about="https://w3id.org/italia/onto/TI/TimeInterval"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/Characteristic -->
+
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Characteristic"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/Description -->
+
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Description"/>
     
 
 
@@ -625,53 +671,53 @@
     
 
 
-    <!-- https://w3id.org/italia/data/distribution/ScholasticProject-AP_IT-JSON-LD -->
+    <!-- https://w3id.org/italia/data/distribution/ScholasticContext-AP_IT-JSON-LD -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/distribution/ScholasticProject-AP_IT-JSON-LD">
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/distribution/ScholasticContext-AP_IT-JSON-LD">
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
-        <terms:description xml:lang="it">Questa è la distribuzione JSON-LD dell&apos;ontologia dei progetti scolastici</terms:description>
-        <terms:description xml:lang="en">This is the distribution in JSON-LD of the scholastic project ontology</terms:description>
+        <terms:description xml:lang="it">Questa è la distribuzione JSON-LD dell&apos;ontologia che descrive i contesti socio-economici delle scuole</terms:description>
+        <terms:description xml:lang="en">This is the distribution in JSON-LD of the ontology describing the socio-economical context of the schools</terms:description>
         <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON_LD"/>
         <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
-        <terms:title xml:lang="it">Distribuzione JSON-LD ontologia ScholasticProject-AP_IT</terms:title>
-        <terms:title xml:lang="en">JSON-LD distribution of the ScholasticProject-AP_IT Ontology</terms:title>
-        <dcat:accessURL rdf:resource="https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/ScholasticProject/latest"/>
-        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/ScholasticProject/latest/ScholasticProject-AP_IT.jsonld"/>
+        <terms:title xml:lang="it">Distribuzione JSON-LD ontologia ScholasticContext-AP_IT</terms:title>
+        <terms:title xml:lang="en">JSON-LD distribution of the ScholasticContext-AP_IT Ontology</terms:title>
+        <dcat:accessURL rdf:resource="https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/ScholasticContext/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/ScholasticContext/latest/ScholasticContext-AP_IT.jsonld"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/italia/data/distribution/ScholasticProject-AP_IT-RDF-TURTLE -->
+    <!-- https://w3id.org/italia/data/distribution/ScholasticContext-AP_IT-RDF-TURTLE -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/distribution/ScholasticProject-AP_IT-RDF-TURTLE">
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/distribution/ScholasticContext-AP_IT-RDF-TURTLE">
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
-        <terms:description xml:lang="it">Questa è la distribuzione RDF/Turtle dell&apos;ontologia dei progetti scolastici</terms:description>
-        <terms:description xml:lang="en">This is the distribution in RDF/turtle of the scholastic project ontology</terms:description>
+        <terms:description xml:lang="it">Questa è la distribuzione RDF/Turtle dell&apos;ontologia che descrive i contesti socio-economici delle scuole</terms:description>
+        <terms:description xml:lang="en">This is the distribution in RDF/turtle of the ontology describing the socio-economical context of the schools</terms:description>
         <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
         <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
-        <terms:title xml:lang="it">Distribuzione RDF/Turtle ontologia ScholasticProject-AP_IT</terms:title>
-        <terms:title xml:lang="en">RDF/Turtle distribution of ScholasticProject-AP_IT Ontology</terms:title>
-        <dcat:accessURL rdf:resource="https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/ScholasticProject/latest"/>
-        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/ScholasticProject/latest/ScholasticProject-AP_IT.ttl"/>
+        <terms:title xml:lang="it">Distribuzione RDF/Turtle ontologia ScholasticContext-AP_IT</terms:title>
+        <terms:title xml:lang="en">RDF/Turtle distribution of ScholasticContext-AP_IT Ontology</terms:title>
+        <dcat:accessURL rdf:resource="https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/ScholasticContext/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/ScholasticContext/latest/ScholasticContext-AP_IT.ttl"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/italia/data/distribution/ScholasticProject-AP_IT-RDF-XML -->
+    <!-- https://w3id.org/italia/data/distribution/ScholasticContext-AP_IT-RDF-XML -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/distribution/ScholasticProject-AP_IT-RDF-XML">
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/distribution/ScholasticContext-AP_IT-RDF-XML">
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
-        <terms:description xml:lang="it">Questa è la distribuzione RDF/XML dell&apos;ontologia dei progetti scolastici</terms:description>
-        <terms:description xml:lang="en">This is the distribution in RDF/XML of the scholastic project ontology</terms:description>
+        <terms:description xml:lang="it">Questa è la distribuzione RDF/XML dell&apos;ontologia che descrive i contesti socio-economici delle scuole</terms:description>
+        <terms:description xml:lang="en">This is the distribution in RDF/XML of the ontology describing the socio-economical context of the schools</terms:description>
         <terms:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
         <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
-        <terms:title xml:lang="it">Distribuzione RDF/XML ontologia ScholasticProject-AP_IT</terms:title>
-        <terms:title xml:lang="en">RDF/XML distribution of ScholasticProject-AP_IT Ontology</terms:title>
-        <dcat:accessURL rdf:resource="https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/ScholasticProject/latest"/>
-        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/ScholasticProject/latest/ScholasticProject-AP_IT.rdf"/>
+        <terms:title xml:lang="it">Distribuzione RDF/XML ontologia ScholasticContext-AP_IT</terms:title>
+        <terms:title xml:lang="en">RDF/XML distribution of ScholasticContext-AP_IT Ontology</terms:title>
+        <dcat:accessURL rdf:resource="https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/ScholasticContext/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/ScholasticContext/latest/ScholasticContext-AP_IT.rdf"/>
     </owl:NamedIndividual>
     
 

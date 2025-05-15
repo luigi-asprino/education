@@ -220,12 +220,7 @@
 #################################################################
 
 ###  https://w3id.org/italia/onto/CLV/hasAddress
-<https://w3id.org/italia/onto/CLV/hasAddress> rdf:type owl:ObjectProperty ;
-                                              rdfs:isDefinedBy <https://w3id.org/italia/onto/School> ;
-                                              rdfs:label "has Address"@en ,
-                                                         "has Address"@it ;
-                                              owl:versionInfo "provvisoria"@it ,
-                                                              "unstable"@en .
+<https://w3id.org/italia/onto/CLV/hasAddress> rdf:type owl:ObjectProperty .
 
 
 ###  https://w3id.org/italia/onto/School/haPuntoDiErogazioneDelServizio
@@ -276,110 +271,47 @@
 #################################################################
 
 ###  http://dati.gov.it/onto/dcatapit#Agent
-<http://dati.gov.it/onto/dcatapit#Agent> rdf:type owl:Class ;
-                                         rdfs:isDefinedBy <https://w3id.org/italia/onto/School> ;
-                                         rdfs:label "Agent"@en ,
-                                                    "Agent"@it ;
-                                         owl:versionInfo "provvisoria"@it ,
-                                                         "unstable"@en .
+<http://dati.gov.it/onto/dcatapit#Agent> rdf:type owl:Class .
 
 
 ###  http://dati.gov.it/onto/dcatapit#Organization
-<http://dati.gov.it/onto/dcatapit#Organization> rdf:type owl:Class ;
-                                                rdfs:isDefinedBy <https://w3id.org/italia/onto/School> ;
-                                                rdfs:label "Organization"@en ,
-                                                           "Organization"@it ;
-                                                owl:versionInfo "provvisoria"@it ,
-                                                                "unstable"@en .
-
-
-###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject
-<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject> rdfs:isDefinedBy <https://w3id.org/italia/onto/School> ;
-                                                                       rdfs:label "Physical Object"@en ,
-                                                                                  "Physical Object"@it ;
-                                                                       owl:versionInfo "provvisoria"@it ,
-                                                                                       "unstable"@en .
+<http://dati.gov.it/onto/dcatapit#Organization> rdf:type owl:Class .
 
 
 ###  http://www.w3.org/2006/vcard/ns#Kind
-<http://www.w3.org/2006/vcard/ns#Kind> rdf:type owl:Class ;
-                                       rdfs:isDefinedBy <https://w3id.org/italia/onto/School> ;
-                                       rdfs:label "Kind"@en ,
-                                                  "Kind"@it ;
-                                       owl:versionInfo "provvisoria"@it ,
-                                                       "unstable"@en .
+<http://www.w3.org/2006/vcard/ns#Kind> rdf:type owl:Class .
 
 
 ###  http://www.w3.org/2006/vcard/ns#Organization
-<http://www.w3.org/2006/vcard/ns#Organization> rdf:type owl:Class ;
-                                               rdfs:isDefinedBy <https://w3id.org/italia/onto/School> ;
-                                               rdfs:label "Organization"@en ,
-                                                          "Organization"@it ;
-                                               owl:versionInfo "provvisoria"@it ,
-                                                               "unstable"@en .
+<http://www.w3.org/2006/vcard/ns#Organization> rdf:type owl:Class .
 
 
 ###  http://xmlns.com/foaf/0.1/Agent
-<http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class ;
-                                  rdfs:isDefinedBy <https://w3id.org/italia/onto/School> ;
-                                  rdfs:label "Agent"@en ,
-                                             "Agent"@it ;
-                                  owl:versionInfo "provvisoria"@it ,
-                                                  "unstable"@en .
+<http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class .
 
 
 ###  https://w3id.org/italia/onto/ADMS/Project
-<https://w3id.org/italia/onto/ADMS/Project> rdf:type owl:Class ;
-                                            rdfs:isDefinedBy <https://w3id.org/italia/onto/School> ;
-                                            rdfs:label "Project"@en ,
-                                                       "Project"@it ;
-                                            owl:versionInfo "provvisoria"@it ,
-                                                            "unstable"@en .
+<https://w3id.org/italia/onto/ADMS/Project> rdf:type owl:Class .
 
 
 ###  https://w3id.org/italia/onto/ADMS/SemanticAsset
-<https://w3id.org/italia/onto/ADMS/SemanticAsset> rdf:type owl:Class ;
-                                                  rdfs:isDefinedBy <https://w3id.org/italia/onto/School> ;
-                                                  rdfs:label "Semantic Asset"@en ,
-                                                             "Semantic Asset"@it ;
-                                                  owl:versionInfo "provvisoria"@it ,
-                                                                  "unstable"@en .
+<https://w3id.org/italia/onto/ADMS/SemanticAsset> rdf:type owl:Class .
 
 
 ###  https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution
-<https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution> rdf:type owl:Class ;
-                                                              rdfs:isDefinedBy <https://w3id.org/italia/onto/School> ;
-                                                              rdfs:label "Semantic Asset Distribution"@en ,
-                                                                         "Semantic Asset Distribution"@it ;
-                                                              owl:versionInfo "provvisoria"@it ,
-                                                                              "unstable"@en .
+<https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution> rdf:type owl:Class .
 
 
 ###  https://w3id.org/italia/onto/CLV/Address
-<https://w3id.org/italia/onto/CLV/Address> rdf:type owl:Class ;
-                                           rdfs:isDefinedBy <https://w3id.org/italia/onto/School> ;
-                                           rdfs:label "Address"@en ,
-                                                      "Address"@it ;
-                                           owl:versionInfo "provvisoria"@it ,
-                                                           "unstable"@en .
+<https://w3id.org/italia/onto/CLV/Address> rdf:type owl:Class .
 
 
 ###  https://w3id.org/italia/onto/COV/Organization
-<https://w3id.org/italia/onto/COV/Organization> rdf:type owl:Class ;
-                                                rdfs:isDefinedBy <https://w3id.org/italia/onto/School> ;
-                                                rdfs:label "Organization"@en ,
-                                                           "Organization"@it ;
-                                                owl:versionInfo "provvisoria"@it ,
-                                                                "unstable"@en .
+<https://w3id.org/italia/onto/COV/Organization> rdf:type owl:Class .
 
 
 ###  https://w3id.org/italia/onto/COV/PrivateOrganization
-<https://w3id.org/italia/onto/COV/PrivateOrganization> rdf:type owl:Class ;
-                                                       rdfs:isDefinedBy <https://w3id.org/italia/onto/School> ;
-                                                       rdfs:label "Private Organization"@en ,
-                                                                  "Private Organization"@it ;
-                                                       owl:versionInfo "provvisoria"@it ,
-                                                                       "unstable"@en .
+<https://w3id.org/italia/onto/COV/PrivateOrganization> rdf:type owl:Class .
 
 
 ###  https://w3id.org/italia/onto/School/CentroProvincialiIstruzioneDegliAdulti
@@ -1000,11 +932,6 @@
                                                              <http://dati.gov.it/onto/dcatapit#Organization> ,
                                                              <http://www.w3.org/2006/vcard/ns#Kind> ,
                                                              <http://www.w3.org/2006/vcard/ns#Organization> ;
-                                                    rdfs:isDefinedBy <https://w3id.org/italia/onto/School> ;
-                                                    rdfs:label "INDIRE"@en ,
-                                                               "INDIRE"@it ;
-                                                    owl:versionInfo "provvisoria"@it ,
-                                                                    "unstable"@en ;
                                                     <http://www.w3.org/2006/vcard/ns#fn> "Ufficio Relazioni con il Pubblico - INDIRE" ;
                                                     <http://www.w3.org/2006/vcard/ns#hasEmail> <mailto:urp@indire.it> .
 
@@ -1014,11 +941,6 @@
                                                                 <http://dati.gov.it/onto/dcatapit#Organization> ,
                                                                 <http://www.w3.org/2006/vcard/ns#Kind> ,
                                                                 <http://www.w3.org/2006/vcard/ns#Organization> ;
-                                                       rdfs:isDefinedBy <https://w3id.org/italia/onto/School> ;
-                                                       rdfs:label "ISTAT - NDC"@en ,
-                                                                  "ISTAT - NDC"@it ;
-                                                       owl:versionInfo "provvisoria"@it ,
-                                                                       "unstable"@en ;
                                                        <http://www.w3.org/2006/vcard/ns#fn> "Segreteria Tecnica Istat - Progetto PNRR National Data Catalog" ;
                                                        <http://www.w3.org/2006/vcard/ns#hasEmail> <mailto:ndc-segr-tec@istat.it> .
 
@@ -1032,11 +954,6 @@
                                                                  <http://purl.org/dc/terms/license> <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
                                                                  <http://purl.org/dc/terms/title> "Distribuzione JSON-LD ontologia School-AP_IT"@it ,
                                                                                                   "JSON-LD distribution of the School-AP_IT Ontology"@en ;
-                                                                 rdfs:isDefinedBy <https://w3id.org/italia/onto/School> ;
-                                                                 rdfs:label "School - AP _ IT - JSON - LD"@en ,
-                                                                            "School - AP _ IT - JSON - LD"@it ;
-                                                                 owl:versionInfo "provvisoria"@it ,
-                                                                                 "unstable"@en ;
                                                                  <http://www.w3.org/ns/dcat#accessURL> <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/School/latest> ;
                                                                  <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/School/latest/School-AP_IT.jsonld> .
 
@@ -1050,11 +967,6 @@
                                                                     <http://purl.org/dc/terms/license> <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
                                                                     <http://purl.org/dc/terms/title> "Distribuzione RDF/Turtle ontologia School-AP_IT"@it ,
                                                                                                      "RDF/Turtle distribution of School-AP_IT Ontology"@en ;
-                                                                    rdfs:isDefinedBy <https://w3id.org/italia/onto/School> ;
-                                                                    rdfs:label "School - AP _ IT - RDF - TURTLE"@en ,
-                                                                               "School - AP _ IT - RDF - TURTLE"@it ;
-                                                                    owl:versionInfo "provvisoria"@it ,
-                                                                                    "unstable"@en ;
                                                                     <http://www.w3.org/ns/dcat#accessURL> <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/School/latest> ;
                                                                     <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/School/latest/School-AP_IT.ttl> .
 
@@ -1068,11 +980,6 @@
                                                                  <http://purl.org/dc/terms/license> <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
                                                                  <http://purl.org/dc/terms/title> "Distribuzione RDF/XML ontologia School-AP_IT"@it ,
                                                                                                   "RDF/XML distribution of School-AP_IT Ontology"@en ;
-                                                                 rdfs:isDefinedBy <https://w3id.org/italia/onto/School> ;
-                                                                 rdfs:label "School - AP _ IT - RDF - XML"@en ,
-                                                                            "School - AP _ IT - RDF - XML"@it ;
-                                                                 owl:versionInfo "provvisoria"@it ,
-                                                                                 "unstable"@en ;
                                                                  <http://www.w3.org/ns/dcat#accessURL> <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/School/latest> ;
                                                                  <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/School/latest/School-AP_IT.rdf> .
 
@@ -1082,11 +989,6 @@
                                                                                    <http://dati.gov.it/onto/dcatapit#Agent> ,
                                                                                    <http://xmlns.com/foaf/0.1/Agent> ;
                                                                           <http://purl.org/dc/terms/identifier> "cnr - Z6HZEH - STLab" ;
-                                                                          rdfs:isDefinedBy <https://w3id.org/italia/onto/School> ;
-                                                                          rdfs:label "stlab"@en ,
-                                                                                     "stlab"@it ;
-                                                                          owl:versionInfo "provvisoria"@it ,
-                                                                                          "unstable"@en ;
                                                                           <http://xmlns.com/foaf/0.1/name> "Institute of Cognitive Sciences and Technologies of the Italian Research Council (CNR) - Semantic Technology Laboratory (STLab)"@en ,
                                                                                                            "Istituto di Scienze e Tecnologie della Cognizione del CNR - Semantic Technology Lab (STLab)"@it .
 
@@ -1094,22 +996,12 @@
 ###  https://w3id.org/italia/data/project/NDC
 <https://w3id.org/italia/data/project/NDC> rdf:type owl:NamedIndividual ,
                                                     <https://w3id.org/italia/onto/ADMS/Project> ;
-                                           rdfs:isDefinedBy <https://w3id.org/italia/onto/School> ;
-                                           rdfs:label "NDC"@en ,
-                                                      "NDC"@it ;
-                                           owl:versionInfo "provvisoria"@it ,
-                                                           "unstable"@en ;
                                            <https://w3id.org/italia/onto/l0/name> "National Data Catalog - schema.gov.it"@it .
 
 
 ###  https://w3id.org/italia/data/project/OntoPiA
 <https://w3id.org/italia/data/project/OntoPiA> rdf:type owl:NamedIndividual ,
                                                         <https://w3id.org/italia/onto/ADMS/Project> ;
-                                               rdfs:isDefinedBy <https://w3id.org/italia/onto/School> ;
-                                               rdfs:label "Onto Pi A"@en ,
-                                                          "Onto Pi A"@it ;
-                                               owl:versionInfo "provvisoria"@it ,
-                                                               "unstable"@en ;
                                                <https://w3id.org/italia/onto/l0/name> "OntoPiA - la rete di ontologie della pubblica amministrazione italiana"@it .
 
 
@@ -1118,11 +1010,6 @@
                                                                    <http://dati.gov.it/onto/dcatapit#Agent> ,
                                                                    <http://xmlns.com/foaf/0.1/Agent> ;
                                                           <http://purl.org/dc/terms/identifier> "INDIRE" ;
-                                                          rdfs:isDefinedBy <https://w3id.org/italia/onto/School> ;
-                                                          rdfs:label "INDIRE"@en ,
-                                                                     "INDIRE"@it ;
-                                                          owl:versionInfo "provvisoria"@it ,
-                                                                          "unstable"@en ;
                                                           <http://xmlns.com/foaf/0.1/name> "Istituto Nazionale di Documentazione, Innovazione e Ricerca Educativa - INDIRE"@it ,
                                                                                            "Italian National Institute for Documentation, Innovation and Educational Research - INDIRE"@en .
 
@@ -1132,11 +1019,6 @@
                                                                   <http://dati.gov.it/onto/dcatapit#Agent> ,
                                                                   <http://xmlns.com/foaf/0.1/Agent> ;
                                                          <http://purl.org/dc/terms/identifier> "ISTAT" ;
-                                                         rdfs:isDefinedBy <https://w3id.org/italia/onto/School> ;
-                                                         rdfs:label "ISTAT"@en ,
-                                                                    "ISTAT"@it ;
-                                                         owl:versionInfo "provvisoria"@it ,
-                                                                         "unstable"@en ;
                                                          <http://xmlns.com/foaf/0.1/name> "Istituto Nazionale di Statistica - ISTAT"@it ,
                                                                                           "Italian National Institute of Statistics - ISTAT"@en .
 
@@ -1146,23 +1028,13 @@
                                                                        <http://dati.gov.it/onto/dcatapit#Agent> ,
                                                                        <http://xmlns.com/foaf/0.1/Agent> ;
                                                               <http://purl.org/dc/terms/identifier> "PCM-1RSIZZ" ;
-                                                              rdfs:isDefinedBy <https://w3id.org/italia/onto/School> ;
-                                                              rdfs:label "PCM - 1 RSIZZ"@en ,
-                                                                         "PCM - 1 RSIZZ"@it ;
-                                                              owl:versionInfo "provvisoria"@it ,
-                                                                              "unstable"@en ;
                                                               <http://xmlns.com/foaf/0.1/name> "Digital Transformation Department of the Presidency of the Council of Ministers"@en ,
                                                                                                "Dipartimento per la Trasformazione Digitale della Presidenza del Consiglio dei Ministri"@it .
 
 
 ###  https://w3id.org/italia/onto/School
 <https://w3id.org/italia/onto/School> rdf:type owl:NamedIndividual ,
-                                               <https://w3id.org/italia/onto/ADMS/SemanticAsset> ;
-                                      rdfs:isDefinedBy <https://w3id.org/italia/onto/School> ;
-                                      rdfs:label "School"@en ,
-                                                 "School"@it ;
-                                      owl:versionInfo "provvisoria"@it ,
-                                                      "unstable"@en .
+                                               <https://w3id.org/italia/onto/ADMS/SemanticAsset> .
 
 
 #################################################################

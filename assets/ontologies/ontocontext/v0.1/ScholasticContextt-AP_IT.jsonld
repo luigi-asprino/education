@@ -1,14 +1,12 @@
 [
     {
-        "@id": "https://w3id.org/italia/onto/ScholasticProject",
+        "@id": "https://w3id.org/italia/onto/ScholasticContext",
         "@type": [
-            "http://www.w3.org/2002/07/owl#Ontology",
-            "http://www.w3.org/2002/07/owl#NamedIndividual",
-            "https://w3id.org/italia/onto/ADMS/SemanticAsset"
+            "http://www.w3.org/2002/07/owl#Ontology"
         ],
         "http://www.w3.org/2002/07/owl#versionIRI": [
             {
-                "@id": "https://w3id.org/italia/onto/ScholasticProject/0.1"
+                "@id": "https://w3id.org/italia/onto/ScholasticContext/0.1"
             }
         ],
         "http://www.w3.org/2002/07/owl#imports": [
@@ -16,12 +14,15 @@
                 "@id": "https://w3id.org/italia/onto/School"
             },
             {
-                "@id": "https://w3id.org/italia/onto/Project/0.3"
+                "@id": "https://w3id.org/italia/onto/CLV/1.0"
+            },
+            {
+                "@id": "https://w3id.org/italia/onto/TI/0.8"
             }
         ],
         "http://purl.org/dc/elements/1.1/description": [
             {
-                "@id": "https://raw.githubusercontent.com/luigi-asprino/education/refs/heads/main/assets/ontologies/ontoproject/ScholasticProject.png"
+                "@id": "https://raw.githubusercontent.com/luigi-asprino/education/refs/heads/main/assets/ontologies/ontocontext/ScholasticContext.png"
             }
         ],
         "http://purl.org/dc/terms/accrualPeriodicity": [
@@ -40,11 +41,11 @@
         "http://purl.org/dc/terms/description": [
             {
                 "@language": "it",
-                "@value": "Questa ontologia che descrive i progetti realizzati dalle scuole italiane."
+                "@value": "Questa ontologia che descrive il contesto socio-economico dalle scuole italiane."
             },
             {
                 "@language": "en",
-                "@value": "This ontology describes the projects conducted by Italian schools."
+                "@value": "This ontology describes the socio-economic context of the Italian schools."
             }
         ],
         "http://purl.org/dc/terms/identifier": [
@@ -85,31 +86,31 @@
         "http://purl.org/dc/terms/title": [
             {
                 "@language": "en",
-                "@value": "ScholasticProject-AP_IT"
+                "@value": "ScholasticContext-AP_IT"
             },
             {
                 "@language": "it",
-                "@value": "ScholasticProject-AP_IT"
+                "@value": "ScholasticContext-AP_IT"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": [
             {
                 "@language": "it",
-                "@value": "Questa ontologia che descrive i progetti realizzati dalle scuole italiane."
+                "@value": "Questa ontologia che descrive il contesto socio-economico dalle scuole italiane."
             },
             {
                 "@language": "en",
-                "@value": "This ontology describes the projects conducted by Italian schools."
+                "@value": "This ontology describes the socio-economic context of the Italian schools."
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
             {
                 "@language": "en",
-                "@value": "ScholasticProject-AP_IT"
+                "@value": "ScholasticContext-AP_IT"
             },
             {
                 "@language": "it",
-                "@value": "ScholasticProject-AP_IT"
+                "@value": "ScholasticContext-AP_IT"
             }
         ],
         "http://www.w3.org/2002/07/owl#versionInfo": [
@@ -129,10 +130,10 @@
         ],
         "http://www.w3.org/ns/dcat#keyword": [
             {
-                "@value": "project"
+                "@value": "scuola"
             },
             {
-                "@value": "scuola"
+                "@value": "socio-economic context"
             }
         ],
         "http://www.w3.org/ns/dcat#theme": [
@@ -142,12 +143,12 @@
         ],
         "http://www.w3.org/ns/prov#wasDerivedFrom": [
             {
-                "@id": "https://w3id.org/italia/onto/ScholasticProject/0.1"
+                "@id": "https://w3id.org/italia/onto/ScholasticContext/0.1"
             }
         ],
         "https://w3id.org/italia/onto/ADMS/acronym": [
             {
-                "@value": "ScholasticProject-AP_IT"
+                "@value": "ScholasticContext-AP_IT"
             }
         ],
         "https://w3id.org/italia/onto/ADMS/hasContributor": [
@@ -162,7 +163,7 @@
         ],
         "https://w3id.org/italia/onto/ADMS/hasKeyClass": [
             {
-                "@id": "https://w3id.org/italia/onto/ScholasticProject/ScholasticProject"
+                "@id": "https://w3id.org/italia/onto/ScholasticProject/ScholasticContext"
             }
         ],
         "https://w3id.org/italia/onto/ADMS/hasOntologyLanguage": [
@@ -172,13 +173,13 @@
         ],
         "https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution": [
             {
-                "@id": "https://w3id.org/italia/data/distribution/ScholasticProject-AP_IT-JSON-LD"
+                "@id": "https://w3id.org/italia/data/distribution/ScholasticContext-AP_IT-JSON-LD"
             },
             {
-                "@id": "https://w3id.org/italia/data/distribution/ScholasticProject-AP_IT-RDF-TURTLE"
+                "@id": "https://w3id.org/italia/data/distribution/ScholasticContext-AP_IT-RDF-TURTLE"
             },
             {
-                "@id": "https://w3id.org/italia/data/distribution/ScholasticProject-AP_IT-RDF-XML"
+                "@id": "https://w3id.org/italia/data/distribution/ScholasticContext-AP_IT-RDF-XML"
             }
         ],
         "https://w3id.org/italia/onto/ADMS/hasTask": [
@@ -191,23 +192,23 @@
         ],
         "https://w3id.org/italia/onto/ADMS/last": [
             {
-                "@id": "https://w3id.org/italia/onto/ScholasticProject/0.1"
+                "@id": "https://w3id.org/italia/onto/ScholasticContext/0.1"
             }
         ],
         "https://w3id.org/italia/onto/ADMS/officialURI": [
             {
-                "@value": "https://w3id.org/italia/onto/ScholasticProject",
+                "@value": "https://w3id.org/italia/onto/ScholasticContext",
                 "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
             }
         ],
         "https://w3id.org/italia/onto/ADMS/prefix": [
             {
-                "@value": "sproject"
+                "@value": "scontext"
             }
         ],
         "https://w3id.org/italia/onto/ADMS/prev": [
             {
-                "@id": "https://w3id.org/italia/onto/ScholasticProject/0.1"
+                "@id": "https://w3id.org/italia/onto/ScholasticContext/0.1"
             }
         ],
         "https://w3id.org/italia/onto/ADMS/semanticAssetInUse": [
@@ -329,63 +330,7 @@
         ]
     },
     {
-        "@id": "https://w3id.org/italia/onto/ScholasticProject/ScholasticProject",
-        "@type": [
-            "http://www.w3.org/2002/07/owl#Class"
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-            {
-                "@id": "https://w3id.org/italia/onto/Project/PublicInvestmentProject"
-            },
-            {
-                "@id": "_:genid1"
-            },
-            {
-                "@id": "_:genid2"
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#comment": [
-            {
-                "@language": "it",
-                "@value": "La classe che rappresenta i progetti di pubblico investimento realizzati da istituzioni scolastiche"
-            },
-            {
-                "@language": "en",
-                "@value": "This is the class that includes the projects conducted by the schools."
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-            {
-                "@id": "https://w3id.org/italia/onto/ScholasticProject"
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-            {
-                "@language": "it",
-                "@value": "Progetto Scolastico"
-            },
-            {
-                "@language": "en",
-                "@value": "Scholastic Project"
-            },
-            {
-                "@language": "it",
-                "@value": "Scholastic Project"
-            }
-        ],
-        "http://www.w3.org/2002/07/owl#versionInfo": [
-            {
-                "@language": "it",
-                "@value": "provvisoria"
-            },
-            {
-                "@language": "en",
-                "@value": "unstable"
-            }
-        ]
-    },
-    {
-        "@id": "https://w3id.org/italia/data/distribution/ScholasticProject-AP_IT-JSON-LD",
+        "@id": "https://w3id.org/italia/data/distribution/ScholasticContext-AP_IT-JSON-LD",
         "@type": [
             "http://www.w3.org/2002/07/owl#NamedIndividual",
             "https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"
@@ -393,11 +338,11 @@
         "http://purl.org/dc/terms/description": [
             {
                 "@language": "it",
-                "@value": "Questa è la distribuzione JSON-LD dell'ontologia dei progetti scolastici"
+                "@value": "Questa è la distribuzione JSON-LD dell'ontologia che descrive i contesti socio-economici delle scuole"
             },
             {
                 "@language": "en",
-                "@value": "This is the distribution in JSON-LD of the scholastic project ontology"
+                "@value": "This is the distribution in JSON-LD of the ontology describing the socio-economical context of the schools"
             }
         ],
         "http://purl.org/dc/terms/format": [
@@ -413,26 +358,26 @@
         "http://purl.org/dc/terms/title": [
             {
                 "@language": "it",
-                "@value": "Distribuzione JSON-LD ontologia ScholasticProject-AP_IT"
+                "@value": "Distribuzione JSON-LD ontologia ScholasticContext-AP_IT"
             },
             {
                 "@language": "en",
-                "@value": "JSON-LD distribution of the ScholasticProject-AP_IT Ontology"
+                "@value": "JSON-LD distribution of the ScholasticContext-AP_IT Ontology"
             }
         ],
         "http://www.w3.org/ns/dcat#accessURL": [
             {
-                "@id": "https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/ScholasticProject/latest"
+                "@id": "https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/ScholasticContext/latest"
             }
         ],
         "http://www.w3.org/ns/dcat#downloadURL": [
             {
-                "@id": "https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/ScholasticProject/latest/ScholasticProject-AP_IT.jsonld"
+                "@id": "https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/ScholasticContext/latest/ScholasticContext-AP_IT.jsonld"
             }
         ]
     },
     {
-        "@id": "https://w3id.org/italia/data/distribution/ScholasticProject-AP_IT-RDF-TURTLE",
+        "@id": "https://w3id.org/italia/data/distribution/ScholasticContext-AP_IT-RDF-TURTLE",
         "@type": [
             "http://www.w3.org/2002/07/owl#NamedIndividual",
             "https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"
@@ -440,11 +385,11 @@
         "http://purl.org/dc/terms/description": [
             {
                 "@language": "it",
-                "@value": "Questa è la distribuzione RDF/Turtle dell'ontologia dei progetti scolastici"
+                "@value": "Questa è la distribuzione RDF/Turtle dell'ontologia che descrive i contesti socio-economici delle scuole"
             },
             {
                 "@language": "en",
-                "@value": "This is the distribution in RDF/turtle of the scholastic project ontology"
+                "@value": "This is the distribution in RDF/turtle of the ontology describing the socio-economical context of the schools"
             }
         ],
         "http://purl.org/dc/terms/format": [
@@ -460,26 +405,26 @@
         "http://purl.org/dc/terms/title": [
             {
                 "@language": "it",
-                "@value": "Distribuzione RDF/Turtle ontologia ScholasticProject-AP_IT"
+                "@value": "Distribuzione RDF/Turtle ontologia ScholasticContext-AP_IT"
             },
             {
                 "@language": "en",
-                "@value": "RDF/Turtle distribution of ScholasticProject-AP_IT Ontology"
+                "@value": "RDF/Turtle distribution of ScholasticContext-AP_IT Ontology"
             }
         ],
         "http://www.w3.org/ns/dcat#accessURL": [
             {
-                "@id": "https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/ScholasticProject/latest"
+                "@id": "https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/ScholasticContext/latest"
             }
         ],
         "http://www.w3.org/ns/dcat#downloadURL": [
             {
-                "@id": "https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/ScholasticProject/latest/ScholasticProject-AP_IT.ttl"
+                "@id": "https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/ScholasticContext/latest/ScholasticContext-AP_IT.ttl"
             }
         ]
     },
     {
-        "@id": "https://w3id.org/italia/data/distribution/ScholasticProject-AP_IT-RDF-XML",
+        "@id": "https://w3id.org/italia/data/distribution/ScholasticContext-AP_IT-RDF-XML",
         "@type": [
             "http://www.w3.org/2002/07/owl#NamedIndividual",
             "https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"
@@ -487,11 +432,11 @@
         "http://purl.org/dc/terms/description": [
             {
                 "@language": "it",
-                "@value": "Questa è la distribuzione RDF/XML dell'ontologia dei progetti scolastici"
+                "@value": "Questa è la distribuzione RDF/XML dell'ontologia che descrive i contesti socio-economici delle scuole"
             },
             {
                 "@language": "en",
-                "@value": "This is the distribution in RDF/XML of the scholastic project ontology"
+                "@value": "This is the distribution in RDF/XML of the ontology describing the socio-economical context of the schools"
             }
         ],
         "http://purl.org/dc/terms/format": [
@@ -507,21 +452,21 @@
         "http://purl.org/dc/terms/title": [
             {
                 "@language": "it",
-                "@value": "Distribuzione RDF/XML ontologia ScholasticProject-AP_IT"
+                "@value": "Distribuzione RDF/XML ontologia ScholasticContext-AP_IT"
             },
             {
                 "@language": "en",
-                "@value": "RDF/XML distribution of ScholasticProject-AP_IT Ontology"
+                "@value": "RDF/XML distribution of ScholasticContext-AP_IT Ontology"
             }
         ],
         "http://www.w3.org/ns/dcat#accessURL": [
             {
-                "@id": "https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/ScholasticProject/latest"
+                "@id": "https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/ScholasticContext/latest"
             }
         ],
         "http://www.w3.org/ns/dcat#downloadURL": [
             {
-                "@id": "https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/ScholasticProject/latest/ScholasticProject-AP_IT.rdf"
+                "@id": "https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/ScholasticContext/latest/ScholasticContext-AP_IT.rdf"
             }
         ]
     },
@@ -786,7 +731,7 @@
         ]
     },
     {
-        "@id": "https://w3id.org/italia/onto/ScholasticProject/conductsScholasticProject",
+        "@id": "https://w3id.org/italia/onto/ScholasticContext/hasCatchmentArea",
         "@type": [
             "http://www.w3.org/2002/07/owl#ObjectProperty"
         ],
@@ -797,40 +742,40 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#range": [
             {
-                "@id": "https://w3id.org/italia/onto/ScholasticProject/ScholasticProject"
+                "@id": "https://w3id.org/italia/onto/ScholasticContext/CatchmentArea"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": [
             {
                 "@language": "it",
-                "@value": "La proprietà lega una istituzione scolastica ai progetti da essa realizzati."
+                "@value": "Collega una istituzione scolastica al suo bacino di utenza."
             },
             {
                 "@language": "en",
-                "@value": "Property that links a scholastic institution to one of its projects."
+                "@value": "It connects a school to its catchment area."
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://w3id.org/italia/onto/ScholasticProject"
+                "@id": "https://w3id.org/italia/onto/ScholasticContext"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
             {
                 "@language": "it",
-                "@value": "conduce progetto scolastico"
+                "@value": "ha bacino di utenza"
             },
             {
                 "@language": "en",
-                "@value": "conducts Scholastic Project"
+                "@value": "has Catchment Area"
             },
             {
                 "@language": "it",
-                "@value": "conducts Scholastic Project"
+                "@value": "has Catchment Area"
             },
             {
                 "@language": "en",
-                "@value": "conducts scholastic project"
+                "@value": "has catchment area"
             }
         ],
         "http://www.w3.org/2002/07/owl#versionInfo": [
@@ -851,101 +796,42 @@
         ]
     },
     {
-        "@id": "https://w3id.org/italia/onto/ScholasticProject/hasScholasticProjectScope",
-        "@type": [
-            "http://www.w3.org/2002/07/owl#ObjectProperty"
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#domain": [
-            {
-                "@id": "https://w3id.org/italia/onto/ScholasticProject/ScholasticProject"
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#range": [
-            {
-                "@id": "https://w3id.org/italia/onto/ScholasticProject/ScholasticProjectScope"
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#comment": [
-            {
-                "@language": "it",
-                "@value": "La proprietà connette un progetto scolastico con i suoi ambiti di interesse."
-            },
-            {
-                "@language": "en",
-                "@value": "Property connects a scholastic project with its scope."
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-            {
-                "@id": "https://w3id.org/italia/onto/ScholasticProject"
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-            {
-                "@language": "it",
-                "@value": "ha ambito di progetto scolastico"
-            },
-            {
-                "@language": "en",
-                "@value": "has Scholastic Project Scope"
-            },
-            {
-                "@language": "it",
-                "@value": "has Scholastic Project Scope"
-            },
-            {
-                "@language": "en",
-                "@value": "has scholastic project scope"
-            }
-        ],
-        "http://www.w3.org/2002/07/owl#versionInfo": [
-            {
-                "@language": "it",
-                "@value": "provvisoria"
-            },
-            {
-                "@language": "en",
-                "@value": "unstable"
-            }
-        ]
-    },
-    {
-        "@id": "https://w3id.org/italia/onto/ScholasticProject/ScholasticProjectScope",
+        "@id": "https://w3id.org/italia/onto/ScholasticContext/CatchmentArea",
         "@type": [
             "http://www.w3.org/2002/07/owl#Class"
         ],
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
             {
-                "@id": "https://w3id.org/italia/onto/l0/Concept"
+                "@id": "https://w3id.org/italia/onto/CLV/Feature"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": [
             {
                 "@language": "it",
-                "@value": "La classe che include gli ambiti dei progetti scolastici."
+                "@value": "L'area da cui una località, come una città, un servizio o un'istituzione, attrae una popolazione che utilizza i suoi servizi e le sue opportunità economiche."
             },
             {
                 "@language": "en",
-                "@value": "This is the class of the Scholastic Project Scopes."
+                "@value": "The area from which a location, such as a city, service or institution, attracts a population that uses its services and economic opportunities."
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://w3id.org/italia/onto/ScholasticProject"
+                "@id": "https://w3id.org/italia/onto/ScholasticContext"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
             {
                 "@language": "it",
-                "@value": "Ambito del Progetto Scolastico"
+                "@value": "Bacino di utenza"
             },
             {
                 "@language": "en",
-                "@value": "Scholastic Project Scope"
+                "@value": "Catchment Area"
             },
             {
                 "@language": "it",
-                "@value": "Scholastic Project Scope"
+                "@value": "Catchment Area"
             }
         ],
         "http://www.w3.org/2002/07/owl#versionInfo": [
@@ -960,51 +846,51 @@
         ]
     },
     {
-        "@id": "https://w3id.org/italia/onto/ScholasticProject/hasScholasticProjectTheme",
+        "@id": "https://w3id.org/italia/onto/ScholasticContext/hasScholasticContext",
         "@type": [
             "http://www.w3.org/2002/07/owl#ObjectProperty"
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://w3id.org/italia/onto/ScholasticProject/ScholasticProject"
+                "@id": "https://w3id.org/italia/onto/School/IstituzioneScolastica"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#range": [
             {
-                "@id": "https://w3id.org/italia/onto/ScholasticProject/ScholasticProjectTheme"
+                "@id": "https://w3id.org/italia/onto/ScholasticContext/ScholasticContext"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": [
             {
                 "@language": "it",
-                "@value": "La proprietà connette un progetto scolastico con il suo tema."
+                "@value": "Collega una istituzione scolastica al suo relativo contesto socio-economico."
             },
             {
                 "@language": "en",
-                "@value": "The property connects a school project with its theme."
-            },
-            {
-                "@language": "it",
-                "@value": "ha tema di progetto scolastico"
-            },
-            {
-                "@language": "en",
-                "@value": "has scholastic project theme"
+                "@value": "It links a scholastic institution to its scholastic context."
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://w3id.org/italia/onto/ScholasticProject"
+                "@id": "https://w3id.org/italia/onto/ScholasticContext"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
             {
+                "@language": "it",
+                "@value": "ha contesto scolastico"
+            },
+            {
                 "@language": "en",
-                "@value": "has Scholastic Project Theme"
+                "@value": "has Scholastic Context"
             },
             {
                 "@language": "it",
-                "@value": "has Scholastic Project Theme"
+                "@value": "has Scholastic Context"
+            },
+            {
+                "@language": "en",
+                "@value": "has scholastic context"
             }
         ],
         "http://www.w3.org/2002/07/owl#versionInfo": [
@@ -1019,42 +905,42 @@
         ]
     },
     {
-        "@id": "https://w3id.org/italia/onto/ScholasticProject/ScholasticProjectTheme",
+        "@id": "https://w3id.org/italia/onto/ScholasticContext/ScholasticContext",
         "@type": [
             "http://www.w3.org/2002/07/owl#Class"
         ],
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
             {
-                "@id": "https://w3id.org/italia/onto/l0/Concept"
+                "@id": "https://w3id.org/italia/onto/l0/Description"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#comment": [
             {
                 "@language": "it",
-                "@value": "Questa classe include i temi dei progetti scolastici."
+                "@value": "Il contesto socio-economico di una istituzione scolastica."
             },
             {
                 "@language": "en",
-                "@value": "This is the class of the Themes of the Scholastic Project."
+                "@value": "The socio-economic context of a scholastic institution."
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://w3id.org/italia/onto/ScholasticProject"
+                "@id": "https://w3id.org/italia/onto/ScholasticContext"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
             {
+                "@language": "it",
+                "@value": "Contesto Scolastico"
+            },
+            {
                 "@language": "en",
-                "@value": "Scholastic Project Theme"
+                "@value": "Scholastic Context"
             },
             {
                 "@language": "it",
-                "@value": "Scholastic Project Theme"
-            },
-            {
-                "@language": "it",
-                "@value": "Tema del Progetto Scolastico"
+                "@value": "Scholastic Context"
             }
         ],
         "http://www.w3.org/2002/07/owl#versionInfo": [
@@ -1066,6 +952,176 @@
                 "@language": "en",
                 "@value": "unstable"
             }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/italia/onto/ScholasticContext/hasVariable",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "https://w3id.org/italia/onto/ScholasticContext/StatisticIndicator"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "https://w3id.org/italia/onto/ScholasticContext/StatisticVariable"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@language": "it",
+                "@value": "Collega un indicatore statistico con le variabile da esso misurate."
+            },
+            {
+                "@language": "en",
+                "@value": "It links a statistic indicator to its variable."
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+            {
+                "@id": "https://w3id.org/italia/onto/ScholasticContext"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@language": "it",
+                "@value": "ha variabile"
+            },
+            {
+                "@language": "en",
+                "@value": "has Variable"
+            },
+            {
+                "@language": "it",
+                "@value": "has Variable"
+            },
+            {
+                "@value": "has variable"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#versionInfo": [
+            {
+                "@language": "it",
+                "@value": "provvisoria"
+            },
+            {
+                "@language": "en",
+                "@value": "unstable"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/italia/onto/ScholasticContext/StatisticIndicator",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/italia/onto/MU/Value"
+            },
+            {
+                "@id": "_:genid1"
+            },
+            {
+                "@id": "_:genid2"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@language": "en",
+                "@value": "A statistic indicator is an observed value of a variable."
+            },
+            {
+                "@language": "it",
+                "@value": "Un indicatore statistico è il valore osservato di una certa variabile."
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+            {
+                "@id": "https://w3id.org/italia/onto/ScholasticContext"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@language": "it",
+                "@value": "Indicatore Statistico"
+            },
+            {
+                "@language": "en",
+                "@value": "Statistic Indicator"
+            },
+            {
+                "@language": "it",
+                "@value": "Statistic Indicator"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#versionInfo": [
+            {
+                "@language": "it",
+                "@value": "provvisoria"
+            },
+            {
+                "@language": "en",
+                "@value": "unstable"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/italia/onto/ScholasticContext/StatisticVariable",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/italia/onto/l0/Characteristic"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@language": "en",
+                "@value": "A variable is any characteristic that can be measured."
+            },
+            {
+                "@language": "it",
+                "@value": "Una variabile statistica è una qualsiasi caratteristica che può essere misurata."
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+            {
+                "@id": "https://w3id.org/italia/onto/ScholasticContext"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@language": "en",
+                "@value": "Statistic Variable"
+            },
+            {
+                "@language": "it",
+                "@value": "Statistic Variable"
+            },
+            {
+                "@language": "it",
+                "@value": "Variabile Statistica"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#versionInfo": [
+            {
+                "@language": "it",
+                "@value": "provvisoria"
+            },
+            {
+                "@language": "en",
+                "@value": "unstable"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/italia/onto/TI/atTime",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
         ]
     },
     {
@@ -1117,21 +1173,33 @@
         ]
     },
     {
-        "@id": "https://w3id.org/italia/onto/Project/PublicInvestmentProject",
+        "@id": "https://w3id.org/italia/onto/CLV/Feature",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ]
+    },
+    {
+        "@id": "https://w3id.org/italia/onto/MU/Value",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ]
+    },
+    {
+        "@id": "https://w3id.org/italia/onto/l0/Description",
         "@type": [
             "http://www.w3.org/2002/07/owl#Class"
         ]
     },
     {
         "@id": "_:genid1",
-        "http://www.w3.org/2002/07/owl#allValuesFrom": [
+        "http://www.w3.org/2002/07/owl#someValuesFrom": [
             {
-                "@id": "https://w3id.org/italia/onto/ScholasticProject/ScholasticProjectScope"
+                "@id": "https://w3id.org/italia/onto/ScholasticContext/StatisticVariable"
             }
         ],
         "http://www.w3.org/2002/07/owl#onProperty": [
             {
-                "@id": "https://w3id.org/italia/onto/ScholasticProject/hasScholasticProjectScope"
+                "@id": "https://w3id.org/italia/onto/ScholasticContext/hasVariable"
             }
         ],
         "@type": [
@@ -1140,14 +1208,14 @@
     },
     {
         "@id": "_:genid2",
-        "http://www.w3.org/2002/07/owl#allValuesFrom": [
+        "http://www.w3.org/2002/07/owl#someValuesFrom": [
             {
-                "@id": "https://w3id.org/italia/onto/ScholasticProject/ScholasticProjectTheme"
+                "@id": "https://w3id.org/italia/onto/TI/TimeInterval"
             }
         ],
         "http://www.w3.org/2002/07/owl#onProperty": [
             {
-                "@id": "https://w3id.org/italia/onto/ScholasticProject/hasScholasticProjectTheme"
+                "@id": "https://w3id.org/italia/onto/TI/atTime"
             }
         ],
         "@type": [
@@ -1155,7 +1223,13 @@
         ]
     },
     {
-        "@id": "https://w3id.org/italia/onto/l0/Concept",
+        "@id": "https://w3id.org/italia/onto/TI/TimeInterval",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ]
+    },
+    {
+        "@id": "https://w3id.org/italia/onto/l0/Characteristic",
         "@type": [
             "http://www.w3.org/2002/07/owl#Class"
         ]
@@ -1200,6 +1274,13 @@
                 "@language": "en",
                 "@value": "Italian National Institute of Statistics - ISTAT"
             }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/italia/onto/ScholasticProject",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/italia/onto/ADMS/SemanticAsset"
         ]
     }
 ]

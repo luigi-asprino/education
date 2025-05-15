@@ -34,7 +34,7 @@
                                                                                      "This ontology describes the projects conducted by Italian schools."@en ;
                                       rdfs:comment "Questa ontologia che descrive i progetti realizzati dalle scuole italiane."@it ,
                                                                                      "This ontology describes the projects conducted by Italian schools."@en ;
-                                                                                     dct:identifier "https://w3id.org/italia/onto/School" ;
+                                                                                     dct:identifier "https://w3id.org/italia/onto/ScholasticProject" ;
                                                                                      dct:issued "2025-05-19"^^xsd:date ;
                                                                                      dct:modified "2025-05-19"^^xsd:date ;
                                                                                      dct:language <http://publications.europa.eu/resource/authority/language/ENG> ,
@@ -184,8 +184,8 @@ sproject:ScholasticProjectTheme rdf:type owl:Class ;
                                                                                "This is the distribution in RDF/turtle of the scholastic project ontology"@en ;
                                                                dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
                                                                dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
-                                                               dct:title "Distribuzione RDF/Turtle ontologia School-AP_IT"@it ,
-                                                                         "RDF/Turtle distribution of School-AP_IT Ontology"@en ;
+                                                               dct:title "Distribuzione RDF/Turtle ontologia ScholasticProject-AP_IT"@it ,
+                                                                         "RDF/Turtle distribution of ScholasticProject-AP_IT Ontology"@en ;
                                                                dcat:accessURL <https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/ScholasticProject/latest> ;
                                                                dcat:downloadURL <https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/ScholasticProject/latest/ScholasticProject-AP_IT.ttl> .
 

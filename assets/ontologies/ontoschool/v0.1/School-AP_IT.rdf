@@ -363,13 +363,7 @@
     <!-- https://w3id.org/italia/onto/CLV/hasAddress -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CLV/hasAddress">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-        <rdfs:label xml:lang="en">has Address</rdfs:label>
-        <rdfs:label xml:lang="it">has Address</rdfs:label>
-        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/CLV/hasAddress"/>
     
 
 
@@ -449,156 +443,77 @@
     <!-- http://dati.gov.it/onto/dcatapit#Agent -->
 
 
-    <owl:Class rdf:about="http://dati.gov.it/onto/dcatapit#Agent">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-        <rdfs:label xml:lang="en">Agent</rdfs:label>
-        <rdfs:label xml:lang="it">Agent</rdfs:label>
-        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    </owl:Class>
+    <owl:Class rdf:about="http://dati.gov.it/onto/dcatapit#Agent"/>
     
 
 
     <!-- http://dati.gov.it/onto/dcatapit#Organization -->
 
 
-    <owl:Class rdf:about="http://dati.gov.it/onto/dcatapit#Organization">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-        <rdfs:label xml:lang="en">Organization</rdfs:label>
-        <rdfs:label xml:lang="it">Organization</rdfs:label>
-        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject -->
-
-
-    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-        <rdfs:label xml:lang="en">Physical Object</rdfs:label>
-        <rdfs:label xml:lang="it">Physical Object</rdfs:label>
-        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    </rdf:Description>
+    <owl:Class rdf:about="http://dati.gov.it/onto/dcatapit#Organization"/>
     
 
 
     <!-- http://www.w3.org/2006/vcard/ns#Kind -->
 
 
-    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Kind">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-        <rdfs:label xml:lang="en">Kind</rdfs:label>
-        <rdfs:label xml:lang="it">Kind</rdfs:label>
-        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Kind"/>
     
 
 
     <!-- http://www.w3.org/2006/vcard/ns#Organization -->
 
 
-    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Organization">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-        <rdfs:label xml:lang="en">Organization</rdfs:label>
-        <rdfs:label xml:lang="it">Organization</rdfs:label>
-        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Organization"/>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/Agent -->
 
 
-    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-        <rdfs:label xml:lang="en">Agent</rdfs:label>
-        <rdfs:label xml:lang="it">Agent</rdfs:label>
-        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    </owl:Class>
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
     
 
 
     <!-- https://w3id.org/italia/onto/ADMS/Project -->
 
 
-    <owl:Class rdf:about="https://w3id.org/italia/onto/ADMS/Project">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-        <rdfs:label xml:lang="en">Project</rdfs:label>
-        <rdfs:label xml:lang="it">Project</rdfs:label>
-        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    </owl:Class>
+    <owl:Class rdf:about="https://w3id.org/italia/onto/ADMS/Project"/>
     
 
 
     <!-- https://w3id.org/italia/onto/ADMS/SemanticAsset -->
 
 
-    <owl:Class rdf:about="https://w3id.org/italia/onto/ADMS/SemanticAsset">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-        <rdfs:label xml:lang="en">Semantic Asset</rdfs:label>
-        <rdfs:label xml:lang="it">Semantic Asset</rdfs:label>
-        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    </owl:Class>
+    <owl:Class rdf:about="https://w3id.org/italia/onto/ADMS/SemanticAsset"/>
     
 
 
     <!-- https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution -->
 
 
-    <owl:Class rdf:about="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-        <rdfs:label xml:lang="en">Semantic Asset Distribution</rdfs:label>
-        <rdfs:label xml:lang="it">Semantic Asset Distribution</rdfs:label>
-        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    </owl:Class>
+    <owl:Class rdf:about="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
     
 
 
     <!-- https://w3id.org/italia/onto/CLV/Address -->
 
 
-    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/Address">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-        <rdfs:label xml:lang="en">Address</rdfs:label>
-        <rdfs:label xml:lang="it">Address</rdfs:label>
-        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    </owl:Class>
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/Address"/>
     
 
 
     <!-- https://w3id.org/italia/onto/COV/Organization -->
 
 
-    <owl:Class rdf:about="https://w3id.org/italia/onto/COV/Organization">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-        <rdfs:label xml:lang="en">Organization</rdfs:label>
-        <rdfs:label xml:lang="it">Organization</rdfs:label>
-        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    </owl:Class>
+    <owl:Class rdf:about="https://w3id.org/italia/onto/COV/Organization"/>
     
 
 
     <!-- https://w3id.org/italia/onto/COV/PrivateOrganization -->
 
 
-    <owl:Class rdf:about="https://w3id.org/italia/onto/COV/PrivateOrganization">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-        <rdfs:label xml:lang="en">Private Organization</rdfs:label>
-        <rdfs:label xml:lang="it">Private Organization</rdfs:label>
-        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    </owl:Class>
+    <owl:Class rdf:about="https://w3id.org/italia/onto/COV/PrivateOrganization"/>
     
 
 
@@ -1470,11 +1385,6 @@
         <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Organization"/>
         <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
         <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-        <rdfs:label xml:lang="en">INDIRE</rdfs:label>
-        <rdfs:label xml:lang="it">INDIRE</rdfs:label>
-        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
         <ns:fn>Ufficio Relazioni con il Pubblico - INDIRE</ns:fn>
         <ns:hasEmail rdf:resource="mailto:urp@indire.it"/>
     </owl:NamedIndividual>
@@ -1488,11 +1398,6 @@
         <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Organization"/>
         <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
         <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-        <rdfs:label xml:lang="en">ISTAT - NDC</rdfs:label>
-        <rdfs:label xml:lang="it">ISTAT - NDC</rdfs:label>
-        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
         <ns:fn>Segreteria Tecnica Istat - Progetto PNRR National Data Catalog</ns:fn>
         <ns:hasEmail rdf:resource="mailto:ndc-segr-tec@istat.it"/>
     </owl:NamedIndividual>
@@ -1510,11 +1415,6 @@
         <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
         <terms:title xml:lang="it">Distribuzione JSON-LD ontologia School-AP_IT</terms:title>
         <terms:title xml:lang="en">JSON-LD distribution of the School-AP_IT Ontology</terms:title>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-        <rdfs:label xml:lang="en">School - AP _ IT - JSON - LD</rdfs:label>
-        <rdfs:label xml:lang="it">School - AP _ IT - JSON - LD</rdfs:label>
-        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
         <dcat:accessURL rdf:resource="https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/School/latest"/>
         <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/School/latest/School-AP_IT.jsonld"/>
     </owl:NamedIndividual>
@@ -1532,11 +1432,6 @@
         <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
         <terms:title xml:lang="it">Distribuzione RDF/Turtle ontologia School-AP_IT</terms:title>
         <terms:title xml:lang="en">RDF/Turtle distribution of School-AP_IT Ontology</terms:title>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-        <rdfs:label xml:lang="en">School - AP _ IT - RDF - TURTLE</rdfs:label>
-        <rdfs:label xml:lang="it">School - AP _ IT - RDF - TURTLE</rdfs:label>
-        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
         <dcat:accessURL rdf:resource="https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/School/latest"/>
         <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/School/latest/School-AP_IT.ttl"/>
     </owl:NamedIndividual>
@@ -1554,11 +1449,6 @@
         <terms:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
         <terms:title xml:lang="it">Distribuzione RDF/XML ontologia School-AP_IT</terms:title>
         <terms:title xml:lang="en">RDF/XML distribution of School-AP_IT Ontology</terms:title>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-        <rdfs:label xml:lang="en">School - AP _ IT - RDF - XML</rdfs:label>
-        <rdfs:label xml:lang="it">School - AP _ IT - RDF - XML</rdfs:label>
-        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
         <dcat:accessURL rdf:resource="https://github.com/italia/daf-ontologie-vocabolari-controllati/tree/master/Ontologie/School/latest"/>
         <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/italia/daf-ontologie-vocabolari-controllati/master/Ontologie/School/latest/School-AP_IT.rdf"/>
     </owl:NamedIndividual>
@@ -1572,11 +1462,6 @@
         <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <terms:identifier>cnr - Z6HZEH - STLab</terms:identifier>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-        <rdfs:label xml:lang="en">stlab</rdfs:label>
-        <rdfs:label xml:lang="it">stlab</rdfs:label>
-        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
         <foaf:name xml:lang="en">Institute of Cognitive Sciences and Technologies of the Italian Research Council (CNR) - Semantic Technology Laboratory (STLab)</foaf:name>
         <foaf:name xml:lang="it">Istituto di Scienze e Tecnologie della Cognizione del CNR - Semantic Technology Lab (STLab)</foaf:name>
     </owl:NamedIndividual>
@@ -1588,11 +1473,6 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/project/NDC">
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/Project"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-        <rdfs:label xml:lang="en">NDC</rdfs:label>
-        <rdfs:label xml:lang="it">NDC</rdfs:label>
-        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
         <l0:name xml:lang="it">National Data Catalog - schema.gov.it</l0:name>
     </owl:NamedIndividual>
     
@@ -1603,11 +1483,6 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/project/OntoPiA">
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/Project"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-        <rdfs:label xml:lang="en">Onto Pi A</rdfs:label>
-        <rdfs:label xml:lang="it">Onto Pi A</rdfs:label>
-        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
         <l0:name xml:lang="it">OntoPiA - la rete di ontologie della pubblica amministrazione italiana</l0:name>
     </owl:NamedIndividual>
     
@@ -1620,11 +1495,6 @@
         <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <terms:identifier>INDIRE</terms:identifier>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-        <rdfs:label xml:lang="en">INDIRE</rdfs:label>
-        <rdfs:label xml:lang="it">INDIRE</rdfs:label>
-        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
         <foaf:name xml:lang="it">Istituto Nazionale di Documentazione, Innovazione e Ricerca Educativa - INDIRE</foaf:name>
         <foaf:name xml:lang="en">Italian National Institute for Documentation, Innovation and Educational Research - INDIRE</foaf:name>
     </owl:NamedIndividual>
@@ -1638,11 +1508,6 @@
         <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <terms:identifier>ISTAT</terms:identifier>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-        <rdfs:label xml:lang="en">ISTAT</rdfs:label>
-        <rdfs:label xml:lang="it">ISTAT</rdfs:label>
-        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
         <foaf:name xml:lang="it">Istituto Nazionale di Statistica - ISTAT</foaf:name>
         <foaf:name xml:lang="en">Italian National Institute of Statistics - ISTAT</foaf:name>
     </owl:NamedIndividual>
@@ -1656,11 +1521,6 @@
         <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <terms:identifier>PCM-1RSIZZ</terms:identifier>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-        <rdfs:label xml:lang="en">PCM - 1 RSIZZ</rdfs:label>
-        <rdfs:label xml:lang="it">PCM - 1 RSIZZ</rdfs:label>
-        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
         <foaf:name xml:lang="en">Digital Transformation Department of the Presidency of the Council of Ministers</foaf:name>
         <foaf:name xml:lang="it">Dipartimento per la Trasformazione Digitale della Presidenza del Consiglio dei Ministri</foaf:name>
     </owl:NamedIndividual>
@@ -1672,11 +1532,6 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/italia/onto/School">
         <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAsset"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/onto/School"/>
-        <rdfs:label xml:lang="en">School</rdfs:label>
-        <rdfs:label xml:lang="it">School</rdfs:label>
-        <owl:versionInfo xml:lang="it">provvisoria</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:NamedIndividual>
     
 
