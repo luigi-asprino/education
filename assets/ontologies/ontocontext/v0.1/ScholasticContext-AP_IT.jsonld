@@ -22,7 +22,7 @@
         ],
         "http://purl.org/dc/elements/1.1/description": [
             {
-                "@id": "https://raw.githubusercontent.com/luigi-asprino/education/refs/heads/main/assets/ontologies/ontocontext/ScholasticContext.png"
+                "@id": "https://raw.githubusercontent.com/luigi-asprino/education/refs/heads/main/assets/ontologies/ontocontext/ScholasticContext-AP_IT.png"
             }
         ],
         "http://purl.org/dc/terms/accrualPeriodicity": [

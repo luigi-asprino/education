@@ -11,7 +11,7 @@
                                                   owl:imports <https://w3id.org/italia/onto/School> ,
                                                               <https://w3id.org/italia/onto/CLV/1.0> ,
                                                               <https://w3id.org/italia/onto/TI/0.8> ;
-                                                  <http://purl.org/dc/elements/1.1/description> <https://raw.githubusercontent.com/luigi-asprino/education/refs/heads/main/assets/ontologies/ontocontext/ScholasticContext.png> ;
+                                                  <http://purl.org/dc/elements/1.1/description> <https://raw.githubusercontent.com/luigi-asprino/education/refs/heads/main/assets/ontologies/ontocontext/ScholasticContext-AP_IT.png> ;
                                                   <http://purl.org/dc/terms/accrualPeriodicity> <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
                                                   <http://purl.org/dc/terms/creator> <https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab> ,
                                                                                      <https://w3id.org/italia/data/public-organization/INDIRE> ;

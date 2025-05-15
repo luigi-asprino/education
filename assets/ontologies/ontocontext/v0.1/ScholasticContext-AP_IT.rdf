@@ -19,7 +19,7 @@
         <owl:imports rdf:resource="https://w3id.org/italia/onto/School"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/CLV/1.0"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/TI/0.8"/>
-        <dc:description rdf:resource="https://raw.githubusercontent.com/luigi-asprino/education/refs/heads/main/assets/ontologies/ontocontext/ScholasticContext.png"/>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/luigi-asprino/education/refs/heads/main/assets/ontologies/ontocontext/ScholasticContext-AP_IT.png"/>
         <terms:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
         <terms:creator rdf:resource="https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab"/>
         <terms:creator rdf:resource="https://w3id.org/italia/data/public-organization/INDIRE"/>
